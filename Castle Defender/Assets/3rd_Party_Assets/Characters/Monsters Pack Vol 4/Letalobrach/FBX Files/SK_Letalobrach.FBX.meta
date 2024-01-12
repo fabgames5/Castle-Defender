@@ -1,0 +1,166 @@
+fileFormatVersion: 2
+guid: f3544d008a0b5ad47a726f7e062e9514
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Letalobrach_
+    100002: Letalobrach_ Head
+    100004: Letalobrach_ L Calf
+    100006: Letalobrach_ L Clavicle
+    100008: Letalobrach_ L Foot
+    100010: Letalobrach_ L Forearm
+    100012: Letalobrach_ L Hand
+    100014: Letalobrach_ L HorseLink
+    100016: Letalobrach_ L Thigh
+    100018: Letalobrach_ L UpperArm
+    100020: Letalobrach_ Neck
+    100022: Letalobrach_ Pelvis
+    100024: Letalobrach_ R Calf
+    100026: Letalobrach_ R Clavicle
+    100028: Letalobrach_ R Foot
+    100030: Letalobrach_ R Forearm
+    100032: Letalobrach_ R Hand
+    100034: Letalobrach_ R HorseLink
+    100036: Letalobrach_ R Thigh
+    100038: Letalobrach_ R UpperArm
+    100040: Letalobrach_ Spine
+    100042: Letalobrach_ Spine1
+    100044: Letalobrach_ Tail
+    100046: Letalobrach_ Tail1
+    100048: Letalobrach_ Tail2
+    100050: Letalobrach_ Tail3
+    100052: Letalobrach_ Tail4
+    100054: Letalobrach_ Tail5
+    100056: Letalobrach_Jaw
+    100058: Letalobrach_Tongue1
+    100060: Letalobrach_Tongue2
+    100062: Letalobrach_Tongue3
+    100064: root
+    100066: //RootNode
+    100068: SK_Letalobrach
+    400000: Letalobrach_
+    400002: Letalobrach_ Head
+    400004: Letalobrach_ L Calf
+    400006: Letalobrach_ L Clavicle
+    400008: Letalobrach_ L Foot
+    400010: Letalobrach_ L Forearm
+    400012: Letalobrach_ L Hand
+    400014: Letalobrach_ L HorseLink
+    400016: Letalobrach_ L Thigh
+    400018: Letalobrach_ L UpperArm
+    400020: Letalobrach_ Neck
+    400022: Letalobrach_ Pelvis
+    400024: Letalobrach_ R Calf
+    400026: Letalobrach_ R Clavicle
+    400028: Letalobrach_ R Foot
+    400030: Letalobrach_ R Forearm
+    400032: Letalobrach_ R Hand
+    400034: Letalobrach_ R HorseLink
+    400036: Letalobrach_ R Thigh
+    400038: Letalobrach_ R UpperArm
+    400040: Letalobrach_ Spine
+    400042: Letalobrach_ Spine1
+    400044: Letalobrach_ Tail
+    400046: Letalobrach_ Tail1
+    400048: Letalobrach_ Tail2
+    400050: Letalobrach_ Tail3
+    400052: Letalobrach_ Tail4
+    400054: Letalobrach_ Tail5
+    400056: Letalobrach_Jaw
+    400058: Letalobrach_Tongue1
+    400060: Letalobrach_Tongue2
+    400062: Letalobrach_Tongue3
+    400064: root
+    400066: //RootNode
+    400068: SK_Letalobrach
+    2100000: M_Letalobrach
+    4300000: SK_Letalobrach
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: SK_Letalobrach
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 1
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 0
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: root
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,475 @@
+fileFormatVersion: 2
+guid: e576e1268eea0174580696de041f4173
+timeCreated: 1518126640
+licenseType: Store
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Deinodonte_
+    100004: Deinodonte_ Footsteps
+    100006: Deinodonte_ Head
+    100008: Deinodonte_ L Calf
+    100010: Deinodonte_ L Clavicle
+    100012: Deinodonte_ L Finger0
+    100014: Deinodonte_ L Finger01
+    100016: Deinodonte_ L Finger02
+    100018: Deinodonte_ L Finger1
+    100020: Deinodonte_ L Finger11
+    100022: Deinodonte_ L Finger12
+    100024: Deinodonte_ L Finger2
+    100026: Deinodonte_ L Finger21
+    100028: Deinodonte_ L Finger22
+    100030: Deinodonte_ L Foot
+    100032: Deinodonte_ L Forearm
+    100034: Deinodonte_ L Hand
+    100036: Deinodonte_ L HorseLink
+    100038: Deinodonte_ L Thigh
+    100040: Deinodonte_ L Toe0
+    100042: Deinodonte_ L Toe01
+    100044: Deinodonte_ L Toe02
+    100046: Deinodonte_ L Toe1
+    100048: Deinodonte_ L Toe11
+    100050: Deinodonte_ L Toe12
+    100052: Deinodonte_ L Toe2
+    100054: Deinodonte_ L Toe21
+    100056: Deinodonte_ L Toe22
+    100058: Deinodonte_ L UpperArm
+    100060: Deinodonte_ Neck
+    100062: Deinodonte_ Pelvis
+    100064: Deinodonte_ Ponytail1
+    100066: Deinodonte_ R Calf
+    100068: Deinodonte_ R Clavicle
+    100070: Deinodonte_ R Finger0
+    100072: Deinodonte_ R Finger01
+    100074: Deinodonte_ R Finger02
+    100076: Deinodonte_ R Finger1
+    100078: Deinodonte_ R Finger11
+    100080: Deinodonte_ R Finger12
+    100082: Deinodonte_ R Finger2
+    100084: Deinodonte_ R Finger21
+    100086: Deinodonte_ R Finger22
+    100088: Deinodonte_ R Foot
+    100090: Deinodonte_ R Forearm
+    100092: Deinodonte_ R Hand
+    100094: Deinodonte_ R HorseLink
+    100096: Deinodonte_ R Thigh
+    100098: Deinodonte_ R Toe0
+    100100: Deinodonte_ R Toe01
+    100102: Deinodonte_ R Toe02
+    100104: Deinodonte_ R Toe1
+    100106: Deinodonte_ R Toe11
+    100108: Deinodonte_ R Toe12
+    100110: Deinodonte_ R Toe2
+    100112: Deinodonte_ R Toe21
+    100114: Deinodonte_ R Toe22
+    100116: Deinodonte_ R UpperArm
+    100118: Deinodonte_ Spine
+    100120: Deinodonte_ Spine1
+    100122: Deinodonte_ Tail
+    100124: Deinodonte_ Tail1
+    100126: Deinodonte_ Tail2
+    100128: Deinodonte_ Tail3
+    100130: Deinodonte_ Tail4
+    100132: Deinodonte_ Tongue1
+    100134: Deinodonte_ Tongue2
+    100136: Deinodonte_ Tongue3
+    100138: Deinodonte_ Tongue4
+    100140: root
+    400000: //RootNode
+    400002: Deinodonte_
+    400004: Deinodonte_ Footsteps
+    400006: Deinodonte_ Head
+    400008: Deinodonte_ L Calf
+    400010: Deinodonte_ L Clavicle
+    400012: Deinodonte_ L Finger0
+    400014: Deinodonte_ L Finger01
+    400016: Deinodonte_ L Finger02
+    400018: Deinodonte_ L Finger1
+    400020: Deinodonte_ L Finger11
+    400022: Deinodonte_ L Finger12
+    400024: Deinodonte_ L Finger2
+    400026: Deinodonte_ L Finger21
+    400028: Deinodonte_ L Finger22
+    400030: Deinodonte_ L Foot
+    400032: Deinodonte_ L Forearm
+    400034: Deinodonte_ L Hand
+    400036: Deinodonte_ L HorseLink
+    400038: Deinodonte_ L Thigh
+    400040: Deinodonte_ L Toe0
+    400042: Deinodonte_ L Toe01
+    400044: Deinodonte_ L Toe02
+    400046: Deinodonte_ L Toe1
+    400048: Deinodonte_ L Toe11
+    400050: Deinodonte_ L Toe12
+    400052: Deinodonte_ L Toe2
+    400054: Deinodonte_ L Toe21
+    400056: Deinodonte_ L Toe22
+    400058: Deinodonte_ L UpperArm
+    400060: Deinodonte_ Neck
+    400062: Deinodonte_ Pelvis
+    400064: Deinodonte_ Ponytail1
+    400066: Deinodonte_ R Calf
+    400068: Deinodonte_ R Clavicle
+    400070: Deinodonte_ R Finger0
+    400072: Deinodonte_ R Finger01
+    400074: Deinodonte_ R Finger02
+    400076: Deinodonte_ R Finger1
+    400078: Deinodonte_ R Finger11
+    400080: Deinodonte_ R Finger12
+    400082: Deinodonte_ R Finger2
+    400084: Deinodonte_ R Finger21
+    400086: Deinodonte_ R Finger22
+    400088: Deinodonte_ R Foot
+    400090: Deinodonte_ R Forearm
+    400092: Deinodonte_ R Hand
+    400094: Deinodonte_ R HorseLink
+    400096: Deinodonte_ R Thigh
+    400098: Deinodonte_ R Toe0
+    400100: Deinodonte_ R Toe01
+    400102: Deinodonte_ R Toe02
+    400104: Deinodonte_ R Toe1
+    400106: Deinodonte_ R Toe11
+    400108: Deinodonte_ R Toe12
+    400110: Deinodonte_ R Toe2
+    400112: Deinodonte_ R Toe21
+    400114: Deinodonte_ R Toe22
+    400116: Deinodonte_ R UpperArm
+    400118: Deinodonte_ Spine
+    400120: Deinodonte_ Spine1
+    400122: Deinodonte_ Tail
+    400124: Deinodonte_ Tail1
+    400126: Deinodonte_ Tail2
+    400128: Deinodonte_ Tail3
+    400130: Deinodonte_ Tail4
+    400132: Deinodonte_ Tongue1
+    400134: Deinodonte_ Tongue2
+    400136: Deinodonte_ Tongue3
+    400138: Deinodonte_ Tongue4
+    400140: root
+    7400000: GetHit1
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 0
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: GetHit1
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 25
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: root
+        weight: 1
+      - path: root/Deinodonte_
+        weight: 1
+      - path: root/Deinodonte_/Deinodonte_ Footsteps
+        weight: 1
+      - path: root/Deinodonte_/Deinodonte_ Pelvis
+        weight: 1
+      - path: root/Deinodonte_/Deinodonte_ Pelvis/Deinodonte_ L Thigh
+        weight: 1
+      - path: root/Deinodonte_/Deinodonte_ Pelvis/Deinodonte_ L Thigh/Deinodonte_
+          L Calf
+        weight: 1
+      - path: root/Deinodonte_/Deinodonte_ Pelvis/Deinodonte_ L Thigh/Deinodonte_
+          L Calf/Deinodonte_ L HorseLink
+        weight: 1
+      - path: root/Deinodonte_/Deinodonte_ Pelvis/Deinodonte_ L Thigh/Deinodonte_
+          L Calf/Deinodonte_ L HorseLink/Deinodonte_ L Foot
+        weight: 1
+      - path: root/Deinodonte_/Deinodonte_ Pelvis/Deinodonte_ L Thigh/Deinodonte_
+          L Calf/Deinodonte_ L HorseLink/Deinodonte_ L Foot/Deinodonte_ L Toe0
+        weight: 1
+      - path: root/Deinodonte_/Deinodonte_ Pelvis/Deinodonte_ L Thigh/Deinodonte_
+          L Calf/Deinodonte_ L HorseLink/Deinodonte_ L Foot/Deinodonte_ L Toe0/Deinodonte_
+          L Toe01
+        weight: 1
+      - path: root/Deinodonte_/Deinodonte_ Pelvis/Deinodonte_ L Thigh/Deinodonte_
+          L Calf/Deinodonte_ L HorseLink/Deinodonte_ L Foot/Deinodonte_ L Toe0/Deinodonte_
+          L Toe01/Deinodonte_ L Toe02
+        weight: 1
+      - path: root/Deinodonte_/Deinodonte_ Pelvis/Deinodonte_ L Thigh/Deinodonte_
+          L Calf/Deinodonte_ L HorseLink/Deinodonte_ L Foot/Deinodonte_ L Toe1
+        weight: 1
+      - path: root/Deinodonte_/Deinodonte_ Pelvis/Deinodonte_ L Thigh/Deinodonte_
+          L Calf/Deinodonte_ L HorseLink/Deinodonte_ L Foot/Deinodonte_ L Toe1/Deinodonte_
+          L Toe11
+        weight: 1
+      - path: root/Deinodonte_/Deinodonte_ Pelvis/Deinodonte_ L Thigh/Deinodonte_
+          L Calf/Deinodonte_ L HorseLink/Deinodonte_ L Foot/Deinodonte_ L Toe1/Deinodonte_
+          L Toe11/Deinodonte_ L Toe12
+        weight: 1
+      - path: root/Deinodonte_/Deinodonte_ Pelvis/Deinodonte_ L Thigh/Deinodonte_
+          L Calf/Deinodonte_ L HorseLink/Deinodonte_ L Foot/Deinodonte_ L Toe2
+        weight: 1
+      - path: root/Deinodonte_/Deinodonte_ Pelvis/Deinodonte_ L Thigh/Deinodonte_
+          L Calf/Deinodonte_ L HorseLink/Deinodonte_ L Foot/Deinodonte_ L Toe2/Deinodonte_
+          L Toe21
+        weight: 1
+      - path: root/Deinodonte_/Deinodonte_ Pelvis/Deinodonte_ L Thigh/Deinodonte_
+          L Calf/Deinodonte_ L HorseLink/Deinodonte_ L Foot/Deinodonte_ L Toe2/Deinodonte_
+          L Toe21/Deinodonte_ L Toe22
+        weight: 1
+      - path: root/Deinodonte_/Deinodonte_ Pelvis/Deinodonte_ R Thigh
+        weight: 1
+      - path: root/Deinodonte_/Deinodonte_ Pelvis/Deinodonte_ R Thigh/Deinodonte_
+          R Calf
+        weight: 1
+      - path: root/Deinodonte_/Deinodonte_ Pelvis/Deinodonte_ R Thigh/Deinodonte_
+          R Calf/Deinodonte_ R HorseLink
+        weight: 1
+      - path: root/Deinodonte_/Deinodonte_ Pelvis/Deinodonte_ R Thigh/Deinodonte_
+          R Calf/Deinodonte_ R HorseLink/Deinodonte_ R Foot
+        weight: 1
+      - path: root/Deinodonte_/Deinodonte_ Pelvis/Deinodonte_ R Thigh/Deinodonte_
+          R Calf/Deinodonte_ R HorseLink/Deinodonte_ R Foot/Deinodonte_ R Toe0
+        weight: 1
+      - path: root/Deinodonte_/Deinodonte_ Pelvis/Deinodonte_ R Thigh/Deinodonte_
+          R Calf/Deinodonte_ R HorseLink/Deinodonte_ R Foot/Deinodonte_ R Toe0/Deinodonte_
+          R Toe01
+        weight: 1
+      - path: root/Deinodonte_/Deinodonte_ Pelvis/Deinodonte_ R Thigh/Deinodonte_
+          R Calf/Deinodonte_ R HorseLink/Deinodonte_ R Foot/Deinodonte_ R Toe0/Deinodonte_
+          R Toe01/Deinodonte_ R Toe02
+        weight: 1
+      - path: root/Deinodonte_/Deinodonte_ Pelvis/Deinodonte_ R Thigh/Deinodonte_
+          R Calf/Deinodonte_ R HorseLink/Deinodonte_ R Foot/Deinodonte_ R Toe1
+        weight: 1
+      - path: root/Deinodonte_/Deinodonte_ Pelvis/Deinodonte_ R Thigh/Deinodonte_
+          R Calf/Deinodonte_ R HorseLink/Deinodonte_ R Foot/Deinodonte_ R Toe1/Deinodonte_
+          R Toe11
+        weight: 1
+      - path: root/Deinodonte_/Deinodonte_ Pelvis/Deinodonte_ R Thigh/Deinodonte_
+          R Calf/Deinodonte_ R HorseLink/Deinodonte_ R Foot/Deinodonte_ R Toe1/Deinodonte_
+          R Toe11/Deinodonte_ R Toe12
+        weight: 1
+      - path: root/Deinodonte_/Deinodonte_ Pelvis/Deinodonte_ R Thigh/Deinodonte_
+          R Calf/Deinodonte_ R HorseLink/Deinodonte_ R Foot/Deinodonte_ R Toe2
+        weight: 1
+      - path: root/Deinodonte_/Deinodonte_ Pelvis/Deinodonte_ R Thigh/Deinodonte_
+          R Calf/Deinodonte_ R HorseLink/Deinodonte_ R Foot/Deinodonte_ R Toe2/Deinodonte_
+          R Toe21
+        weight: 1
+      - path: root/Deinodonte_/Deinodonte_ Pelvis/Deinodonte_ R Thigh/Deinodonte_
+          R Calf/Deinodonte_ R HorseLink/Deinodonte_ R Foot/Deinodonte_ R Toe2/Deinodonte_
+          R Toe21/Deinodonte_ R Toe22
+        weight: 1
+      - path: root/Deinodonte_/Deinodonte_ Pelvis/Deinodonte_ Spine
+        weight: 1
+      - path: root/Deinodonte_/Deinodonte_ Pelvis/Deinodonte_ Spine/Deinodonte_ Spine1
+        weight: 1
+      - path: root/Deinodonte_/Deinodonte_ Pelvis/Deinodonte_ Spine/Deinodonte_ Spine1/Deinodonte_
+          L Clavicle
+        weight: 1
+      - path: root/Deinodonte_/Deinodonte_ Pelvis/Deinodonte_ Spine/Deinodonte_ Spine1/Deinodonte_
+          L Clavicle/Deinodonte_ L UpperArm
+        weight: 1
+      - path: root/Deinodonte_/Deinodonte_ Pelvis/Deinodonte_ Spine/Deinodonte_ Spine1/Deinodonte_
+          L Clavicle/Deinodonte_ L UpperArm/Deinodonte_ L Forearm
+        weight: 1
+      - path: root/Deinodonte_/Deinodonte_ Pelvis/Deinodonte_ Spine/Deinodonte_ Spine1/Deinodonte_
+          L Clavicle/Deinodonte_ L UpperArm/Deinodonte_ L Forearm/Deinodonte_ L Hand
+        weight: 1
+      - path: root/Deinodonte_/Deinodonte_ Pelvis/Deinodonte_ Spine/Deinodonte_ Spine1/Deinodonte_
+          L Clavicle/Deinodonte_ L UpperArm/Deinodonte_ L Forearm/Deinodonte_ L Hand/Deinodonte_
+          L Finger0
+        weight: 1
+      - path: root/Deinodonte_/Deinodonte_ Pelvis/Deinodonte_ Spine/Deinodonte_ Spine1/Deinodonte_
+          L Clavicle/Deinodonte_ L UpperArm/Deinodonte_ L Forearm/Deinodonte_ L Hand/Deinodonte_
+          L Finger0/Deinodonte_ L Finger01
+        weight: 1
+      - path: root/Deinodonte_/Deinodonte_ Pelvis/Deinodonte_ Spine/Deinodonte_ Spine1/Deinodonte_
+          L Clavicle/Deinodonte_ L UpperArm/Deinodonte_ L Forearm/Deinodonte_ L Hand/Deinodonte_
+          L Finger0/Deinodonte_ L Finger01/Deinodonte_ L Finger02
+        weight: 1
+      - path: root/Deinodonte_/Deinodonte_ Pelvis/Deinodonte_ Spine/Deinodonte_ Spine1/Deinodonte_
+          L Clavicle/Deinodonte_ L UpperArm/Deinodonte_ L Forearm/Deinodonte_ L Hand/Deinodonte_
+          L Finger1
+        weight: 1
+      - path: root/Deinodonte_/Deinodonte_ Pelvis/Deinodonte_ Spine/Deinodonte_ Spine1/Deinodonte_
+          L Clavicle/Deinodonte_ L UpperArm/Deinodonte_ L Forearm/Deinodonte_ L Hand/Deinodonte_
+          L Finger1/Deinodonte_ L Finger11
+        weight: 1
+      - path: root/Deinodonte_/Deinodonte_ Pelvis/Deinodonte_ Spine/Deinodonte_ Spine1/Deinodonte_
+          L Clavicle/Deinodonte_ L UpperArm/Deinodonte_ L Forearm/Deinodonte_ L Hand/Deinodonte_
+          L Finger1/Deinodonte_ L Finger11/Deinodonte_ L Finger12
+        weight: 1
+      - path: root/Deinodonte_/Deinodonte_ Pelvis/Deinodonte_ Spine/Deinodonte_ Spine1/Deinodonte_
+          L Clavicle/Deinodonte_ L UpperArm/Deinodonte_ L Forearm/Deinodonte_ L Hand/Deinodonte_
+          L Finger2
+        weight: 1
+      - path: root/Deinodonte_/Deinodonte_ Pelvis/Deinodonte_ Spine/Deinodonte_ Spine1/Deinodonte_
+          L Clavicle/Deinodonte_ L UpperArm/Deinodonte_ L Forearm/Deinodonte_ L Hand/Deinodonte_
+          L Finger2/Deinodonte_ L Finger21
+        weight: 1
+      - path: root/Deinodonte_/Deinodonte_ Pelvis/Deinodonte_ Spine/Deinodonte_ Spine1/Deinodonte_
+          L Clavicle/Deinodonte_ L UpperArm/Deinodonte_ L Forearm/Deinodonte_ L Hand/Deinodonte_
+          L Finger2/Deinodonte_ L Finger21/Deinodonte_ L Finger22
+        weight: 1
+      - path: root/Deinodonte_/Deinodonte_ Pelvis/Deinodonte_ Spine/Deinodonte_ Spine1/Deinodonte_
+          Neck
+        weight: 1
+      - path: root/Deinodonte_/Deinodonte_ Pelvis/Deinodonte_ Spine/Deinodonte_ Spine1/Deinodonte_
+          Neck/Deinodonte_ Head
+        weight: 1
+      - path: root/Deinodonte_/Deinodonte_ Pelvis/Deinodonte_ Spine/Deinodonte_ Spine1/Deinodonte_
+          Neck/Deinodonte_ Head/Deinodonte_ Ponytail1
+        weight: 1
+      - path: root/Deinodonte_/Deinodonte_ Pelvis/Deinodonte_ Spine/Deinodonte_ Spine1/Deinodonte_
+          Neck/Deinodonte_ Head/Deinodonte_ Ponytail1/Deinodonte_ Tongue1
+        weight: 1
+      - path: root/Deinodonte_/Deinodonte_ Pelvis/Deinodonte_ Spine/Deinodonte_ Spine1/Deinodonte_
+          Neck/Deinodonte_ Head/Deinodonte_ Ponytail1/Deinodonte_ Tongue1/Deinodonte_
+          Tongue2
+        weight: 1
+      - path: root/Deinodonte_/Deinodonte_ Pelvis/Deinodonte_ Spine/Deinodonte_ Spine1/Deinodonte_
+          Neck/Deinodonte_ Head/Deinodonte_ Ponytail1/Deinodonte_ Tongue1/Deinodonte_
+          Tongue2/Deinodonte_ Tongue3
+        weight: 1
+      - path: root/Deinodonte_/Deinodonte_ Pelvis/Deinodonte_ Spine/Deinodonte_ Spine1/Deinodonte_
+          Neck/Deinodonte_ Head/Deinodonte_ Ponytail1/Deinodonte_ Tongue1/Deinodonte_
+          Tongue2/Deinodonte_ Tongue3/Deinodonte_ Tongue4
+        weight: 1
+      - path: root/Deinodonte_/Deinodonte_ Pelvis/Deinodonte_ Spine/Deinodonte_ Spine1/Deinodonte_
+          R Clavicle
+        weight: 1
+      - path: root/Deinodonte_/Deinodonte_ Pelvis/Deinodonte_ Spine/Deinodonte_ Spine1/Deinodonte_
+          R Clavicle/Deinodonte_ R UpperArm
+        weight: 1
+      - path: root/Deinodonte_/Deinodonte_ Pelvis/Deinodonte_ Spine/Deinodonte_ Spine1/Deinodonte_
+          R Clavicle/Deinodonte_ R UpperArm/Deinodonte_ R Forearm
+        weight: 1
+      - path: root/Deinodonte_/Deinodonte_ Pelvis/Deinodonte_ Spine/Deinodonte_ Spine1/Deinodonte_
+          R Clavicle/Deinodonte_ R UpperArm/Deinodonte_ R Forearm/Deinodonte_ R Hand
+        weight: 1
+      - path: root/Deinodonte_/Deinodonte_ Pelvis/Deinodonte_ Spine/Deinodonte_ Spine1/Deinodonte_
+          R Clavicle/Deinodonte_ R UpperArm/Deinodonte_ R Forearm/Deinodonte_ R Hand/Deinodonte_
+          R Finger0
+        weight: 1
+      - path: root/Deinodonte_/Deinodonte_ Pelvis/Deinodonte_ Spine/Deinodonte_ Spine1/Deinodonte_
+          R Clavicle/Deinodonte_ R UpperArm/Deinodonte_ R Forearm/Deinodonte_ R Hand/Deinodonte_
+          R Finger0/Deinodonte_ R Finger01
+        weight: 1
+      - path: root/Deinodonte_/Deinodonte_ Pelvis/Deinodonte_ Spine/Deinodonte_ Spine1/Deinodonte_
+          R Clavicle/Deinodonte_ R UpperArm/Deinodonte_ R Forearm/Deinodonte_ R Hand/Deinodonte_
+          R Finger0/Deinodonte_ R Finger01/Deinodonte_ R Finger02
+        weight: 1
+      - path: root/Deinodonte_/Deinodonte_ Pelvis/Deinodonte_ Spine/Deinodonte_ Spine1/Deinodonte_
+          R Clavicle/Deinodonte_ R UpperArm/Deinodonte_ R Forearm/Deinodonte_ R Hand/Deinodonte_
+          R Finger1
+        weight: 1
+      - path: root/Deinodonte_/Deinodonte_ Pelvis/Deinodonte_ Spine/Deinodonte_ Spine1/Deinodonte_
+          R Clavicle/Deinodonte_ R UpperArm/Deinodonte_ R Forearm/Deinodonte_ R Hand/Deinodonte_
+          R Finger1/Deinodonte_ R Finger11
+        weight: 1
+      - path: root/Deinodonte_/Deinodonte_ Pelvis/Deinodonte_ Spine/Deinodonte_ Spine1/Deinodonte_
+          R Clavicle/Deinodonte_ R UpperArm/Deinodonte_ R Forearm/Deinodonte_ R Hand/Deinodonte_
+          R Finger1/Deinodonte_ R Finger11/Deinodonte_ R Finger12
+        weight: 1
+      - path: root/Deinodonte_/Deinodonte_ Pelvis/Deinodonte_ Spine/Deinodonte_ Spine1/Deinodonte_
+          R Clavicle/Deinodonte_ R UpperArm/Deinodonte_ R Forearm/Deinodonte_ R Hand/Deinodonte_
+          R Finger2
+        weight: 1
+      - path: root/Deinodonte_/Deinodonte_ Pelvis/Deinodonte_ Spine/Deinodonte_ Spine1/Deinodonte_
+          R Clavicle/Deinodonte_ R UpperArm/Deinodonte_ R Forearm/Deinodonte_ R Hand/Deinodonte_
+          R Finger2/Deinodonte_ R Finger21
+        weight: 1
+      - path: root/Deinodonte_/Deinodonte_ Pelvis/Deinodonte_ Spine/Deinodonte_ Spine1/Deinodonte_
+          R Clavicle/Deinodonte_ R UpperArm/Deinodonte_ R Forearm/Deinodonte_ R Hand/Deinodonte_
+          R Finger2/Deinodonte_ R Finger21/Deinodonte_ R Finger22
+        weight: 1
+      - path: root/Deinodonte_/Deinodonte_ Pelvis/Deinodonte_ Tail
+        weight: 1
+      - path: root/Deinodonte_/Deinodonte_ Pelvis/Deinodonte_ Tail/Deinodonte_ Tail1
+        weight: 1
+      - path: root/Deinodonte_/Deinodonte_ Pelvis/Deinodonte_ Tail/Deinodonte_ Tail1/Deinodonte_
+          Tail2
+        weight: 1
+      - path: root/Deinodonte_/Deinodonte_ Pelvis/Deinodonte_ Tail/Deinodonte_ Tail1/Deinodonte_
+          Tail2/Deinodonte_ Tail3
+        weight: 1
+      - path: root/Deinodonte_/Deinodonte_ Pelvis/Deinodonte_ Tail/Deinodonte_ Tail1/Deinodonte_
+          Tail2/Deinodonte_ Tail3/Deinodonte_ Tail4
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 1
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: root
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: bc143661372c43d4b8b6d3bdcf076856,
+    type: 3}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

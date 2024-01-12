@@ -1,0 +1,236 @@
+fileFormatVersion: 2
+guid: d8a9015f0dec0304997f778919fc7f7d
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Hideoplast_
+    100004: Hideoplast_ Head
+    100006: Hideoplast_ L Calf
+    100008: Hideoplast_ L Clavicle
+    100010: Hideoplast_ L Finger0
+    100012: Hideoplast_ L Finger01
+    100014: Hideoplast_ L Foot
+    100016: Hideoplast_ L Forearm
+    100018: Hideoplast_ L Hand
+    100020: Hideoplast_ L HorseLink
+    100022: Hideoplast_ L Thigh
+    100024: Hideoplast_ L Toe0
+    100026: Hideoplast_ L UpperArm
+    100028: Hideoplast_ Neck
+    100030: Hideoplast_ Pelvis
+    100032: Hideoplast_ Ponytail1
+    100034: Hideoplast_ Ponytail1Nub
+    100036: Hideoplast_ Ponytail2
+    100038: Hideoplast_ R Calf
+    100040: Hideoplast_ R Clavicle
+    100042: Hideoplast_ R Finger0
+    100044: Hideoplast_ R Finger01
+    100046: Hideoplast_ R Foot
+    100048: Hideoplast_ R Forearm
+    100050: Hideoplast_ R Hand
+    100052: Hideoplast_ R HorseLink
+    100054: Hideoplast_ R Thigh
+    100056: Hideoplast_ R Toe0
+    100058: Hideoplast_ R UpperArm
+    100060: Hideoplast_ Spine
+    100062: Hideoplast_ Spine1
+    100064: Hideoplast_ Tail
+    100066: Hideoplast_ Tail1
+    100068: Hideoplast_ Tail2
+    100070: Hideoplast_ Tail3
+    100072: Hideoplast_JawLower
+    100074: Hideoplast_jawUpper
+    100076: Hideoplast_MandibuleLowerLeft_1
+    100078: Hideoplast_MandibuleLowerLeft_2
+    100080: Hideoplast_MandibuleLowerLeft_3
+    100082: Hideoplast_MandibuleLowerRight_1
+    100084: Hideoplast_MandibuleLowerRight_2
+    100086: Hideoplast_MandibuleLowerRight_3
+    100088: Hideoplast_MandibuleMiddleLeft_1
+    100090: Hideoplast_MandibuleMiddleLeft_2
+    100092: Hideoplast_MandibuleMiddleLeft_3
+    100094: Hideoplast_MandibuleMiddleRight_1
+    100096: Hideoplast_MandibuleMiddleRight_2
+    100098: Hideoplast_MandibuleMiddleRight_3
+    100100: Hideoplast_MandibuleUpperLeft_1
+    100102: Hideoplast_MandibuleUpperLeft_2
+    100104: Hideoplast_MandibuleUpperLeft_3
+    100106: Hideoplast_MandibuleUpperRight_1
+    100108: Hideoplast_MandibuleUpperRight_2
+    100110: Hideoplast_MandibuleUpperRight_3
+    100112: root
+    400000: //RootNode
+    400002: Hideoplast_
+    400004: Hideoplast_ Head
+    400006: Hideoplast_ L Calf
+    400008: Hideoplast_ L Clavicle
+    400010: Hideoplast_ L Finger0
+    400012: Hideoplast_ L Finger01
+    400014: Hideoplast_ L Foot
+    400016: Hideoplast_ L Forearm
+    400018: Hideoplast_ L Hand
+    400020: Hideoplast_ L HorseLink
+    400022: Hideoplast_ L Thigh
+    400024: Hideoplast_ L Toe0
+    400026: Hideoplast_ L UpperArm
+    400028: Hideoplast_ Neck
+    400030: Hideoplast_ Pelvis
+    400032: Hideoplast_ Ponytail1
+    400034: Hideoplast_ Ponytail1Nub
+    400036: Hideoplast_ Ponytail2
+    400038: Hideoplast_ R Calf
+    400040: Hideoplast_ R Clavicle
+    400042: Hideoplast_ R Finger0
+    400044: Hideoplast_ R Finger01
+    400046: Hideoplast_ R Foot
+    400048: Hideoplast_ R Forearm
+    400050: Hideoplast_ R Hand
+    400052: Hideoplast_ R HorseLink
+    400054: Hideoplast_ R Thigh
+    400056: Hideoplast_ R Toe0
+    400058: Hideoplast_ R UpperArm
+    400060: Hideoplast_ Spine
+    400062: Hideoplast_ Spine1
+    400064: Hideoplast_ Tail
+    400066: Hideoplast_ Tail1
+    400068: Hideoplast_ Tail2
+    400070: Hideoplast_ Tail3
+    400072: Hideoplast_JawLower
+    400074: Hideoplast_jawUpper
+    400076: Hideoplast_MandibuleLowerLeft_1
+    400078: Hideoplast_MandibuleLowerLeft_2
+    400080: Hideoplast_MandibuleLowerLeft_3
+    400082: Hideoplast_MandibuleLowerRight_1
+    400084: Hideoplast_MandibuleLowerRight_2
+    400086: Hideoplast_MandibuleLowerRight_3
+    400088: Hideoplast_MandibuleMiddleLeft_1
+    400090: Hideoplast_MandibuleMiddleLeft_2
+    400092: Hideoplast_MandibuleMiddleLeft_3
+    400094: Hideoplast_MandibuleMiddleRight_1
+    400096: Hideoplast_MandibuleMiddleRight_2
+    400098: Hideoplast_MandibuleMiddleRight_3
+    400100: Hideoplast_MandibuleUpperLeft_1
+    400102: Hideoplast_MandibuleUpperLeft_2
+    400104: Hideoplast_MandibuleUpperLeft_3
+    400106: Hideoplast_MandibuleUpperRight_1
+    400108: Hideoplast_MandibuleUpperRight_2
+    400110: Hideoplast_MandibuleUpperRight_3
+    400112: root
+    7400000: SpitAcid
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 0
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: SpitAcid
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 1
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: root
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: b56cfb3dbb4699f40aefce6e2ebfd1fd,
+    type: 3}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

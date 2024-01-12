@@ -1,0 +1,198 @@
+fileFormatVersion: 2
+guid: 43ab05afe10b50d409e1a87a3a5f39cc
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Carcidonte_Abdomen1
+    100004: Carcidonte_Abdomen2
+    100006: Carcidonte_Head
+    100008: Carcidonte_Jaw
+    100010: Carcidonte_LegLeftFront1
+    100012: Carcidonte_LegLeftFront2
+    100014: Carcidonte_LegLeftFront3
+    100016: Carcidonte_LegLeftFront4
+    100018: Carcidonte_LegLeftMiddle1
+    100020: Carcidonte_LegLeftMiddle2
+    100022: Carcidonte_LegLeftMiddle3
+    100024: Carcidonte_LegLeftMiddle4
+    100026: Carcidonte_LegLeftRear1
+    100028: Carcidonte_LegLeftRear2
+    100030: Carcidonte_LegLeftRear3
+    100032: Carcidonte_LegLeftRear4
+    100034: Carcidonte_LegRightFront1
+    100036: Carcidonte_LegRightFront2
+    100038: Carcidonte_LegRightFront3
+    100040: Carcidonte_LegRightFront4
+    100042: Carcidonte_LegRightMiddle1
+    100044: Carcidonte_LegRightMiddle2
+    100046: Carcidonte_LegRightMiddle3
+    100048: Carcidonte_LegRightMiddle4
+    100050: Carcidonte_LegRightRear1
+    100052: Carcidonte_LegRightRear2
+    100054: Carcidonte_LegRightRear3
+    100056: Carcidonte_LegRightRear4
+    100058: Carcidonte_Pelvis
+    100060: Carcidonte_Tail1
+    100062: Carcidonte_Tail2
+    100064: Carcidonte_Tail3
+    100066: Carcidonte_Tail4
+    100068: Carcidonte_Tail5
+    100070: Carcidonte_ThumbLeft
+    100072: Carcidonte_ThumbRight
+    100074: root
+    400000: //RootNode
+    400002: Carcidonte_Abdomen1
+    400004: Carcidonte_Abdomen2
+    400006: Carcidonte_Head
+    400008: Carcidonte_Jaw
+    400010: Carcidonte_LegLeftFront1
+    400012: Carcidonte_LegLeftFront2
+    400014: Carcidonte_LegLeftFront3
+    400016: Carcidonte_LegLeftFront4
+    400018: Carcidonte_LegLeftMiddle1
+    400020: Carcidonte_LegLeftMiddle2
+    400022: Carcidonte_LegLeftMiddle3
+    400024: Carcidonte_LegLeftMiddle4
+    400026: Carcidonte_LegLeftRear1
+    400028: Carcidonte_LegLeftRear2
+    400030: Carcidonte_LegLeftRear3
+    400032: Carcidonte_LegLeftRear4
+    400034: Carcidonte_LegRightFront1
+    400036: Carcidonte_LegRightFront2
+    400038: Carcidonte_LegRightFront3
+    400040: Carcidonte_LegRightFront4
+    400042: Carcidonte_LegRightMiddle1
+    400044: Carcidonte_LegRightMiddle2
+    400046: Carcidonte_LegRightMiddle3
+    400048: Carcidonte_LegRightMiddle4
+    400050: Carcidonte_LegRightRear1
+    400052: Carcidonte_LegRightRear2
+    400054: Carcidonte_LegRightRear3
+    400056: Carcidonte_LegRightRear4
+    400058: Carcidonte_Pelvis
+    400060: Carcidonte_Tail1
+    400062: Carcidonte_Tail2
+    400064: Carcidonte_Tail3
+    400066: Carcidonte_Tail4
+    400068: Carcidonte_Tail5
+    400070: Carcidonte_ThumbLeft
+    400072: Carcidonte_ThumbRight
+    400074: root
+    7400000: Turn90RightClawsAttack_RM
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 0
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Turn90RightClawsAttack_RM
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 1
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: root
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: e4472cc0c0c12984baa59297fbea8377,
+    type: 3}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

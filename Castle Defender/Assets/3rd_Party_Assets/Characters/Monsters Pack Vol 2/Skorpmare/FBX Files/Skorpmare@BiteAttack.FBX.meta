@@ -1,0 +1,755 @@
+fileFormatVersion: 2
+guid: 0425ad25e71c15041a790c337ea9f6e0
+timeCreated: 1518804675
+licenseType: Store
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Dummy001
+    100002: Dummy002
+    100004: Dummy003
+    100006: Dummy004
+    100008: Dummy005
+    100010: nub
+    100012: nub 1
+    100014: nub 10
+    100016: nub 11
+    100018: nub 12
+    100020: nub 2
+    100022: nub 3
+    100024: nub 4
+    100026: nub 5
+    100028: nub 6
+    100030: nub 7
+    100032: nub 8
+    100034: nub 9
+    100036: root
+    100038: //RootNode
+    100040: Skorpmare_
+    100042: Skorpmare_ Footsteps
+    100044: Skorpmare_ Head
+    100046: Skorpmare_ HeadNub
+    100048: Skorpmare_ L Calf
+    100050: Skorpmare_ L Clavicle
+    100052: Skorpmare_ L Finger0
+    100054: Skorpmare_ L Finger01
+    100056: Skorpmare_ L Finger02
+    100058: Skorpmare_ L Finger0Nub
+    100060: Skorpmare_ L Finger1
+    100062: Skorpmare_ L Finger11
+    100064: Skorpmare_ L Finger12
+    100066: Skorpmare_ L Finger1Nub
+    100068: Skorpmare_ L Finger2
+    100070: Skorpmare_ L Finger21
+    100072: Skorpmare_ L Finger22
+    100074: Skorpmare_ L Finger2Nub
+    100076: Skorpmare_ L Foot
+    100078: Skorpmare_ L Forearm
+    100080: Skorpmare_ L Hand
+    100082: Skorpmare_ L Thigh
+    100084: Skorpmare_ L Toe0
+    100086: Skorpmare_ L Toe01
+    100088: Skorpmare_ L Toe02
+    100090: Skorpmare_ L Toe0Nub
+    100092: Skorpmare_ L Toe1
+    100094: Skorpmare_ L Toe11
+    100096: Skorpmare_ L Toe12
+    100098: Skorpmare_ L Toe1Nub
+    100100: Skorpmare_ L Toe2
+    100102: Skorpmare_ L Toe21
+    100104: Skorpmare_ L Toe22
+    100106: Skorpmare_ L Toe2Nub
+    100108: Skorpmare_ L UpperArm
+    100110: Skorpmare_ Neck
+    100112: Skorpmare_ Pelvis
+    100114: Skorpmare_ R Calf
+    100116: Skorpmare_ R Clavicle
+    100118: Skorpmare_ R Finger0
+    100120: Skorpmare_ R Finger01
+    100122: Skorpmare_ R Finger02
+    100124: Skorpmare_ R Finger0Nub
+    100126: Skorpmare_ R Finger1
+    100128: Skorpmare_ R Finger11
+    100130: Skorpmare_ R Finger12
+    100132: Skorpmare_ R Finger1Nub
+    100134: Skorpmare_ R Finger2
+    100136: Skorpmare_ R Finger21
+    100138: Skorpmare_ R Finger22
+    100140: Skorpmare_ R Finger2Nub
+    100142: Skorpmare_ R Foot
+    100144: Skorpmare_ R Forearm
+    100146: Skorpmare_ R Hand
+    100148: Skorpmare_ R Thigh
+    100150: Skorpmare_ R Toe0
+    100152: Skorpmare_ R Toe01
+    100154: Skorpmare_ R Toe02
+    100156: Skorpmare_ R Toe0Nub
+    100158: Skorpmare_ R Toe1
+    100160: Skorpmare_ R Toe11
+    100162: Skorpmare_ R Toe12
+    100164: Skorpmare_ R Toe1Nub
+    100166: Skorpmare_ R Toe2
+    100168: Skorpmare_ R Toe21
+    100170: Skorpmare_ R Toe22
+    100172: Skorpmare_ R Toe2Nub
+    100174: Skorpmare_ R UpperArm
+    100176: Skorpmare_ Spine
+    100178: Skorpmare_ Tail
+    100180: Skorpmare_ Tail1
+    100182: Skorpmare_ TailNub
+    100184: Skorpmare_FeelerLeft_1
+    100186: Skorpmare_FeelerLeft_2
+    100188: Skorpmare_FeelerLeft_3
+    100190: Skorpmare_FeelerLeft_4
+    100192: Skorpmare_FeelerLeft_5
+    100194: Skorpmare_FeelerMiddle_1
+    100196: Skorpmare_FeelerMiddle_2
+    100198: Skorpmare_FeelerMiddle_3
+    100200: Skorpmare_FeelerMiddle_4
+    100202: Skorpmare_FeelerMiddle_5
+    100204: Skorpmare_FeelerRight_1
+    100206: Skorpmare_FeelerRight_2
+    100208: Skorpmare_FeelerRight_3
+    100210: Skorpmare_FeelerRight_4
+    100212: Skorpmare_FeelerRight_5
+    100214: Skorpmare_LowerClawLeft
+    100216: Skorpmare_LowerClawRight
+    100218: Skorpmare_LowerJaw
+    100220: Skorpmare_TentacleLeft_1
+    100222: Skorpmare_TentacleLeft_10
+    100224: Skorpmare_TentacleLeft_11
+    100226: Skorpmare_TentacleLeft_12
+    100228: Skorpmare_TentacleLeft_13
+    100230: Skorpmare_TentacleLeft_14
+    100232: Skorpmare_TentacleLeft_2
+    100234: Skorpmare_TentacleLeft_3
+    100236: Skorpmare_TentacleLeft_4
+    100238: Skorpmare_TentacleLeft_5
+    100240: Skorpmare_TentacleLeft_6
+    100242: Skorpmare_TentacleLeft_7
+    100244: Skorpmare_TentacleLeft_8
+    100246: Skorpmare_TentacleLeft_9
+    100248: Skorpmare_TentacleRight_1
+    100250: Skorpmare_TentacleRight_10
+    100252: Skorpmare_TentacleRight_11
+    100254: Skorpmare_TentacleRight_12
+    100256: Skorpmare_TentacleRight_13
+    100258: Skorpmare_TentacleRight_14
+    100260: Skorpmare_TentacleRight_2
+    100262: Skorpmare_TentacleRight_3
+    100264: Skorpmare_TentacleRight_4
+    100266: Skorpmare_TentacleRight_5
+    100268: Skorpmare_TentacleRight_6
+    100270: Skorpmare_TentacleRight_7
+    100272: Skorpmare_TentacleRight_8
+    100274: Skorpmare_TentacleRight_9
+    100276: Skorpmare_UpperClawLeft
+    100278: Skorpmare_UpperClawRight
+    100280: Skorpmare_UpperJaw
+    100282: Skorpmre_Throat
+    400000: Dummy001
+    400002: Dummy002
+    400004: Dummy003
+    400006: Dummy004
+    400008: Dummy005
+    400010: nub
+    400012: nub 1
+    400014: nub 10
+    400016: nub 11
+    400018: nub 12
+    400020: nub 2
+    400022: nub 3
+    400024: nub 4
+    400026: nub 5
+    400028: nub 6
+    400030: nub 7
+    400032: nub 8
+    400034: nub 9
+    400036: root
+    400038: //RootNode
+    400040: Skorpmare_
+    400042: Skorpmare_ Footsteps
+    400044: Skorpmare_ Head
+    400046: Skorpmare_ HeadNub
+    400048: Skorpmare_ L Calf
+    400050: Skorpmare_ L Clavicle
+    400052: Skorpmare_ L Finger0
+    400054: Skorpmare_ L Finger01
+    400056: Skorpmare_ L Finger02
+    400058: Skorpmare_ L Finger0Nub
+    400060: Skorpmare_ L Finger1
+    400062: Skorpmare_ L Finger11
+    400064: Skorpmare_ L Finger12
+    400066: Skorpmare_ L Finger1Nub
+    400068: Skorpmare_ L Finger2
+    400070: Skorpmare_ L Finger21
+    400072: Skorpmare_ L Finger22
+    400074: Skorpmare_ L Finger2Nub
+    400076: Skorpmare_ L Foot
+    400078: Skorpmare_ L Forearm
+    400080: Skorpmare_ L Hand
+    400082: Skorpmare_ L Thigh
+    400084: Skorpmare_ L Toe0
+    400086: Skorpmare_ L Toe01
+    400088: Skorpmare_ L Toe02
+    400090: Skorpmare_ L Toe0Nub
+    400092: Skorpmare_ L Toe1
+    400094: Skorpmare_ L Toe11
+    400096: Skorpmare_ L Toe12
+    400098: Skorpmare_ L Toe1Nub
+    400100: Skorpmare_ L Toe2
+    400102: Skorpmare_ L Toe21
+    400104: Skorpmare_ L Toe22
+    400106: Skorpmare_ L Toe2Nub
+    400108: Skorpmare_ L UpperArm
+    400110: Skorpmare_ Neck
+    400112: Skorpmare_ Pelvis
+    400114: Skorpmare_ R Calf
+    400116: Skorpmare_ R Clavicle
+    400118: Skorpmare_ R Finger0
+    400120: Skorpmare_ R Finger01
+    400122: Skorpmare_ R Finger02
+    400124: Skorpmare_ R Finger0Nub
+    400126: Skorpmare_ R Finger1
+    400128: Skorpmare_ R Finger11
+    400130: Skorpmare_ R Finger12
+    400132: Skorpmare_ R Finger1Nub
+    400134: Skorpmare_ R Finger2
+    400136: Skorpmare_ R Finger21
+    400138: Skorpmare_ R Finger22
+    400140: Skorpmare_ R Finger2Nub
+    400142: Skorpmare_ R Foot
+    400144: Skorpmare_ R Forearm
+    400146: Skorpmare_ R Hand
+    400148: Skorpmare_ R Thigh
+    400150: Skorpmare_ R Toe0
+    400152: Skorpmare_ R Toe01
+    400154: Skorpmare_ R Toe02
+    400156: Skorpmare_ R Toe0Nub
+    400158: Skorpmare_ R Toe1
+    400160: Skorpmare_ R Toe11
+    400162: Skorpmare_ R Toe12
+    400164: Skorpmare_ R Toe1Nub
+    400166: Skorpmare_ R Toe2
+    400168: Skorpmare_ R Toe21
+    400170: Skorpmare_ R Toe22
+    400172: Skorpmare_ R Toe2Nub
+    400174: Skorpmare_ R UpperArm
+    400176: Skorpmare_ Spine
+    400178: Skorpmare_ Tail
+    400180: Skorpmare_ Tail1
+    400182: Skorpmare_ TailNub
+    400184: Skorpmare_FeelerLeft_1
+    400186: Skorpmare_FeelerLeft_2
+    400188: Skorpmare_FeelerLeft_3
+    400190: Skorpmare_FeelerLeft_4
+    400192: Skorpmare_FeelerLeft_5
+    400194: Skorpmare_FeelerMiddle_1
+    400196: Skorpmare_FeelerMiddle_2
+    400198: Skorpmare_FeelerMiddle_3
+    400200: Skorpmare_FeelerMiddle_4
+    400202: Skorpmare_FeelerMiddle_5
+    400204: Skorpmare_FeelerRight_1
+    400206: Skorpmare_FeelerRight_2
+    400208: Skorpmare_FeelerRight_3
+    400210: Skorpmare_FeelerRight_4
+    400212: Skorpmare_FeelerRight_5
+    400214: Skorpmare_LowerClawLeft
+    400216: Skorpmare_LowerClawRight
+    400218: Skorpmare_LowerJaw
+    400220: Skorpmare_TentacleLeft_1
+    400222: Skorpmare_TentacleLeft_10
+    400224: Skorpmare_TentacleLeft_11
+    400226: Skorpmare_TentacleLeft_12
+    400228: Skorpmare_TentacleLeft_13
+    400230: Skorpmare_TentacleLeft_14
+    400232: Skorpmare_TentacleLeft_2
+    400234: Skorpmare_TentacleLeft_3
+    400236: Skorpmare_TentacleLeft_4
+    400238: Skorpmare_TentacleLeft_5
+    400240: Skorpmare_TentacleLeft_6
+    400242: Skorpmare_TentacleLeft_7
+    400244: Skorpmare_TentacleLeft_8
+    400246: Skorpmare_TentacleLeft_9
+    400248: Skorpmare_TentacleRight_1
+    400250: Skorpmare_TentacleRight_10
+    400252: Skorpmare_TentacleRight_11
+    400254: Skorpmare_TentacleRight_12
+    400256: Skorpmare_TentacleRight_13
+    400258: Skorpmare_TentacleRight_14
+    400260: Skorpmare_TentacleRight_2
+    400262: Skorpmare_TentacleRight_3
+    400264: Skorpmare_TentacleRight_4
+    400266: Skorpmare_TentacleRight_5
+    400268: Skorpmare_TentacleRight_6
+    400270: Skorpmare_TentacleRight_7
+    400272: Skorpmare_TentacleRight_8
+    400274: Skorpmare_TentacleRight_9
+    400276: Skorpmare_UpperClawLeft
+    400278: Skorpmare_UpperClawRight
+    400280: Skorpmare_UpperJaw
+    400282: Skorpmre_Throat
+    7400000: BiteAttack
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 0
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: BiteAttack
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Dummy005
+        weight: 1
+      - path: root
+        weight: 1
+      - path: root/nub
+        weight: 1
+      - path: root/Skorpmare_
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Footsteps
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ L Thigh
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ L Thigh/Skorpmare_ L Calf
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ L Thigh/Skorpmare_ L Calf/Skorpmare_
+          L Foot
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ L Thigh/Skorpmare_ L Calf/Skorpmare_
+          L Foot/Skorpmare_ L Toe0
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ L Thigh/Skorpmare_ L Calf/Skorpmare_
+          L Foot/Skorpmare_ L Toe0/Skorpmare_ L Toe01
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ L Thigh/Skorpmare_ L Calf/Skorpmare_
+          L Foot/Skorpmare_ L Toe0/Skorpmare_ L Toe01/Skorpmare_ L Toe02
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ L Thigh/Skorpmare_ L Calf/Skorpmare_
+          L Foot/Skorpmare_ L Toe0/Skorpmare_ L Toe01/Skorpmare_ L Toe02/Skorpmare_
+          L Toe0Nub
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ L Thigh/Skorpmare_ L Calf/Skorpmare_
+          L Foot/Skorpmare_ L Toe1
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ L Thigh/Skorpmare_ L Calf/Skorpmare_
+          L Foot/Skorpmare_ L Toe1/Skorpmare_ L Toe11
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ L Thigh/Skorpmare_ L Calf/Skorpmare_
+          L Foot/Skorpmare_ L Toe1/Skorpmare_ L Toe11/Skorpmare_ L Toe12
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ L Thigh/Skorpmare_ L Calf/Skorpmare_
+          L Foot/Skorpmare_ L Toe1/Skorpmare_ L Toe11/Skorpmare_ L Toe12/Skorpmare_
+          L Toe1Nub
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ L Thigh/Skorpmare_ L Calf/Skorpmare_
+          L Foot/Skorpmare_ L Toe2
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ L Thigh/Skorpmare_ L Calf/Skorpmare_
+          L Foot/Skorpmare_ L Toe2/Skorpmare_ L Toe21
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ L Thigh/Skorpmare_ L Calf/Skorpmare_
+          L Foot/Skorpmare_ L Toe2/Skorpmare_ L Toe21/Skorpmare_ L Toe22
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ L Thigh/Skorpmare_ L Calf/Skorpmare_
+          L Foot/Skorpmare_ L Toe2/Skorpmare_ L Toe21/Skorpmare_ L Toe22/Skorpmare_
+          L Toe2Nub
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ R Thigh
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ R Thigh/Skorpmare_ R Calf
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ R Thigh/Skorpmare_ R Calf/Skorpmare_
+          R Foot
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ R Thigh/Skorpmare_ R Calf/Skorpmare_
+          R Foot/Skorpmare_ R Toe0
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ R Thigh/Skorpmare_ R Calf/Skorpmare_
+          R Foot/Skorpmare_ R Toe0/Skorpmare_ R Toe01
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ R Thigh/Skorpmare_ R Calf/Skorpmare_
+          R Foot/Skorpmare_ R Toe0/Skorpmare_ R Toe01/Skorpmare_ R Toe02
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ R Thigh/Skorpmare_ R Calf/Skorpmare_
+          R Foot/Skorpmare_ R Toe0/Skorpmare_ R Toe01/Skorpmare_ R Toe02/Skorpmare_
+          R Toe0Nub
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ R Thigh/Skorpmare_ R Calf/Skorpmare_
+          R Foot/Skorpmare_ R Toe1
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ R Thigh/Skorpmare_ R Calf/Skorpmare_
+          R Foot/Skorpmare_ R Toe1/Skorpmare_ R Toe11
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ R Thigh/Skorpmare_ R Calf/Skorpmare_
+          R Foot/Skorpmare_ R Toe1/Skorpmare_ R Toe11/Skorpmare_ R Toe12
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ R Thigh/Skorpmare_ R Calf/Skorpmare_
+          R Foot/Skorpmare_ R Toe1/Skorpmare_ R Toe11/Skorpmare_ R Toe12/Skorpmare_
+          R Toe1Nub
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ R Thigh/Skorpmare_ R Calf/Skorpmare_
+          R Foot/Skorpmare_ R Toe2
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ R Thigh/Skorpmare_ R Calf/Skorpmare_
+          R Foot/Skorpmare_ R Toe2/Skorpmare_ R Toe21
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ R Thigh/Skorpmare_ R Calf/Skorpmare_
+          R Foot/Skorpmare_ R Toe2/Skorpmare_ R Toe21/Skorpmare_ R Toe22
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ R Thigh/Skorpmare_ R Calf/Skorpmare_
+          R Foot/Skorpmare_ R Toe2/Skorpmare_ R Toe21/Skorpmare_ R Toe22/Skorpmare_
+          R Toe2Nub
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Dummy001
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Dummy001/Dummy003
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Dummy001/Dummy004
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Dummy002
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_ L UpperArm
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_ L UpperArm/Skorpmare_
+          L Forearm
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_ L UpperArm/Skorpmare_
+          L Forearm/Skorpmare_ L Hand
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_ L UpperArm/Skorpmare_
+          L Forearm/Skorpmare_ L Hand/Skorpmare_ L Finger0
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_ L UpperArm/Skorpmare_
+          L Forearm/Skorpmare_ L Hand/Skorpmare_ L Finger0/Skorpmare_ L Finger01
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_ L UpperArm/Skorpmare_
+          L Forearm/Skorpmare_ L Hand/Skorpmare_ L Finger0/Skorpmare_ L Finger01/Skorpmare_
+          L Finger02
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_ L UpperArm/Skorpmare_
+          L Forearm/Skorpmare_ L Hand/Skorpmare_ L Finger0/Skorpmare_ L Finger01/Skorpmare_
+          L Finger02/Skorpmare_ L Finger0Nub
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_ L UpperArm/Skorpmare_
+          L Forearm/Skorpmare_ L Hand/Skorpmare_ L Finger1
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_ L UpperArm/Skorpmare_
+          L Forearm/Skorpmare_ L Hand/Skorpmare_ L Finger1/Skorpmare_ L Finger11
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_ L UpperArm/Skorpmare_
+          L Forearm/Skorpmare_ L Hand/Skorpmare_ L Finger1/Skorpmare_ L Finger11/Skorpmare_
+          L Finger12
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_ L UpperArm/Skorpmare_
+          L Forearm/Skorpmare_ L Hand/Skorpmare_ L Finger1/Skorpmare_ L Finger11/Skorpmare_
+          L Finger12/Skorpmare_ L Finger1Nub
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_ L UpperArm/Skorpmare_
+          L Forearm/Skorpmare_ L Hand/Skorpmare_ L Finger2
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_ L UpperArm/Skorpmare_
+          L Forearm/Skorpmare_ L Hand/Skorpmare_ L Finger2/Skorpmare_ L Finger21
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_ L UpperArm/Skorpmare_
+          L Forearm/Skorpmare_ L Hand/Skorpmare_ L Finger2/Skorpmare_ L Finger21/Skorpmare_
+          L Finger22
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_ L UpperArm/Skorpmare_
+          L Forearm/Skorpmare_ L Hand/Skorpmare_ L Finger2/Skorpmare_ L Finger21/Skorpmare_
+          L Finger22/Skorpmare_ L Finger2Nub
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_ Neck
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_ Neck/Skorpmare_
+          Head
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_ Neck/Skorpmare_
+          Head/Skorpmare_ HeadNub
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_ Neck/Skorpmare_
+          L Clavicle
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_ Neck/Skorpmare_
+          R Clavicle
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_ R UpperArm
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_ R UpperArm/Skorpmare_
+          R Forearm
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_ R UpperArm/Skorpmare_
+          R Forearm/Skorpmare_ R Hand
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_ R UpperArm/Skorpmare_
+          R Forearm/Skorpmare_ R Hand/Skorpmare_ R Finger0
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_ R UpperArm/Skorpmare_
+          R Forearm/Skorpmare_ R Hand/Skorpmare_ R Finger0/Skorpmare_ R Finger01
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_ R UpperArm/Skorpmare_
+          R Forearm/Skorpmare_ R Hand/Skorpmare_ R Finger0/Skorpmare_ R Finger01/Skorpmare_
+          R Finger02
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_ R UpperArm/Skorpmare_
+          R Forearm/Skorpmare_ R Hand/Skorpmare_ R Finger0/Skorpmare_ R Finger01/Skorpmare_
+          R Finger02/Skorpmare_ R Finger0Nub
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_ R UpperArm/Skorpmare_
+          R Forearm/Skorpmare_ R Hand/Skorpmare_ R Finger1
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_ R UpperArm/Skorpmare_
+          R Forearm/Skorpmare_ R Hand/Skorpmare_ R Finger1/Skorpmare_ R Finger11
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_ R UpperArm/Skorpmare_
+          R Forearm/Skorpmare_ R Hand/Skorpmare_ R Finger1/Skorpmare_ R Finger11/Skorpmare_
+          R Finger12
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_ R UpperArm/Skorpmare_
+          R Forearm/Skorpmare_ R Hand/Skorpmare_ R Finger1/Skorpmare_ R Finger11/Skorpmare_
+          R Finger12/Skorpmare_ R Finger1Nub
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_ R UpperArm/Skorpmare_
+          R Forearm/Skorpmare_ R Hand/Skorpmare_ R Finger2
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_ R UpperArm/Skorpmare_
+          R Forearm/Skorpmare_ R Hand/Skorpmare_ R Finger2/Skorpmare_ R Finger21
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_ R UpperArm/Skorpmare_
+          R Forearm/Skorpmare_ R Hand/Skorpmare_ R Finger2/Skorpmare_ R Finger21/Skorpmare_
+          R Finger22
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_ R UpperArm/Skorpmare_
+          R Forearm/Skorpmare_ R Hand/Skorpmare_ R Finger2/Skorpmare_ R Finger21/Skorpmare_
+          R Finger22/Skorpmare_ R Finger2Nub
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_FeelerLeft_1
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_FeelerLeft_1/Skorpmare_FeelerLeft_2
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_FeelerLeft_1/Skorpmare_FeelerLeft_2/Skorpmare_FeelerLeft_3
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_FeelerLeft_1/Skorpmare_FeelerLeft_2/Skorpmare_FeelerLeft_3/Skorpmare_FeelerLeft_4
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_FeelerLeft_1/Skorpmare_FeelerLeft_2/Skorpmare_FeelerLeft_3/Skorpmare_FeelerLeft_4/Skorpmare_FeelerLeft_5
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_FeelerLeft_1/Skorpmare_FeelerLeft_2/Skorpmare_FeelerLeft_3/Skorpmare_FeelerLeft_4/Skorpmare_FeelerLeft_5/nub
+          8
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_FeelerMiddle_1
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_FeelerMiddle_1/Skorpmare_FeelerMiddle_2
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_FeelerMiddle_1/Skorpmare_FeelerMiddle_2/Skorpmare_FeelerMiddle_3
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_FeelerMiddle_1/Skorpmare_FeelerMiddle_2/Skorpmare_FeelerMiddle_3/Skorpmare_FeelerMiddle_4
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_FeelerMiddle_1/Skorpmare_FeelerMiddle_2/Skorpmare_FeelerMiddle_3/Skorpmare_FeelerMiddle_4/Skorpmare_FeelerMiddle_5
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_FeelerMiddle_1/Skorpmare_FeelerMiddle_2/Skorpmare_FeelerMiddle_3/Skorpmare_FeelerMiddle_4/Skorpmare_FeelerMiddle_5/nub
+          9
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_FeelerRight_1
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_FeelerRight_1/Skorpmare_FeelerRight_2
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_FeelerRight_1/Skorpmare_FeelerRight_2/Skorpmare_FeelerRight_3
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_FeelerRight_1/Skorpmare_FeelerRight_2/Skorpmare_FeelerRight_3/Skorpmare_FeelerRight_4
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_FeelerRight_1/Skorpmare_FeelerRight_2/Skorpmare_FeelerRight_3/Skorpmare_FeelerRight_4/Skorpmare_FeelerRight_5
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_FeelerRight_1/Skorpmare_FeelerRight_2/Skorpmare_FeelerRight_3/Skorpmare_FeelerRight_4/Skorpmare_FeelerRight_5/nub
+          10
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_LowerClawLeft
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_LowerClawLeft/nub
+          1
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_LowerClawRight
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_LowerClawRight/nub
+          2
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_TentacleLeft_1
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_TentacleLeft_1/Skorpmare_TentacleLeft_2
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_TentacleLeft_1/Skorpmare_TentacleLeft_2/Skorpmare_TentacleLeft_3
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_TentacleLeft_1/Skorpmare_TentacleLeft_2/Skorpmare_TentacleLeft_3/Skorpmare_TentacleLeft_4
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_TentacleLeft_1/Skorpmare_TentacleLeft_2/Skorpmare_TentacleLeft_3/Skorpmare_TentacleLeft_4/Skorpmare_TentacleLeft_5
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_TentacleLeft_1/Skorpmare_TentacleLeft_2/Skorpmare_TentacleLeft_3/Skorpmare_TentacleLeft_4/Skorpmare_TentacleLeft_5/Skorpmare_TentacleLeft_6
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_TentacleLeft_1/Skorpmare_TentacleLeft_2/Skorpmare_TentacleLeft_3/Skorpmare_TentacleLeft_4/Skorpmare_TentacleLeft_5/Skorpmare_TentacleLeft_6/Skorpmare_TentacleLeft_7
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_TentacleLeft_1/Skorpmare_TentacleLeft_2/Skorpmare_TentacleLeft_3/Skorpmare_TentacleLeft_4/Skorpmare_TentacleLeft_5/Skorpmare_TentacleLeft_6/Skorpmare_TentacleLeft_7/Skorpmare_TentacleLeft_8
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_TentacleLeft_1/Skorpmare_TentacleLeft_2/Skorpmare_TentacleLeft_3/Skorpmare_TentacleLeft_4/Skorpmare_TentacleLeft_5/Skorpmare_TentacleLeft_6/Skorpmare_TentacleLeft_7/Skorpmare_TentacleLeft_8/Skorpmare_TentacleLeft_9
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_TentacleLeft_1/Skorpmare_TentacleLeft_2/Skorpmare_TentacleLeft_3/Skorpmare_TentacleLeft_4/Skorpmare_TentacleLeft_5/Skorpmare_TentacleLeft_6/Skorpmare_TentacleLeft_7/Skorpmare_TentacleLeft_8/Skorpmare_TentacleLeft_9/Skorpmare_TentacleLeft_10
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_TentacleLeft_1/Skorpmare_TentacleLeft_2/Skorpmare_TentacleLeft_3/Skorpmare_TentacleLeft_4/Skorpmare_TentacleLeft_5/Skorpmare_TentacleLeft_6/Skorpmare_TentacleLeft_7/Skorpmare_TentacleLeft_8/Skorpmare_TentacleLeft_9/Skorpmare_TentacleLeft_10/Skorpmare_TentacleLeft_11
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_TentacleLeft_1/Skorpmare_TentacleLeft_2/Skorpmare_TentacleLeft_3/Skorpmare_TentacleLeft_4/Skorpmare_TentacleLeft_5/Skorpmare_TentacleLeft_6/Skorpmare_TentacleLeft_7/Skorpmare_TentacleLeft_8/Skorpmare_TentacleLeft_9/Skorpmare_TentacleLeft_10/Skorpmare_TentacleLeft_11/Skorpmare_TentacleLeft_12
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_TentacleLeft_1/Skorpmare_TentacleLeft_2/Skorpmare_TentacleLeft_3/Skorpmare_TentacleLeft_4/Skorpmare_TentacleLeft_5/Skorpmare_TentacleLeft_6/Skorpmare_TentacleLeft_7/Skorpmare_TentacleLeft_8/Skorpmare_TentacleLeft_9/Skorpmare_TentacleLeft_10/Skorpmare_TentacleLeft_11/Skorpmare_TentacleLeft_12/Skorpmare_TentacleLeft_13
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_TentacleLeft_1/Skorpmare_TentacleLeft_2/Skorpmare_TentacleLeft_3/Skorpmare_TentacleLeft_4/Skorpmare_TentacleLeft_5/Skorpmare_TentacleLeft_6/Skorpmare_TentacleLeft_7/Skorpmare_TentacleLeft_8/Skorpmare_TentacleLeft_9/Skorpmare_TentacleLeft_10/Skorpmare_TentacleLeft_11/Skorpmare_TentacleLeft_12/Skorpmare_TentacleLeft_13/Skorpmare_TentacleLeft_14
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_TentacleLeft_1/Skorpmare_TentacleLeft_2/Skorpmare_TentacleLeft_3/Skorpmare_TentacleLeft_4/Skorpmare_TentacleLeft_5/Skorpmare_TentacleLeft_6/Skorpmare_TentacleLeft_7/Skorpmare_TentacleLeft_8/Skorpmare_TentacleLeft_9/Skorpmare_TentacleLeft_10/Skorpmare_TentacleLeft_11/Skorpmare_TentacleLeft_12/Skorpmare_TentacleLeft_13/Skorpmare_TentacleLeft_14/nub
+          11
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_TentacleRight_1
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_TentacleRight_1/Skorpmare_TentacleRight_2
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_TentacleRight_1/Skorpmare_TentacleRight_2/Skorpmare_TentacleRight_3
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_TentacleRight_1/Skorpmare_TentacleRight_2/Skorpmare_TentacleRight_3/Skorpmare_TentacleRight_4
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_TentacleRight_1/Skorpmare_TentacleRight_2/Skorpmare_TentacleRight_3/Skorpmare_TentacleRight_4/Skorpmare_TentacleRight_5
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_TentacleRight_1/Skorpmare_TentacleRight_2/Skorpmare_TentacleRight_3/Skorpmare_TentacleRight_4/Skorpmare_TentacleRight_5/Skorpmare_TentacleRight_6
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_TentacleRight_1/Skorpmare_TentacleRight_2/Skorpmare_TentacleRight_3/Skorpmare_TentacleRight_4/Skorpmare_TentacleRight_5/Skorpmare_TentacleRight_6/Skorpmare_TentacleRight_7
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_TentacleRight_1/Skorpmare_TentacleRight_2/Skorpmare_TentacleRight_3/Skorpmare_TentacleRight_4/Skorpmare_TentacleRight_5/Skorpmare_TentacleRight_6/Skorpmare_TentacleRight_7/Skorpmare_TentacleRight_8
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_TentacleRight_1/Skorpmare_TentacleRight_2/Skorpmare_TentacleRight_3/Skorpmare_TentacleRight_4/Skorpmare_TentacleRight_5/Skorpmare_TentacleRight_6/Skorpmare_TentacleRight_7/Skorpmare_TentacleRight_8/Skorpmare_TentacleRight_9
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_TentacleRight_1/Skorpmare_TentacleRight_2/Skorpmare_TentacleRight_3/Skorpmare_TentacleRight_4/Skorpmare_TentacleRight_5/Skorpmare_TentacleRight_6/Skorpmare_TentacleRight_7/Skorpmare_TentacleRight_8/Skorpmare_TentacleRight_9/Skorpmare_TentacleRight_10
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_TentacleRight_1/Skorpmare_TentacleRight_2/Skorpmare_TentacleRight_3/Skorpmare_TentacleRight_4/Skorpmare_TentacleRight_5/Skorpmare_TentacleRight_6/Skorpmare_TentacleRight_7/Skorpmare_TentacleRight_8/Skorpmare_TentacleRight_9/Skorpmare_TentacleRight_10/Skorpmare_TentacleRight_11
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_TentacleRight_1/Skorpmare_TentacleRight_2/Skorpmare_TentacleRight_3/Skorpmare_TentacleRight_4/Skorpmare_TentacleRight_5/Skorpmare_TentacleRight_6/Skorpmare_TentacleRight_7/Skorpmare_TentacleRight_8/Skorpmare_TentacleRight_9/Skorpmare_TentacleRight_10/Skorpmare_TentacleRight_11/Skorpmare_TentacleRight_12
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_TentacleRight_1/Skorpmare_TentacleRight_2/Skorpmare_TentacleRight_3/Skorpmare_TentacleRight_4/Skorpmare_TentacleRight_5/Skorpmare_TentacleRight_6/Skorpmare_TentacleRight_7/Skorpmare_TentacleRight_8/Skorpmare_TentacleRight_9/Skorpmare_TentacleRight_10/Skorpmare_TentacleRight_11/Skorpmare_TentacleRight_12/Skorpmare_TentacleRight_13
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_TentacleRight_1/Skorpmare_TentacleRight_2/Skorpmare_TentacleRight_3/Skorpmare_TentacleRight_4/Skorpmare_TentacleRight_5/Skorpmare_TentacleRight_6/Skorpmare_TentacleRight_7/Skorpmare_TentacleRight_8/Skorpmare_TentacleRight_9/Skorpmare_TentacleRight_10/Skorpmare_TentacleRight_11/Skorpmare_TentacleRight_12/Skorpmare_TentacleRight_13/Skorpmare_TentacleRight_14
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_TentacleRight_1/Skorpmare_TentacleRight_2/Skorpmare_TentacleRight_3/Skorpmare_TentacleRight_4/Skorpmare_TentacleRight_5/Skorpmare_TentacleRight_6/Skorpmare_TentacleRight_7/Skorpmare_TentacleRight_8/Skorpmare_TentacleRight_9/Skorpmare_TentacleRight_10/Skorpmare_TentacleRight_11/Skorpmare_TentacleRight_12/Skorpmare_TentacleRight_13/Skorpmare_TentacleRight_14/nub
+          12
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_UpperClawLeft
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_UpperClawLeft/nub
+          3
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_UpperClawRight
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmare_UpperClawRight/nub
+          4
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmre_Throat
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmre_Throat/nub
+          5
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmre_Throat/Skorpmare_LowerJaw
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmre_Throat/Skorpmare_LowerJaw/nub
+          6
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmre_Throat/Skorpmare_UpperJaw
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Spine/Skorpmre_Throat/Skorpmare_UpperJaw/nub
+          7
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Tail
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Tail/Skorpmare_ Tail1
+        weight: 1
+      - path: root/Skorpmare_/Skorpmare_ Pelvis/Skorpmare_ Tail/Skorpmare_ Tail1/Skorpmare_
+          TailNub
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 1
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: root
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 728d3fa9617f49c4daa306325baa05bc,
+    type: 3}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

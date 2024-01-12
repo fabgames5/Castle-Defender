@@ -1,0 +1,164 @@
+fileFormatVersion: 2
+guid: c4b89918552197242932b506b1749850
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Entomorane_FrontLegLeft_1
+    100004: Entomorane_FrontLegLeft_2
+    100006: Entomorane_FrontLegLeft_3
+    100008: Entomorane_FrontLegLeft_4
+    100010: Entomorane_FrontRightLeg_1
+    100012: Entomorane_FrontRightLeg_2
+    100014: Entomorane_FrontRightLeg_3
+    100016: Entomorane_FrontRightLeg_4
+    100018: Entomorane_LowerJaw
+    100020: Entomorane_RearLegLeft_1
+    100022: Entomorane_RearLegLeft_2
+    100024: Entomorane_RearLegLeft_3
+    100026: Entomorane_RearLegLeft_4
+    100028: Entomorane_RearLegRight_1
+    100030: Entomorane_RearLegRight_2
+    100032: Entomorane_RearLegRight_3
+    100034: Entomorane_RearLegRight_4
+    100036: Entomorane_Thorax
+    100038: Entomorane_UpperJaw
+    100040: root
+    400000: //RootNode
+    400002: Entomorane_FrontLegLeft_1
+    400004: Entomorane_FrontLegLeft_2
+    400006: Entomorane_FrontLegLeft_3
+    400008: Entomorane_FrontLegLeft_4
+    400010: Entomorane_FrontRightLeg_1
+    400012: Entomorane_FrontRightLeg_2
+    400014: Entomorane_FrontRightLeg_3
+    400016: Entomorane_FrontRightLeg_4
+    400018: Entomorane_LowerJaw
+    400020: Entomorane_RearLegLeft_1
+    400022: Entomorane_RearLegLeft_2
+    400024: Entomorane_RearLegLeft_3
+    400026: Entomorane_RearLegLeft_4
+    400028: Entomorane_RearLegRight_1
+    400030: Entomorane_RearLegRight_2
+    400032: Entomorane_RearLegRight_3
+    400034: Entomorane_RearLegRight_4
+    400036: Entomorane_Thorax
+    400038: Entomorane_UpperJaw
+    400040: root
+    7400000: WalkForward
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 0
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: WalkForward
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 1
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: root
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: b3cf370c40d666b41986e50a9c7e5431,
+    type: 3}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

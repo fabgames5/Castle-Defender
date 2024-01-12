@@ -1,0 +1,232 @@
+fileFormatVersion: 2
+guid: 3c03217b1d7fb7d4eae60a96d2e04648
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Laminoferox_AntennaLeft1
+    100004: Laminoferox_AntennaLeft2
+    100006: Laminoferox_AntennaLeft3
+    100008: Laminoferox_AntennaLeft4
+    100010: Laminoferox_AntennaLeft5
+    100012: Laminoferox_AntennaRight1
+    100014: Laminoferox_AntennaRight2
+    100016: Laminoferox_AntennaRight3
+    100018: Laminoferox_AntennaRight4
+    100020: Laminoferox_AntennaRight5
+    100022: Laminoferox_FrontRight1
+    100024: Laminoferox_FrontRight2
+    100026: Laminoferox_FrontRight3
+    100028: Laminoferox_Head
+    100030: Laminoferox_Hips
+    100032: Laminoferox_Jaw
+    100034: Laminoferox_JawLowerLeft
+    100036: Laminoferox_JawLowerRight
+    100038: Laminoferox_JawUpperLeft
+    100040: Laminoferox_JawUpperRight
+    100042: Laminoferox_LegFrontLeft1
+    100044: Laminoferox_LegFrontLeft2
+    100046: Laminoferox_LegFrontLeft3
+    100048: Laminoferox_LegMiddleLeft1
+    100050: Laminoferox_LegMiddleLeft2
+    100052: Laminoferox_LegMiddleLeft3
+    100054: Laminoferox_LegMiddleRight1
+    100056: Laminoferox_LegMiddleRight2
+    100058: Laminoferox_LegMiddleRight3
+    100060: Laminoferox_LegRearLeft1
+    100062: Laminoferox_LegRearLeft2
+    100064: Laminoferox_LegRearLeft3
+    100066: Laminoferox_LegRearRight1
+    100068: Laminoferox_LegRearRight2
+    100070: Laminoferox_LegRearRight3
+    100072: Laminoferox_Neck1
+    100074: Laminoferox_Neck2
+    100076: Laminoferox_Neck3
+    100078: Laminoferox_Neck4
+    100080: Laminoferox_Neck5
+    100082: Laminoferox_Pelvis
+    100084: Laminoferox_Spine1
+    100086: Laminoferox_Spine2
+    100088: Laminoferox_Tail1
+    100090: Laminoferox_Tail2
+    100092: Laminoferox_Tail3
+    100094: Laminoferox_Tail4
+    100096: Laminoferox_WeakPointLeft1
+    100098: Laminoferox_WeakPointLeft2
+    100100: Laminoferox_WeakPointLeft3
+    100102: Laminoferox_WeakPointRight1
+    100104: Laminoferox_WeakPointRight2
+    100106: Laminoferox_WeakPointRight3
+    100108: Root
+    400000: //RootNode
+    400002: Laminoferox_AntennaLeft1
+    400004: Laminoferox_AntennaLeft2
+    400006: Laminoferox_AntennaLeft3
+    400008: Laminoferox_AntennaLeft4
+    400010: Laminoferox_AntennaLeft5
+    400012: Laminoferox_AntennaRight1
+    400014: Laminoferox_AntennaRight2
+    400016: Laminoferox_AntennaRight3
+    400018: Laminoferox_AntennaRight4
+    400020: Laminoferox_AntennaRight5
+    400022: Laminoferox_FrontRight1
+    400024: Laminoferox_FrontRight2
+    400026: Laminoferox_FrontRight3
+    400028: Laminoferox_Head
+    400030: Laminoferox_Hips
+    400032: Laminoferox_Jaw
+    400034: Laminoferox_JawLowerLeft
+    400036: Laminoferox_JawLowerRight
+    400038: Laminoferox_JawUpperLeft
+    400040: Laminoferox_JawUpperRight
+    400042: Laminoferox_LegFrontLeft1
+    400044: Laminoferox_LegFrontLeft2
+    400046: Laminoferox_LegFrontLeft3
+    400048: Laminoferox_LegMiddleLeft1
+    400050: Laminoferox_LegMiddleLeft2
+    400052: Laminoferox_LegMiddleLeft3
+    400054: Laminoferox_LegMiddleRight1
+    400056: Laminoferox_LegMiddleRight2
+    400058: Laminoferox_LegMiddleRight3
+    400060: Laminoferox_LegRearLeft1
+    400062: Laminoferox_LegRearLeft2
+    400064: Laminoferox_LegRearLeft3
+    400066: Laminoferox_LegRearRight1
+    400068: Laminoferox_LegRearRight2
+    400070: Laminoferox_LegRearRight3
+    400072: Laminoferox_Neck1
+    400074: Laminoferox_Neck2
+    400076: Laminoferox_Neck3
+    400078: Laminoferox_Neck4
+    400080: Laminoferox_Neck5
+    400082: Laminoferox_Pelvis
+    400084: Laminoferox_Spine1
+    400086: Laminoferox_Spine2
+    400088: Laminoferox_Tail1
+    400090: Laminoferox_Tail2
+    400092: Laminoferox_Tail3
+    400094: Laminoferox_Tail4
+    400096: Laminoferox_WeakPointLeft1
+    400098: Laminoferox_WeakPointLeft2
+    400100: Laminoferox_WeakPointLeft3
+    400102: Laminoferox_WeakPointRight1
+    400104: Laminoferox_WeakPointRight2
+    400106: Laminoferox_WeakPointRight3
+    400108: Root
+    7400000: Fire6Spits
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 0
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Fire6Spits
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 50
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 1
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: Root
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: be93a973a2d36934ebb95ecaf484a791,
+    type: 3}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

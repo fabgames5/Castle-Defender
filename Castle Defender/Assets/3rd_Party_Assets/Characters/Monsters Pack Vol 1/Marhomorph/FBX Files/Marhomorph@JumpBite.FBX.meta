@@ -1,0 +1,247 @@
+fileFormatVersion: 2
+guid: 388ba70c5e925f44abf29e0c76f40c20
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: MARHOMORPH_
+    100002: MARHOMORPH_ Head
+    100004: MARHOMORPH_ L Calf
+    100006: MARHOMORPH_ L Clavicle
+    100008: MARHOMORPH_ L Finger0
+    100010: MARHOMORPH_ L Finger01
+    100012: MARHOMORPH_ L Finger1
+    100014: MARHOMORPH_ L Finger11
+    100016: MARHOMORPH_ L Finger2
+    100018: MARHOMORPH_ L Finger21
+    100020: MARHOMORPH_ L Foot
+    100022: MARHOMORPH_ L Forearm
+    100024: MARHOMORPH_ L Hand
+    100026: MARHOMORPH_ L Thigh
+    100028: MARHOMORPH_ L Toe0
+    100030: MARHOMORPH_ L Toe01
+    100032: MARHOMORPH_ L Toe1
+    100034: MARHOMORPH_ L Toe11
+    100036: MARHOMORPH_ L UpperArm
+    100038: MARHOMORPH_ Neck
+    100040: MARHOMORPH_ Pelvis
+    100042: MARHOMORPH_ Ponytail1
+    100044: MARHOMORPH_ Ponytail11
+    100046: MARHOMORPH_ Ponytail12
+    100048: MARHOMORPH_ Ponytail2
+    100050: MARHOMORPH_ Ponytail21
+    100052: MARHOMORPH_ Ponytail22
+    100054: MARHOMORPH_ R Calf
+    100056: MARHOMORPH_ R Clavicle
+    100058: MARHOMORPH_ R Finger0
+    100060: MARHOMORPH_ R Finger01
+    100062: MARHOMORPH_ R Finger1
+    100064: MARHOMORPH_ R Finger11
+    100066: MARHOMORPH_ R Finger2
+    100068: MARHOMORPH_ R Finger21
+    100070: MARHOMORPH_ R Foot
+    100072: MARHOMORPH_ R Forearm
+    100074: MARHOMORPH_ R Hand
+    100076: MARHOMORPH_ R Thigh
+    100078: MARHOMORPH_ R Toe0
+    100080: MARHOMORPH_ R Toe01
+    100082: MARHOMORPH_ R Toe1
+    100084: MARHOMORPH_ R Toe11
+    100086: MARHOMORPH_ R UpperArm
+    100088: MARHOMORPH_ Spine
+    100090: MARHOMORPH_ Spine1
+    100092: MARHOMORPH_JAW_DOWN_1
+    100094: MARHOMORPH_JAW_DOWN_2
+    100096: MARHOMORPH_JAW_DOWN_LEFT_1
+    100098: MARHOMORPH_JAW_DOWN_LEFT_2
+    100100: MARHOMORPH_JAW_DOWN_RIGHT_1
+    100102: MARHOMORPH_JAW_DOWN_RIGHT_2
+    100104: MARHOMORPH_JAW_UP_LEFT_1
+    100106: MARHOMORPH_JAW_UP_LEFT_2
+    100108: MARHOMORPH_JAW_UP_RIGHT_1
+    100110: MARHOMORPH_JAW_UP_RIGHT_2
+    100112: MARHOMORPH_TONGUE_1
+    100114: MARHOMORPH_TONGUE_2
+    100116: MARHOMORPH_TONGUE_3
+    100118: MARHOMORPH_TONGUE_4
+    100120: //RootNode
+    100122: root
+    400000: MARHOMORPH_
+    400002: MARHOMORPH_ Head
+    400004: MARHOMORPH_ L Calf
+    400006: MARHOMORPH_ L Clavicle
+    400008: MARHOMORPH_ L Finger0
+    400010: MARHOMORPH_ L Finger01
+    400012: MARHOMORPH_ L Finger1
+    400014: MARHOMORPH_ L Finger11
+    400016: MARHOMORPH_ L Finger2
+    400018: MARHOMORPH_ L Finger21
+    400020: MARHOMORPH_ L Foot
+    400022: MARHOMORPH_ L Forearm
+    400024: MARHOMORPH_ L Hand
+    400026: MARHOMORPH_ L Thigh
+    400028: MARHOMORPH_ L Toe0
+    400030: MARHOMORPH_ L Toe01
+    400032: MARHOMORPH_ L Toe1
+    400034: MARHOMORPH_ L Toe11
+    400036: MARHOMORPH_ L UpperArm
+    400038: MARHOMORPH_ Neck
+    400040: MARHOMORPH_ Pelvis
+    400042: MARHOMORPH_ Ponytail1
+    400044: MARHOMORPH_ Ponytail11
+    400046: MARHOMORPH_ Ponytail12
+    400048: MARHOMORPH_ Ponytail2
+    400050: MARHOMORPH_ Ponytail21
+    400052: MARHOMORPH_ Ponytail22
+    400054: MARHOMORPH_ R Calf
+    400056: MARHOMORPH_ R Clavicle
+    400058: MARHOMORPH_ R Finger0
+    400060: MARHOMORPH_ R Finger01
+    400062: MARHOMORPH_ R Finger1
+    400064: MARHOMORPH_ R Finger11
+    400066: MARHOMORPH_ R Finger2
+    400068: MARHOMORPH_ R Finger21
+    400070: MARHOMORPH_ R Foot
+    400072: MARHOMORPH_ R Forearm
+    400074: MARHOMORPH_ R Hand
+    400076: MARHOMORPH_ R Thigh
+    400078: MARHOMORPH_ R Toe0
+    400080: MARHOMORPH_ R Toe01
+    400082: MARHOMORPH_ R Toe1
+    400084: MARHOMORPH_ R Toe11
+    400086: MARHOMORPH_ R UpperArm
+    400088: MARHOMORPH_ Spine
+    400090: MARHOMORPH_ Spine1
+    400092: MARHOMORPH_JAW_DOWN_1
+    400094: MARHOMORPH_JAW_DOWN_2
+    400096: MARHOMORPH_JAW_DOWN_LEFT_1
+    400098: MARHOMORPH_JAW_DOWN_LEFT_2
+    400100: MARHOMORPH_JAW_DOWN_RIGHT_1
+    400102: MARHOMORPH_JAW_DOWN_RIGHT_2
+    400104: MARHOMORPH_JAW_UP_LEFT_1
+    400106: MARHOMORPH_JAW_UP_LEFT_2
+    400108: MARHOMORPH_JAW_UP_RIGHT_1
+    400110: MARHOMORPH_JAW_UP_RIGHT_2
+    400112: MARHOMORPH_TONGUE_1
+    400114: MARHOMORPH_TONGUE_2
+    400116: MARHOMORPH_TONGUE_3
+    400118: MARHOMORPH_TONGUE_4
+    400120: //RootNode
+    400122: root
+    7400000: JumpBite
+    9500000: //RootNode
+    11100000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 1
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 0
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 2
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: JumpBite
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 45
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 1
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: root
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 96931e08e0851514dbd0d14e1f302686,
+    type: 3}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

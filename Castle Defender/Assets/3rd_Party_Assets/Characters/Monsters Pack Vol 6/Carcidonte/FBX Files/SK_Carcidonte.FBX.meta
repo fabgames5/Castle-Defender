@@ -1,0 +1,179 @@
+fileFormatVersion: 2
+guid: e4472cc0c0c12984baa59297fbea8377
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Carcidonte_Abdomen1
+    100002: Carcidonte_Abdomen2
+    100004: Carcidonte_Head
+    100006: Carcidonte_Jaw
+    100008: Carcidonte_LegLeftFront1
+    100010: Carcidonte_LegLeftFront2
+    100012: Carcidonte_LegLeftFront3
+    100014: Carcidonte_LegLeftFront4
+    100016: Carcidonte_LegLeftMiddle1
+    100018: Carcidonte_LegLeftMiddle2
+    100020: Carcidonte_LegLeftMiddle3
+    100022: Carcidonte_LegLeftMiddle4
+    100024: Carcidonte_LegLeftRear1
+    100026: Carcidonte_LegLeftRear2
+    100028: Carcidonte_LegLeftRear3
+    100030: Carcidonte_LegLeftRear4
+    100032: Carcidonte_LegRightFront1
+    100034: Carcidonte_LegRightFront2
+    100036: Carcidonte_LegRightFront3
+    100038: Carcidonte_LegRightFront4
+    100040: Carcidonte_LegRightMiddle1
+    100042: Carcidonte_LegRightMiddle2
+    100044: Carcidonte_LegRightMiddle3
+    100046: Carcidonte_LegRightMiddle4
+    100048: Carcidonte_LegRightRear1
+    100050: Carcidonte_LegRightRear2
+    100052: Carcidonte_LegRightRear3
+    100054: Carcidonte_LegRightRear4
+    100056: Carcidonte_Pelvis
+    100058: Carcidonte_Tail1
+    100060: Carcidonte_Tail2
+    100062: Carcidonte_Tail3
+    100064: Carcidonte_Tail4
+    100066: Carcidonte_Tail5
+    100068: Carcidonte_ThumbLeft
+    100070: Carcidonte_ThumbRight
+    100072: root
+    100074: SK_Carcidonte
+    100076: //RootNode
+    400000: Carcidonte_Abdomen1
+    400002: Carcidonte_Abdomen2
+    400004: Carcidonte_Head
+    400006: Carcidonte_Jaw
+    400008: Carcidonte_LegLeftFront1
+    400010: Carcidonte_LegLeftFront2
+    400012: Carcidonte_LegLeftFront3
+    400014: Carcidonte_LegLeftFront4
+    400016: Carcidonte_LegLeftMiddle1
+    400018: Carcidonte_LegLeftMiddle2
+    400020: Carcidonte_LegLeftMiddle3
+    400022: Carcidonte_LegLeftMiddle4
+    400024: Carcidonte_LegLeftRear1
+    400026: Carcidonte_LegLeftRear2
+    400028: Carcidonte_LegLeftRear3
+    400030: Carcidonte_LegLeftRear4
+    400032: Carcidonte_LegRightFront1
+    400034: Carcidonte_LegRightFront2
+    400036: Carcidonte_LegRightFront3
+    400038: Carcidonte_LegRightFront4
+    400040: Carcidonte_LegRightMiddle1
+    400042: Carcidonte_LegRightMiddle2
+    400044: Carcidonte_LegRightMiddle3
+    400046: Carcidonte_LegRightMiddle4
+    400048: Carcidonte_LegRightRear1
+    400050: Carcidonte_LegRightRear2
+    400052: Carcidonte_LegRightRear3
+    400054: Carcidonte_LegRightRear4
+    400056: Carcidonte_Pelvis
+    400058: Carcidonte_Tail1
+    400060: Carcidonte_Tail2
+    400062: Carcidonte_Tail3
+    400064: Carcidonte_Tail4
+    400066: Carcidonte_Tail5
+    400068: Carcidonte_ThumbLeft
+    400070: Carcidonte_ThumbRight
+    400072: root
+    400074: //RootNode
+    400076: SK_Carcidonte
+    2100000: M_Carcidonte
+    4300000: SK_Carcidonte
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: SK_Carcidonte
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Carcidonte
+    second: {fileID: 2100000, guid: cb8150a7ced3b2a448d10a1efadd31aa, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 1
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 0
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: root
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

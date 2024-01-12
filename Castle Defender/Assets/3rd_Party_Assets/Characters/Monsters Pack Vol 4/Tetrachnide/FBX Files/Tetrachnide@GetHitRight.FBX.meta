@@ -1,0 +1,186 @@
+fileFormatVersion: 2
+guid: 4cb8e450c07e2bb4b9d441eaf219512b
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: root
+    100002: //RootNode
+    100004: Tetrachnide_Body
+    100006: Tetrachnide_JawLowerLeft
+    100008: Tetrachnide_JawLowerRight
+    100010: Tetrachnide_JawUpperLeft
+    100012: Tetrachnide_JawUpperRight
+    100014: Tetrachnide_LegFrontLeft_1
+    100016: Tetrachnide_LegFrontLeft_2
+    100018: Tetrachnide_LegFrontLeft_3
+    100020: Tetrachnide_LegFrontLeft_4
+    100022: Tetrachnide_LegFrontLeft_5
+    100024: Tetrachnide_LegFrontRight_1
+    100026: Tetrachnide_LegFrontRight_2
+    100028: Tetrachnide_LegFrontRight_3
+    100030: Tetrachnide_LegFrontRight_4
+    100032: Tetrachnide_LegFrontRight_5
+    100034: Tetrachnide_LegRearLeft_1
+    100036: Tetrachnide_LegRearLeft_2
+    100038: Tetrachnide_LegRearLeft_3
+    100040: Tetrachnide_LegRearLeft_4
+    100042: Tetrachnide_LegRearLeft_5
+    100044: Tetrachnide_LegRearRight_1
+    100046: Tetrachnide_LegRearRight_2
+    100048: Tetrachnide_LegRearRight_3
+    100050: Tetrachnide_LegRearRight_4
+    100052: Tetrachnide_LegRearRight_5
+    100054: Tetrachnide_Tongue_1
+    100056: Tetrachnide_Tongue_2
+    100058: Tetrachnide_Tongue_3
+    100060: Tetrachnide_WeakPointLower
+    100062: Tetrachnide_WeakPointUpper
+    400000: root
+    400002: //RootNode
+    400004: Tetrachnide_Body
+    400006: Tetrachnide_JawLowerLeft
+    400008: Tetrachnide_JawLowerRight
+    400010: Tetrachnide_JawUpperLeft
+    400012: Tetrachnide_JawUpperRight
+    400014: Tetrachnide_LegFrontLeft_1
+    400016: Tetrachnide_LegFrontLeft_2
+    400018: Tetrachnide_LegFrontLeft_3
+    400020: Tetrachnide_LegFrontLeft_4
+    400022: Tetrachnide_LegFrontLeft_5
+    400024: Tetrachnide_LegFrontRight_1
+    400026: Tetrachnide_LegFrontRight_2
+    400028: Tetrachnide_LegFrontRight_3
+    400030: Tetrachnide_LegFrontRight_4
+    400032: Tetrachnide_LegFrontRight_5
+    400034: Tetrachnide_LegRearLeft_1
+    400036: Tetrachnide_LegRearLeft_2
+    400038: Tetrachnide_LegRearLeft_3
+    400040: Tetrachnide_LegRearLeft_4
+    400042: Tetrachnide_LegRearLeft_5
+    400044: Tetrachnide_LegRearRight_1
+    400046: Tetrachnide_LegRearRight_2
+    400048: Tetrachnide_LegRearRight_3
+    400050: Tetrachnide_LegRearRight_4
+    400052: Tetrachnide_LegRearRight_5
+    400054: Tetrachnide_Tongue_1
+    400056: Tetrachnide_Tongue_2
+    400058: Tetrachnide_Tongue_3
+    400060: Tetrachnide_WeakPointLower
+    400062: Tetrachnide_WeakPointUpper
+    7400000: GetHitRight
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 0
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: GetHitRight
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 1
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: root
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: c99e30ec5aed7b64e8c59937c0884332,
+    type: 3}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

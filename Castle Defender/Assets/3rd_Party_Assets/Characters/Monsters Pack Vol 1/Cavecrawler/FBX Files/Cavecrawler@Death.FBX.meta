@@ -1,0 +1,314 @@
+fileFormatVersion: 2
+guid: f0970c698e2ed184c8eb7124cd07174b
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: CAVECRAWLER_
+    100004: CAVECRAWLER_ABDOMEN
+    100006: CAVECRAWLER_ARM_LEFT
+    100008: CAVECRAWLER_ARM_RIGHT
+    100010: CAVECRAWLER_CHEST
+    100012: CAVECRAWLER_CLAW_LEFT
+    100014: CAVECRAWLER_CLAW_RIGHT
+    100016: CAVECRAWLER_FOREARM_LEFT
+    100018: CAVECRAWLER_FOREARM_RIGHT
+    100020: CAVECRAWLER_HEAD
+    100022: CAVECRAWLER_JAW_LEFT
+    100024: CAVECRAWLER_JAW_RIGHT
+    100026: CAVECRAWLER_LEG_FRONT_LEFT_1
+    100028: CAVECRAWLER_LEG_FRONT_LEFT_2
+    100030: CAVECRAWLER_LEG_FRONT_LEFT_3
+    100032: CAVECRAWLER_LEG_FRONT_RIGHT_1
+    100034: CAVECRAWLER_LEG_FRONT_RIGHT_2
+    100036: CAVECRAWLER_LEG_FRONT_RIGHT_3
+    100038: CAVECRAWLER_LEG_MIDDLE_LEFT_1
+    100040: CAVECRAWLER_LEG_MIDDLE_LEFT_2
+    100042: CAVECRAWLER_LEG_MIDDLE_LEFT_3
+    100044: CAVECRAWLER_LEG_MIDDLE_RIGHT_1
+    100046: CAVECRAWLER_LEG_MIDDLE_RIGHT_2
+    100048: CAVECRAWLER_LEG_MIDDLE_RIGHT_3
+    100050: CAVECRAWLER_LEG_REAR_LEFT_1
+    100052: CAVECRAWLER_LEG_REAR_LEFT_2
+    100054: CAVECRAWLER_LEG_REAR_LEFT_3
+    100056: CAVECRAWLER_LEG_REAR_RIGHT_1
+    100058: CAVECRAWLER_LEG_REAR_RIGHT_2
+    100060: CAVECRAWLER_LEG_REAR_RIGHT_3
+    100062: CAVECRAWLER_MANDIBULE_LEFT_1
+    100064: CAVECRAWLER_MANDIBULE_LEFT_2
+    100066: CAVECRAWLER_MANDIBULE_RIGHT_1
+    100068: CAVECRAWLER_MANDIBULE_RIGHT_2
+    100070: CAVECRAWLER_MUSTACHE_LEFT_1
+    100072: CAVECRAWLER_MUSTACHE_LEFT_2
+    100074: CAVECRAWLER_MUSTACHE_LEFT_3
+    100076: CAVECRAWLER_MUSTACHE_RIGHT_1
+    100078: CAVECRAWLER_MUSTACHE_RIGHT_2
+    100080: CAVECRAWLER_MUSTACHE_RIGHT_3
+    100082: CAVECRAWLER_THORAX
+    100084: CAVECRAWLER_ABDOMEN_nub
+    100086: CAVECRAWLER_CLAW_LEFT_nub
+    100088: CAVECRAWLER_CLAW_RIGHT_nub
+    100090: CAVECRAWLER_HEAD_nub
+    100092: CAVECRAWLER_JAW_LEFT_nub
+    100094: CAVECRAWLER_JAW_RIGHT_nub
+    100096: CAVECRAWLER_LEG_FRONT_LEFT_nub
+    100098: CAVECRAWLER_LEG_FRONT_RIGHT_nub
+    100100: CAVECRAWLER_LEG_MIDDLE_LEFT_nub
+    100102: CAVECRAWLER_LEG_MIDDLE_RIGHT_nub
+    100104: CAVECRAWLER_LEG_REAR_LEFT_nub
+    100106: CAVECRAWLER_LEG_REAR_RIGHT_nub
+    100108: CAVECRAWLER_MANDIBULE_LEFT_nub
+    100110: CAVECRAWLER_MANDIBULE_RIGHT_nub
+    100112: CAVECRAWLER_MUSTACHE_LEFT_nub
+    100114: CAVECRAWLER_MUSTACHE_RIGHT_nub
+    100116: CAVECRAWLER_ROOT_
+    100118: Dummy001
+    100120: Dummy002
+    100122: Dummy003
+    100124: Dummy004
+    100126: Dummy005
+    100128: Dummy006
+    100130: Dummy007
+    100132: Dummy008
+    100134: Dummy009
+    100136: Dummy010
+    100138: Dummy011
+    100140: Dummy012
+    100142: Dummy014
+    100144: Dummy015
+    100146: Dummy016
+    100148: IK Chain001
+    100150: IK Chain002
+    100152: IK Chain003
+    100154: IK Chain004
+    100156: IK Chain005
+    100158: IK Chain006
+    100160: IK Chain007
+    100162: IK Chain008
+    100164: IK Chain009
+    100166: IK Chain010
+    100168: IK Chain011
+    100170: IK Chain012
+    100172: IK Chain013
+    100174: IK Chain014
+    100176: nub
+    100178: nub 1
+    100180: root
+    100182: SK_Cavecrawler
+    400000: //RootNode
+    400002: CAVECRAWLER_
+    400004: CAVECRAWLER_ABDOMEN
+    400006: CAVECRAWLER_ARM_LEFT
+    400008: CAVECRAWLER_ARM_RIGHT
+    400010: CAVECRAWLER_CHEST
+    400012: CAVECRAWLER_CLAW_LEFT
+    400014: CAVECRAWLER_CLAW_RIGHT
+    400016: CAVECRAWLER_FOREARM_LEFT
+    400018: CAVECRAWLER_FOREARM_RIGHT
+    400020: CAVECRAWLER_HEAD
+    400022: CAVECRAWLER_JAW_LEFT
+    400024: CAVECRAWLER_JAW_RIGHT
+    400026: CAVECRAWLER_LEG_FRONT_LEFT_1
+    400028: CAVECRAWLER_LEG_FRONT_LEFT_2
+    400030: CAVECRAWLER_LEG_FRONT_LEFT_3
+    400032: CAVECRAWLER_LEG_FRONT_RIGHT_1
+    400034: CAVECRAWLER_LEG_FRONT_RIGHT_2
+    400036: CAVECRAWLER_LEG_FRONT_RIGHT_3
+    400038: CAVECRAWLER_LEG_MIDDLE_LEFT_1
+    400040: CAVECRAWLER_LEG_MIDDLE_LEFT_2
+    400042: CAVECRAWLER_LEG_MIDDLE_LEFT_3
+    400044: CAVECRAWLER_LEG_MIDDLE_RIGHT_1
+    400046: CAVECRAWLER_LEG_MIDDLE_RIGHT_2
+    400048: CAVECRAWLER_LEG_MIDDLE_RIGHT_3
+    400050: CAVECRAWLER_LEG_REAR_LEFT_1
+    400052: CAVECRAWLER_LEG_REAR_LEFT_2
+    400054: CAVECRAWLER_LEG_REAR_LEFT_3
+    400056: CAVECRAWLER_LEG_REAR_RIGHT_1
+    400058: CAVECRAWLER_LEG_REAR_RIGHT_2
+    400060: CAVECRAWLER_LEG_REAR_RIGHT_3
+    400062: CAVECRAWLER_MANDIBULE_LEFT_1
+    400064: CAVECRAWLER_MANDIBULE_LEFT_2
+    400066: CAVECRAWLER_MANDIBULE_RIGHT_1
+    400068: CAVECRAWLER_MANDIBULE_RIGHT_2
+    400070: CAVECRAWLER_MUSTACHE_LEFT_1
+    400072: CAVECRAWLER_MUSTACHE_LEFT_2
+    400074: CAVECRAWLER_MUSTACHE_LEFT_3
+    400076: CAVECRAWLER_MUSTACHE_RIGHT_1
+    400078: CAVECRAWLER_MUSTACHE_RIGHT_2
+    400080: CAVECRAWLER_MUSTACHE_RIGHT_3
+    400082: CAVECRAWLER_THORAX
+    400084: CAVECRAWLER_ABDOMEN_nub
+    400086: CAVECRAWLER_CLAW_LEFT_nub
+    400088: CAVECRAWLER_CLAW_RIGHT_nub
+    400090: CAVECRAWLER_HEAD_nub
+    400092: CAVECRAWLER_JAW_LEFT_nub
+    400094: CAVECRAWLER_JAW_RIGHT_nub
+    400096: CAVECRAWLER_LEG_FRONT_LEFT_nub
+    400098: CAVECRAWLER_LEG_FRONT_RIGHT_nub
+    400100: CAVECRAWLER_LEG_MIDDLE_LEFT_nub
+    400102: CAVECRAWLER_LEG_MIDDLE_RIGHT_nub
+    400104: CAVECRAWLER_LEG_REAR_LEFT_nub
+    400106: CAVECRAWLER_LEG_REAR_RIGHT_nub
+    400108: CAVECRAWLER_MANDIBULE_LEFT_nub
+    400110: CAVECRAWLER_MANDIBULE_RIGHT_nub
+    400112: CAVECRAWLER_MUSTACHE_LEFT_nub
+    400114: CAVECRAWLER_MUSTACHE_RIGHT_nub
+    400116: CAVECRAWLER_ROOT_
+    400118: Dummy001
+    400120: Dummy002
+    400122: Dummy003
+    400124: Dummy004
+    400126: Dummy005
+    400128: Dummy006
+    400130: Dummy007
+    400132: Dummy008
+    400134: Dummy009
+    400136: Dummy010
+    400138: Dummy011
+    400140: Dummy012
+    400142: Dummy014
+    400144: Dummy015
+    400146: Dummy016
+    400148: IK Chain001
+    400150: IK Chain002
+    400152: IK Chain003
+    400154: IK Chain004
+    400156: IK Chain005
+    400158: IK Chain006
+    400160: IK Chain007
+    400162: IK Chain008
+    400164: IK Chain009
+    400166: IK Chain010
+    400168: IK Chain011
+    400170: IK Chain012
+    400172: IK Chain013
+    400174: IK Chain014
+    400176: nub
+    400178: nub 1
+    400180: root
+    400182: SK_Cavecrawler
+    4300000: SK_Cavecrawler
+    7400000: Death
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: SK_Cavecrawler
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Cavecrawler
+    second: {fileID: 2100000, guid: 2c46a2b50ff56264d81e3596ea4f5c19, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 0
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Death
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 66
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 1
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: root
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: b598a6d6e366c2b4697923164327b18d,
+    type: 3}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

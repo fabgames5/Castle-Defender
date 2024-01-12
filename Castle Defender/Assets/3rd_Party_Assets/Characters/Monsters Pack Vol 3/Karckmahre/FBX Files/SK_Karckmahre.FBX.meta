@@ -1,0 +1,236 @@
+fileFormatVersion: 2
+guid: bbc4ce9e9c0060240a25fcd80d1dbc1e
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Dummy009
+    100002: Karckmahre_
+    100004: Karckmahre_ Head
+    100006: Karckmahre_ L Calf
+    100008: Karckmahre_ L Clavicle
+    100010: Karckmahre_ L Finger0
+    100012: Karckmahre_ L Finger01
+    100014: Karckmahre_ L Finger1
+    100016: Karckmahre_ L Finger11
+    100018: Karckmahre_ L Finger2
+    100020: Karckmahre_ L Finger21
+    100022: Karckmahre_ L Foot
+    100024: Karckmahre_ L Forearm
+    100026: Karckmahre_ L Hand
+    100028: Karckmahre_ L HorseLink
+    100030: Karckmahre_ L Thigh
+    100032: Karckmahre_ L Toe0
+    100034: Karckmahre_ L Toe01
+    100036: Karckmahre_ L Toe1
+    100038: Karckmahre_ L Toe11
+    100040: Karckmahre_ L Toe2
+    100042: Karckmahre_ L Toe21
+    100044: Karckmahre_ L UpperArm
+    100046: Karckmahre_ Neck
+    100048: Karckmahre_ Pelvis
+    100050: Karckmahre_ Ponytail1
+    100052: Karckmahre_ Ponytail11
+    100054: Karckmahre_ Ponytail12
+    100056: Karckmahre_ Ponytail13
+    100058: Karckmahre_ Ponytail14
+    100060: Karckmahre_ Ponytail2
+    100062: Karckmahre_ Ponytail21
+    100064: Karckmahre_ Ponytail22
+    100066: Karckmahre_ Ponytail23
+    100068: Karckmahre_ Ponytail24
+    100070: Karckmahre_ R Calf
+    100072: Karckmahre_ R Clavicle
+    100074: Karckmahre_ R Finger0
+    100076: Karckmahre_ R Finger01
+    100078: Karckmahre_ R Finger1
+    100080: Karckmahre_ R Finger11
+    100082: Karckmahre_ R Finger2
+    100084: Karckmahre_ R Finger21
+    100086: Karckmahre_ R Foot
+    100088: Karckmahre_ R Forearm
+    100090: Karckmahre_ R Hand
+    100092: Karckmahre_ R HorseLink
+    100094: Karckmahre_ R Thigh
+    100096: Karckmahre_ R Toe0
+    100098: Karckmahre_ R Toe01
+    100100: Karckmahre_ R Toe1
+    100102: Karckmahre_ R Toe11
+    100104: Karckmahre_ R Toe2
+    100106: Karckmahre_ R Toe21
+    100108: Karckmahre_ R UpperArm
+    100110: Karckmahre_ Spine
+    100112: Karckmahre_ Spine1
+    100114: Karckmahre_Mouth
+    100116: Karckmahre_ToothLeft
+    100118: Karckmahre_ToothLower
+    100120: Karckmahre_ToothLowerLeft
+    100122: Karckmahre_ToothLowerRight
+    100124: Karckmahre_ToothRight
+    100126: Karckmahre_ToothUpper
+    100128: Karckmahre_ToothUpperLeft
+    100130: Karckmahre_ToothUpperRight
+    100132: nub
+    100134: root
+    100136: SK_Karckmahre
+    100138: //RootNode
+    400000: Dummy009
+    400002: Karckmahre_
+    400004: Karckmahre_ Head
+    400006: Karckmahre_ L Calf
+    400008: Karckmahre_ L Clavicle
+    400010: Karckmahre_ L Finger0
+    400012: Karckmahre_ L Finger01
+    400014: Karckmahre_ L Finger1
+    400016: Karckmahre_ L Finger11
+    400018: Karckmahre_ L Finger2
+    400020: Karckmahre_ L Finger21
+    400022: Karckmahre_ L Foot
+    400024: Karckmahre_ L Forearm
+    400026: Karckmahre_ L Hand
+    400028: Karckmahre_ L HorseLink
+    400030: Karckmahre_ L Thigh
+    400032: Karckmahre_ L Toe0
+    400034: Karckmahre_ L Toe01
+    400036: Karckmahre_ L Toe1
+    400038: Karckmahre_ L Toe11
+    400040: Karckmahre_ L Toe2
+    400042: Karckmahre_ L Toe21
+    400044: Karckmahre_ L UpperArm
+    400046: Karckmahre_ Neck
+    400048: Karckmahre_ Pelvis
+    400050: Karckmahre_ Ponytail1
+    400052: Karckmahre_ Ponytail11
+    400054: Karckmahre_ Ponytail12
+    400056: Karckmahre_ Ponytail13
+    400058: Karckmahre_ Ponytail14
+    400060: Karckmahre_ Ponytail2
+    400062: Karckmahre_ Ponytail21
+    400064: Karckmahre_ Ponytail22
+    400066: Karckmahre_ Ponytail23
+    400068: Karckmahre_ Ponytail24
+    400070: Karckmahre_ R Calf
+    400072: Karckmahre_ R Clavicle
+    400074: Karckmahre_ R Finger0
+    400076: Karckmahre_ R Finger01
+    400078: Karckmahre_ R Finger1
+    400080: Karckmahre_ R Finger11
+    400082: Karckmahre_ R Finger2
+    400084: Karckmahre_ R Finger21
+    400086: Karckmahre_ R Foot
+    400088: Karckmahre_ R Forearm
+    400090: Karckmahre_ R Hand
+    400092: Karckmahre_ R HorseLink
+    400094: Karckmahre_ R Thigh
+    400096: Karckmahre_ R Toe0
+    400098: Karckmahre_ R Toe01
+    400100: Karckmahre_ R Toe1
+    400102: Karckmahre_ R Toe11
+    400104: Karckmahre_ R Toe2
+    400106: Karckmahre_ R Toe21
+    400108: Karckmahre_ R UpperArm
+    400110: Karckmahre_ Spine
+    400112: Karckmahre_ Spine1
+    400114: Karckmahre_Mouth
+    400116: Karckmahre_ToothLeft
+    400118: Karckmahre_ToothLower
+    400120: Karckmahre_ToothLowerLeft
+    400122: Karckmahre_ToothLowerRight
+    400124: Karckmahre_ToothRight
+    400126: Karckmahre_ToothUpper
+    400128: Karckmahre_ToothUpperLeft
+    400130: Karckmahre_ToothUpperRight
+    400132: nub
+    400134: root
+    400136: //RootNode
+    400138: SK_Karckmahre
+    2100000: M_Karckmahre
+    4300000: SK_Karckmahre
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: SK_Karckmahre
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 1
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 0
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: root
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

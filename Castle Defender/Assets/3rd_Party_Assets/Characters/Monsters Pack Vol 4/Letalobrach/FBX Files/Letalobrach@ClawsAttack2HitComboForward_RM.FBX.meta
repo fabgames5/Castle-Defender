@@ -1,0 +1,190 @@
+fileFormatVersion: 2
+guid: d72607bf89b932f4ba3413e3bb22faf0
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Letalobrach_
+    100004: Letalobrach_ Head
+    100006: Letalobrach_ L Calf
+    100008: Letalobrach_ L Clavicle
+    100010: Letalobrach_ L Foot
+    100012: Letalobrach_ L Forearm
+    100014: Letalobrach_ L Hand
+    100016: Letalobrach_ L HorseLink
+    100018: Letalobrach_ L Thigh
+    100020: Letalobrach_ L UpperArm
+    100022: Letalobrach_ Neck
+    100024: Letalobrach_ Pelvis
+    100026: Letalobrach_ R Calf
+    100028: Letalobrach_ R Clavicle
+    100030: Letalobrach_ R Foot
+    100032: Letalobrach_ R Forearm
+    100034: Letalobrach_ R Hand
+    100036: Letalobrach_ R HorseLink
+    100038: Letalobrach_ R Thigh
+    100040: Letalobrach_ R UpperArm
+    100042: Letalobrach_ Spine
+    100044: Letalobrach_ Spine1
+    100046: Letalobrach_ Tail
+    100048: Letalobrach_ Tail1
+    100050: Letalobrach_ Tail2
+    100052: Letalobrach_ Tail3
+    100054: Letalobrach_ Tail4
+    100056: Letalobrach_ Tail5
+    100058: Letalobrach_Jaw
+    100060: Letalobrach_Tongue1
+    100062: Letalobrach_Tongue2
+    100064: Letalobrach_Tongue3
+    100066: root
+    400000: //RootNode
+    400002: Letalobrach_
+    400004: Letalobrach_ Head
+    400006: Letalobrach_ L Calf
+    400008: Letalobrach_ L Clavicle
+    400010: Letalobrach_ L Foot
+    400012: Letalobrach_ L Forearm
+    400014: Letalobrach_ L Hand
+    400016: Letalobrach_ L HorseLink
+    400018: Letalobrach_ L Thigh
+    400020: Letalobrach_ L UpperArm
+    400022: Letalobrach_ Neck
+    400024: Letalobrach_ Pelvis
+    400026: Letalobrach_ R Calf
+    400028: Letalobrach_ R Clavicle
+    400030: Letalobrach_ R Foot
+    400032: Letalobrach_ R Forearm
+    400034: Letalobrach_ R Hand
+    400036: Letalobrach_ R HorseLink
+    400038: Letalobrach_ R Thigh
+    400040: Letalobrach_ R UpperArm
+    400042: Letalobrach_ Spine
+    400044: Letalobrach_ Spine1
+    400046: Letalobrach_ Tail
+    400048: Letalobrach_ Tail1
+    400050: Letalobrach_ Tail2
+    400052: Letalobrach_ Tail3
+    400054: Letalobrach_ Tail4
+    400056: Letalobrach_ Tail5
+    400058: Letalobrach_Jaw
+    400060: Letalobrach_Tongue1
+    400062: Letalobrach_Tongue2
+    400064: Letalobrach_Tongue3
+    400066: root
+    7400000: ClawsAttack2HitComboForward_RM
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 0
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: ClawsAttack2HitComboForward_RM
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 50
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 1
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: root
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: f3544d008a0b5ad47a726f7e062e9514,
+    type: 3}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

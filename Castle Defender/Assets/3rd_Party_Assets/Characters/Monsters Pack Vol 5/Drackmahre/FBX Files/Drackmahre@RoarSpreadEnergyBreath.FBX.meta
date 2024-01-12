@@ -1,0 +1,332 @@
+fileFormatVersion: 2
+guid: c8b7b8c25eaee5e46ad815cad9a42b75
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Drackmahre_
+    100004: Drackmahre_ Head
+    100006: Drackmahre_ L Calf
+    100008: Drackmahre_ L Clavicle
+    100010: Drackmahre_ L Finger0
+    100012: Drackmahre_ L Finger01
+    100014: Drackmahre_ L Finger02
+    100016: Drackmahre_ L Finger1
+    100018: Drackmahre_ L Finger11
+    100020: Drackmahre_ L Finger12
+    100022: Drackmahre_ L Finger2
+    100024: Drackmahre_ L Finger21
+    100026: Drackmahre_ L Finger22
+    100028: Drackmahre_ L Foot
+    100030: Drackmahre_ L Forearm
+    100032: Drackmahre_ L Hand
+    100034: Drackmahre_ L HorseLink
+    100036: Drackmahre_ L Thigh
+    100038: Drackmahre_ L Toe0
+    100040: Drackmahre_ L Toe01
+    100042: Drackmahre_ L Toe1
+    100044: Drackmahre_ L Toe11
+    100046: Drackmahre_ L Toe2
+    100048: Drackmahre_ L Toe21
+    100050: Drackmahre_ L UpperArm
+    100052: Drackmahre_ Neck
+    100054: Drackmahre_ Neck1
+    100056: Drackmahre_ Neck2
+    100058: Drackmahre_ Neck3
+    100060: Drackmahre_ Neck4
+    100062: Drackmahre_ Neck5
+    100064: Drackmahre_ Neck6
+    100066: Drackmahre_ Neck7
+    100068: Drackmahre_ Neck8
+    100070: Drackmahre_ Pelvis
+    100072: Drackmahre_ Ponytail1
+    100074: Drackmahre_ R Calf
+    100076: Drackmahre_ R Clavicle
+    100078: Drackmahre_ R Finger0
+    100080: Drackmahre_ R Finger01
+    100082: Drackmahre_ R Finger02
+    100084: Drackmahre_ R Finger1
+    100086: Drackmahre_ R Finger11
+    100088: Drackmahre_ R Finger12
+    100090: Drackmahre_ R Finger2
+    100092: Drackmahre_ R Finger21
+    100094: Drackmahre_ R Finger22
+    100096: Drackmahre_ R Foot
+    100098: Drackmahre_ R Forearm
+    100100: Drackmahre_ R Hand
+    100102: Drackmahre_ R HorseLink
+    100104: Drackmahre_ R Thigh
+    100106: Drackmahre_ R Toe0
+    100108: Drackmahre_ R Toe01
+    100110: Drackmahre_ R Toe1
+    100112: Drackmahre_ R Toe11
+    100114: Drackmahre_ R Toe2
+    100116: Drackmahre_ R Toe21
+    100118: Drackmahre_ R UpperArm
+    100120: Drackmahre_ Spine
+    100122: Drackmahre_ Spine1
+    100124: Drackmahre_ Spine2
+    100126: Drackmahre_ Tail
+    100128: Drackmahre_ Tail1
+    100130: Drackmahre_ Tail10
+    100132: Drackmahre_ Tail11
+    100134: Drackmahre_ Tail12
+    100136: Drackmahre_ Tail13
+    100138: Drackmahre_ Tail14
+    100140: Drackmahre_ Tail15
+    100142: Drackmahre_ Tail16
+    100144: Drackmahre_ Tail17
+    100146: Drackmahre_ Tail18
+    100148: Drackmahre_ Tail19
+    100150: Drackmahre_ Tail2
+    100152: Drackmahre_ Tail3
+    100154: Drackmahre_ Tail4
+    100156: Drackmahre_ Tail5
+    100158: Drackmahre_ Tail6
+    100160: Drackmahre_ Tail7
+    100162: Drackmahre_ Tail8
+    100164: Drackmahre_ Tail9
+    100166: Drackmahre_TailWingA_Left_1
+    100168: Drackmahre_TailWingA_Left_2
+    100170: Drackmahre_TailWingA_Left_3
+    100172: Drackmahre_TailWingA_Right_1
+    100174: Drackmahre_TailWingA_Right_2
+    100176: Drackmahre_TailWingA_Right_3
+    100178: Drackmahre_TailWingB_Left_1
+    100180: Drackmahre_TailWingB_Left_2
+    100182: Drackmahre_TailWingB_Left_3
+    100184: Drackmahre_TailWingB_Left_4
+    100186: Drackmahre_TailWingB_Right_1
+    100188: Drackmahre_TailWingB_Right_2
+    100190: Drackmahre_TailWingB_Right_3
+    100192: Drackmahre_TailWingB_Right_4
+    100194: Drackmahre_Tongue_1
+    100196: Drackmahre_Tongue_2
+    100198: Drackmahre_Tongue_3
+    100200: Drackmahre_Tongue_4
+    100202: Drackmahre_Tongue_5
+    100204: Drackmahre_WeakpointA
+    100206: Drackmahre_WeakpointB
+    100208: root
+    400000: //RootNode
+    400002: Drackmahre_
+    400004: Drackmahre_ Head
+    400006: Drackmahre_ L Calf
+    400008: Drackmahre_ L Clavicle
+    400010: Drackmahre_ L Finger0
+    400012: Drackmahre_ L Finger01
+    400014: Drackmahre_ L Finger02
+    400016: Drackmahre_ L Finger1
+    400018: Drackmahre_ L Finger11
+    400020: Drackmahre_ L Finger12
+    400022: Drackmahre_ L Finger2
+    400024: Drackmahre_ L Finger21
+    400026: Drackmahre_ L Finger22
+    400028: Drackmahre_ L Foot
+    400030: Drackmahre_ L Forearm
+    400032: Drackmahre_ L Hand
+    400034: Drackmahre_ L HorseLink
+    400036: Drackmahre_ L Thigh
+    400038: Drackmahre_ L Toe0
+    400040: Drackmahre_ L Toe01
+    400042: Drackmahre_ L Toe1
+    400044: Drackmahre_ L Toe11
+    400046: Drackmahre_ L Toe2
+    400048: Drackmahre_ L Toe21
+    400050: Drackmahre_ L UpperArm
+    400052: Drackmahre_ Neck
+    400054: Drackmahre_ Neck1
+    400056: Drackmahre_ Neck2
+    400058: Drackmahre_ Neck3
+    400060: Drackmahre_ Neck4
+    400062: Drackmahre_ Neck5
+    400064: Drackmahre_ Neck6
+    400066: Drackmahre_ Neck7
+    400068: Drackmahre_ Neck8
+    400070: Drackmahre_ Pelvis
+    400072: Drackmahre_ Ponytail1
+    400074: Drackmahre_ R Calf
+    400076: Drackmahre_ R Clavicle
+    400078: Drackmahre_ R Finger0
+    400080: Drackmahre_ R Finger01
+    400082: Drackmahre_ R Finger02
+    400084: Drackmahre_ R Finger1
+    400086: Drackmahre_ R Finger11
+    400088: Drackmahre_ R Finger12
+    400090: Drackmahre_ R Finger2
+    400092: Drackmahre_ R Finger21
+    400094: Drackmahre_ R Finger22
+    400096: Drackmahre_ R Foot
+    400098: Drackmahre_ R Forearm
+    400100: Drackmahre_ R Hand
+    400102: Drackmahre_ R HorseLink
+    400104: Drackmahre_ R Thigh
+    400106: Drackmahre_ R Toe0
+    400108: Drackmahre_ R Toe01
+    400110: Drackmahre_ R Toe1
+    400112: Drackmahre_ R Toe11
+    400114: Drackmahre_ R Toe2
+    400116: Drackmahre_ R Toe21
+    400118: Drackmahre_ R UpperArm
+    400120: Drackmahre_ Spine
+    400122: Drackmahre_ Spine1
+    400124: Drackmahre_ Spine2
+    400126: Drackmahre_ Tail
+    400128: Drackmahre_ Tail1
+    400130: Drackmahre_ Tail10
+    400132: Drackmahre_ Tail11
+    400134: Drackmahre_ Tail12
+    400136: Drackmahre_ Tail13
+    400138: Drackmahre_ Tail14
+    400140: Drackmahre_ Tail15
+    400142: Drackmahre_ Tail16
+    400144: Drackmahre_ Tail17
+    400146: Drackmahre_ Tail18
+    400148: Drackmahre_ Tail19
+    400150: Drackmahre_ Tail2
+    400152: Drackmahre_ Tail3
+    400154: Drackmahre_ Tail4
+    400156: Drackmahre_ Tail5
+    400158: Drackmahre_ Tail6
+    400160: Drackmahre_ Tail7
+    400162: Drackmahre_ Tail8
+    400164: Drackmahre_ Tail9
+    400166: Drackmahre_TailWingA_Left_1
+    400168: Drackmahre_TailWingA_Left_2
+    400170: Drackmahre_TailWingA_Left_3
+    400172: Drackmahre_TailWingA_Right_1
+    400174: Drackmahre_TailWingA_Right_2
+    400176: Drackmahre_TailWingA_Right_3
+    400178: Drackmahre_TailWingB_Left_1
+    400180: Drackmahre_TailWingB_Left_2
+    400182: Drackmahre_TailWingB_Left_3
+    400184: Drackmahre_TailWingB_Left_4
+    400186: Drackmahre_TailWingB_Right_1
+    400188: Drackmahre_TailWingB_Right_2
+    400190: Drackmahre_TailWingB_Right_3
+    400192: Drackmahre_TailWingB_Right_4
+    400194: Drackmahre_Tongue_1
+    400196: Drackmahre_Tongue_2
+    400198: Drackmahre_Tongue_3
+    400200: Drackmahre_Tongue_4
+    400202: Drackmahre_Tongue_5
+    400204: Drackmahre_WeakpointA
+    400206: Drackmahre_WeakpointB
+    400208: root
+    7400000: RoarSpreadEnergyBreath
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 0
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: RoarSpreadEnergyBreath
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 95
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 1
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: root
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: ce589afee28a49e489048630f01dfb65,
+    type: 3}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

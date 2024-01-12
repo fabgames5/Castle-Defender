@@ -1,0 +1,251 @@
+fileFormatVersion: 2
+guid: ab721511a3917a74c909da308512bae3
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: HELLCREEPER_
+    100004: HELLCREEPER_ Head
+    100006: HELLCREEPER_ L Calf
+    100008: HELLCREEPER_ L Clavicle
+    100010: HELLCREEPER_ L Finger0
+    100012: HELLCREEPER_ L Finger01
+    100014: HELLCREEPER_ L Finger1
+    100016: HELLCREEPER_ L Finger11
+    100018: HELLCREEPER_ L Finger2
+    100020: HELLCREEPER_ L Finger21
+    100022: HELLCREEPER_ L Foot
+    100024: HELLCREEPER_ L Forearm
+    100026: HELLCREEPER_ L Hand
+    100028: HELLCREEPER_ L Thigh
+    100030: HELLCREEPER_ L Toe0
+    100032: HELLCREEPER_ L Toe01
+    100034: HELLCREEPER_ L Toe1
+    100036: HELLCREEPER_ L Toe11
+    100038: HELLCREEPER_ L Toe2
+    100040: HELLCREEPER_ L Toe21
+    100042: HELLCREEPER_ L UpperArm
+    100044: HELLCREEPER_ Neck
+    100046: HELLCREEPER_ Pelvis
+    100048: HELLCREEPER_ Ponytail1
+    100050: HELLCREEPER_ Ponytail11
+    100052: HELLCREEPER_ Ponytail2
+    100054: HELLCREEPER_ Ponytail21
+    100056: HELLCREEPER_ R Calf
+    100058: HELLCREEPER_ R Clavicle
+    100060: HELLCREEPER_ R Finger0
+    100062: HELLCREEPER_ R Finger01
+    100064: HELLCREEPER_ R Finger1
+    100066: HELLCREEPER_ R Finger11
+    100068: HELLCREEPER_ R Finger2
+    100070: HELLCREEPER_ R Finger21
+    100072: HELLCREEPER_ R Foot
+    100074: HELLCREEPER_ R Forearm
+    100076: HELLCREEPER_ R Hand
+    100078: HELLCREEPER_ R Thigh
+    100080: HELLCREEPER_ R Toe0
+    100082: HELLCREEPER_ R Toe01
+    100084: HELLCREEPER_ R Toe1
+    100086: HELLCREEPER_ R Toe11
+    100088: HELLCREEPER_ R Toe2
+    100090: HELLCREEPER_ R Toe21
+    100092: HELLCREEPER_ R UpperArm
+    100094: HELLCREEPER_ Spine
+    100096: HELLCREEPER_ Spine1
+    100098: HELLCREEPER_INNER_MOUTH_1
+    100100: HELLCREEPER_INNER_MOUTH_2
+    100102: HELLCREEPER_INNER_MOUTH_3
+    100104: HELLCREEPER_INNER_MOUTH_4
+    100106: HELLCREEPER_LowerTooth
+    100108: HELLCREEPER_LowerToothLeft_1
+    100110: HELLCREEPER_LowerToothLeft_2
+    100112: HELLCREEPER_LowerToothRight_1
+    100114: HELLCREEPER_LowerToothRight_2
+    100116: HELLCREEPER_UpperTooth
+    100118: HELLCREEPER_UpperToothLeft_1
+    100120: HELLCREEPER_UpperToothLeft_2
+    100122: HELLCREEPER_UpperToothRight_1
+    100124: HELLCREEPER_UpperToothRight_2
+    100126: root
+    400000: //RootNode
+    400002: HELLCREEPER_
+    400004: HELLCREEPER_ Head
+    400006: HELLCREEPER_ L Calf
+    400008: HELLCREEPER_ L Clavicle
+    400010: HELLCREEPER_ L Finger0
+    400012: HELLCREEPER_ L Finger01
+    400014: HELLCREEPER_ L Finger1
+    400016: HELLCREEPER_ L Finger11
+    400018: HELLCREEPER_ L Finger2
+    400020: HELLCREEPER_ L Finger21
+    400022: HELLCREEPER_ L Foot
+    400024: HELLCREEPER_ L Forearm
+    400026: HELLCREEPER_ L Hand
+    400028: HELLCREEPER_ L Thigh
+    400030: HELLCREEPER_ L Toe0
+    400032: HELLCREEPER_ L Toe01
+    400034: HELLCREEPER_ L Toe1
+    400036: HELLCREEPER_ L Toe11
+    400038: HELLCREEPER_ L Toe2
+    400040: HELLCREEPER_ L Toe21
+    400042: HELLCREEPER_ L UpperArm
+    400044: HELLCREEPER_ Neck
+    400046: HELLCREEPER_ Pelvis
+    400048: HELLCREEPER_ Ponytail1
+    400050: HELLCREEPER_ Ponytail11
+    400052: HELLCREEPER_ Ponytail2
+    400054: HELLCREEPER_ Ponytail21
+    400056: HELLCREEPER_ R Calf
+    400058: HELLCREEPER_ R Clavicle
+    400060: HELLCREEPER_ R Finger0
+    400062: HELLCREEPER_ R Finger01
+    400064: HELLCREEPER_ R Finger1
+    400066: HELLCREEPER_ R Finger11
+    400068: HELLCREEPER_ R Finger2
+    400070: HELLCREEPER_ R Finger21
+    400072: HELLCREEPER_ R Foot
+    400074: HELLCREEPER_ R Forearm
+    400076: HELLCREEPER_ R Hand
+    400078: HELLCREEPER_ R Thigh
+    400080: HELLCREEPER_ R Toe0
+    400082: HELLCREEPER_ R Toe01
+    400084: HELLCREEPER_ R Toe1
+    400086: HELLCREEPER_ R Toe11
+    400088: HELLCREEPER_ R Toe2
+    400090: HELLCREEPER_ R Toe21
+    400092: HELLCREEPER_ R UpperArm
+    400094: HELLCREEPER_ Spine
+    400096: HELLCREEPER_ Spine1
+    400098: HELLCREEPER_INNER_MOUTH_1
+    400100: HELLCREEPER_INNER_MOUTH_2
+    400102: HELLCREEPER_INNER_MOUTH_3
+    400104: HELLCREEPER_INNER_MOUTH_4
+    400106: HELLCREEPER_LowerTooth
+    400108: HELLCREEPER_LowerToothLeft_1
+    400110: HELLCREEPER_LowerToothLeft_2
+    400112: HELLCREEPER_LowerToothRight_1
+    400114: HELLCREEPER_LowerToothRight_2
+    400116: HELLCREEPER_UpperTooth
+    400118: HELLCREEPER_UpperToothLeft_1
+    400120: HELLCREEPER_UpperToothLeft_2
+    400122: HELLCREEPER_UpperToothRight_1
+    400124: HELLCREEPER_UpperToothRight_2
+    400126: root
+    7400000: JumpRight
+    9500000: //RootNode
+    11100000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 1
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 0
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 2
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: JumpRight
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 1
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: root
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: e5f00383df495154781c6c9f36649d09,
+    type: 3}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

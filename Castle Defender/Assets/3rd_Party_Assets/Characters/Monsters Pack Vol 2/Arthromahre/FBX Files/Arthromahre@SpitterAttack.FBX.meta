@@ -1,0 +1,427 @@
+fileFormatVersion: 2
+guid: c45b1c43f280ecb49be6ecd7cb4a00eb
+timeCreated: 1520461314
+licenseType: Store
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Arthromahre_
+    100004: Arthromahre_ Footsteps
+    100006: Arthromahre_ Head
+    100008: Arthromahre_ L Calf
+    100010: Arthromahre_ L Finger0
+    100012: Arthromahre_ L Foot
+    100014: Arthromahre_ L Forearm
+    100016: Arthromahre_ L Hand
+    100018: Arthromahre_ L Thigh
+    100020: Arthromahre_ L UpperArm
+    100022: Arthromahre_ Neck
+    100024: Arthromahre_ Pelvis
+    100026: Arthromahre_ Ponytail1
+    100028: Arthromahre_ R Calf
+    100030: Arthromahre_ R Finger0
+    100032: Arthromahre_ R Foot
+    100034: Arthromahre_ R Forearm
+    100036: Arthromahre_ R Hand
+    100038: Arthromahre_ R Thigh
+    100040: Arthromahre_ R UpperArm
+    100042: Arthromahre_ Spine
+    100044: Arthromahre_ Spine1
+    100046: Arthromahre_ Spine2
+    100048: Arthromahre_ Tail
+    100050: Arthromahre_ Tail1
+    100052: Arthromahre_ Tail2
+    100054: Arthromahre_ Tail3
+    100056: Arthromahre_EyeLeft
+    100058: Arthromahre_EyeRight
+    100060: Arthromahre_MandibuleLeftLower_1
+    100062: Arthromahre_MandibuleLeftLower_2
+    100064: Arthromahre_MandibuleLeftLower_3
+    100066: Arthromahre_MandibuleLeftMiddle_1
+    100068: Arthromahre_MandibuleLeftMiddle_2
+    100070: Arthromahre_MandibuleLeftMiddle_3
+    100072: Arthromahre_MandibuleLeftUpper_1
+    100074: Arthromahre_MandibuleLeftUpper_2
+    100076: Arthromahre_MandibuleLeftUpper_3
+    100078: Arthromahre_MandibuleRightLower_1
+    100080: Arthromahre_MandibuleRightLower_2
+    100082: Arthromahre_MandibuleRightLower_3
+    100084: Arthromahre_MandibuleRightMiddle_1
+    100086: Arthromahre_MandibuleRightMiddle_2
+    100088: Arthromahre_MandibuleRightMiddle_3
+    100090: Arthromahre_MandibuleRightUpper_1
+    100092: Arthromahre_MandibuleRightUpper_2
+    100094: Arthromahre_MandibuleRightUpper_3
+    100096: Arthromahre_SpitterLeftA_1
+    100098: Arthromahre_SpitterLeftA_2
+    100100: Arthromahre_SpitterLeftA_3
+    100102: Arthromahre_SpitterLeftB_1
+    100104: Arthromahre_SpitterLeftB_2
+    100106: Arthromahre_SpitterLeftB_3
+    100108: Arthromahre_SpitterLeftC_1
+    100110: Arthromahre_SpitterLeftC_2
+    100112: Arthromahre_SpitterLeftC_3
+    100114: Arthromahre_SpitterRightA_1
+    100116: Arthromahre_SpitterRightA_2
+    100118: Arthromahre_SpitterRightA_3
+    100120: Arthromahre_SpitterRightB_1
+    100122: Arthromahre_SpitterRightB_2
+    100124: Arthromahre_SpitterRightB_3
+    100126: Arthromahre_SpitterRightC_1
+    100128: Arthromahre_SpitterRightC_2
+    100130: Arthromahre_SpitterRightC_3
+    100132: Arthromahre_WeakPoint
+    100134: root
+    400000: //RootNode
+    400002: Arthromahre_
+    400004: Arthromahre_ Footsteps
+    400006: Arthromahre_ Head
+    400008: Arthromahre_ L Calf
+    400010: Arthromahre_ L Finger0
+    400012: Arthromahre_ L Foot
+    400014: Arthromahre_ L Forearm
+    400016: Arthromahre_ L Hand
+    400018: Arthromahre_ L Thigh
+    400020: Arthromahre_ L UpperArm
+    400022: Arthromahre_ Neck
+    400024: Arthromahre_ Pelvis
+    400026: Arthromahre_ Ponytail1
+    400028: Arthromahre_ R Calf
+    400030: Arthromahre_ R Finger0
+    400032: Arthromahre_ R Foot
+    400034: Arthromahre_ R Forearm
+    400036: Arthromahre_ R Hand
+    400038: Arthromahre_ R Thigh
+    400040: Arthromahre_ R UpperArm
+    400042: Arthromahre_ Spine
+    400044: Arthromahre_ Spine1
+    400046: Arthromahre_ Spine2
+    400048: Arthromahre_ Tail
+    400050: Arthromahre_ Tail1
+    400052: Arthromahre_ Tail2
+    400054: Arthromahre_ Tail3
+    400056: Arthromahre_EyeLeft
+    400058: Arthromahre_EyeRight
+    400060: Arthromahre_MandibuleLeftLower_1
+    400062: Arthromahre_MandibuleLeftLower_2
+    400064: Arthromahre_MandibuleLeftLower_3
+    400066: Arthromahre_MandibuleLeftMiddle_1
+    400068: Arthromahre_MandibuleLeftMiddle_2
+    400070: Arthromahre_MandibuleLeftMiddle_3
+    400072: Arthromahre_MandibuleLeftUpper_1
+    400074: Arthromahre_MandibuleLeftUpper_2
+    400076: Arthromahre_MandibuleLeftUpper_3
+    400078: Arthromahre_MandibuleRightLower_1
+    400080: Arthromahre_MandibuleRightLower_2
+    400082: Arthromahre_MandibuleRightLower_3
+    400084: Arthromahre_MandibuleRightMiddle_1
+    400086: Arthromahre_MandibuleRightMiddle_2
+    400088: Arthromahre_MandibuleRightMiddle_3
+    400090: Arthromahre_MandibuleRightUpper_1
+    400092: Arthromahre_MandibuleRightUpper_2
+    400094: Arthromahre_MandibuleRightUpper_3
+    400096: Arthromahre_SpitterLeftA_1
+    400098: Arthromahre_SpitterLeftA_2
+    400100: Arthromahre_SpitterLeftA_3
+    400102: Arthromahre_SpitterLeftB_1
+    400104: Arthromahre_SpitterLeftB_2
+    400106: Arthromahre_SpitterLeftB_3
+    400108: Arthromahre_SpitterLeftC_1
+    400110: Arthromahre_SpitterLeftC_2
+    400112: Arthromahre_SpitterLeftC_3
+    400114: Arthromahre_SpitterRightA_1
+    400116: Arthromahre_SpitterRightA_2
+    400118: Arthromahre_SpitterRightA_3
+    400120: Arthromahre_SpitterRightB_1
+    400122: Arthromahre_SpitterRightB_2
+    400124: Arthromahre_SpitterRightB_3
+    400126: Arthromahre_SpitterRightC_1
+    400128: Arthromahre_SpitterRightC_2
+    400130: Arthromahre_SpitterRightC_3
+    400132: Arthromahre_WeakPoint
+    400134: root
+    7400000: SpitterAttack
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 0
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: SpitterAttack
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: root
+        weight: 1
+      - path: root/Arthromahre_
+        weight: 1
+      - path: root/Arthromahre_/Arthromahre_ Footsteps
+        weight: 1
+      - path: root/Arthromahre_/Arthromahre_ Pelvis
+        weight: 1
+      - path: root/Arthromahre_/Arthromahre_ Pelvis/Arthromahre_ L Thigh
+        weight: 1
+      - path: root/Arthromahre_/Arthromahre_ Pelvis/Arthromahre_ L Thigh/Arthromahre_
+          L Calf
+        weight: 1
+      - path: root/Arthromahre_/Arthromahre_ Pelvis/Arthromahre_ L Thigh/Arthromahre_
+          L Calf/Arthromahre_ L Foot
+        weight: 1
+      - path: root/Arthromahre_/Arthromahre_ Pelvis/Arthromahre_ R Thigh
+        weight: 1
+      - path: root/Arthromahre_/Arthromahre_ Pelvis/Arthromahre_ R Thigh/Arthromahre_
+          R Calf
+        weight: 1
+      - path: root/Arthromahre_/Arthromahre_ Pelvis/Arthromahre_ R Thigh/Arthromahre_
+          R Calf/Arthromahre_ R Foot
+        weight: 1
+      - path: root/Arthromahre_/Arthromahre_ Pelvis/Arthromahre_ Spine
+        weight: 1
+      - path: root/Arthromahre_/Arthromahre_ Pelvis/Arthromahre_ Spine/Arthromahre_
+          Spine1
+        weight: 1
+      - path: root/Arthromahre_/Arthromahre_ Pelvis/Arthromahre_ Spine/Arthromahre_
+          Spine1/Arthromahre_ Spine2
+        weight: 1
+      - path: root/Arthromahre_/Arthromahre_ Pelvis/Arthromahre_ Spine/Arthromahre_
+          Spine1/Arthromahre_ Spine2/Arthromahre_ L UpperArm
+        weight: 1
+      - path: root/Arthromahre_/Arthromahre_ Pelvis/Arthromahre_ Spine/Arthromahre_
+          Spine1/Arthromahre_ Spine2/Arthromahre_ L UpperArm/Arthromahre_ L Forearm
+        weight: 1
+      - path: root/Arthromahre_/Arthromahre_ Pelvis/Arthromahre_ Spine/Arthromahre_
+          Spine1/Arthromahre_ Spine2/Arthromahre_ L UpperArm/Arthromahre_ L Forearm/Arthromahre_
+          L Hand
+        weight: 1
+      - path: root/Arthromahre_/Arthromahre_ Pelvis/Arthromahre_ Spine/Arthromahre_
+          Spine1/Arthromahre_ Spine2/Arthromahre_ L UpperArm/Arthromahre_ L Forearm/Arthromahre_
+          L Hand/Arthromahre_ L Finger0
+        weight: 1
+      - path: root/Arthromahre_/Arthromahre_ Pelvis/Arthromahre_ Spine/Arthromahre_
+          Spine1/Arthromahre_ Spine2/Arthromahre_ Neck
+        weight: 1
+      - path: root/Arthromahre_/Arthromahre_ Pelvis/Arthromahre_ Spine/Arthromahre_
+          Spine1/Arthromahre_ Spine2/Arthromahre_ Neck/Arthromahre_ Head
+        weight: 1
+      - path: root/Arthromahre_/Arthromahre_ Pelvis/Arthromahre_ Spine/Arthromahre_
+          Spine1/Arthromahre_ Spine2/Arthromahre_ Neck/Arthromahre_ Head/Arthromahre_
+          Ponytail1
+        weight: 1
+      - path: root/Arthromahre_/Arthromahre_ Pelvis/Arthromahre_ Spine/Arthromahre_
+          Spine1/Arthromahre_ Spine2/Arthromahre_ Neck/Arthromahre_ Head/Arthromahre_EyeLeft
+        weight: 1
+      - path: root/Arthromahre_/Arthromahre_ Pelvis/Arthromahre_ Spine/Arthromahre_
+          Spine1/Arthromahre_ Spine2/Arthromahre_ Neck/Arthromahre_ Head/Arthromahre_EyeRight
+        weight: 1
+      - path: root/Arthromahre_/Arthromahre_ Pelvis/Arthromahre_ Spine/Arthromahre_
+          Spine1/Arthromahre_ Spine2/Arthromahre_ Neck/Arthromahre_ Head/Arthromahre_MandibuleLeftLower_1
+        weight: 1
+      - path: root/Arthromahre_/Arthromahre_ Pelvis/Arthromahre_ Spine/Arthromahre_
+          Spine1/Arthromahre_ Spine2/Arthromahre_ Neck/Arthromahre_ Head/Arthromahre_MandibuleLeftLower_1/Arthromahre_MandibuleLeftLower_2
+        weight: 1
+      - path: root/Arthromahre_/Arthromahre_ Pelvis/Arthromahre_ Spine/Arthromahre_
+          Spine1/Arthromahre_ Spine2/Arthromahre_ Neck/Arthromahre_ Head/Arthromahre_MandibuleLeftLower_1/Arthromahre_MandibuleLeftLower_2/Arthromahre_MandibuleLeftLower_3
+        weight: 1
+      - path: root/Arthromahre_/Arthromahre_ Pelvis/Arthromahre_ Spine/Arthromahre_
+          Spine1/Arthromahre_ Spine2/Arthromahre_ Neck/Arthromahre_ Head/Arthromahre_MandibuleLeftMiddle_1
+        weight: 1
+      - path: root/Arthromahre_/Arthromahre_ Pelvis/Arthromahre_ Spine/Arthromahre_
+          Spine1/Arthromahre_ Spine2/Arthromahre_ Neck/Arthromahre_ Head/Arthromahre_MandibuleLeftMiddle_1/Arthromahre_MandibuleLeftMiddle_2
+        weight: 1
+      - path: root/Arthromahre_/Arthromahre_ Pelvis/Arthromahre_ Spine/Arthromahre_
+          Spine1/Arthromahre_ Spine2/Arthromahre_ Neck/Arthromahre_ Head/Arthromahre_MandibuleLeftMiddle_1/Arthromahre_MandibuleLeftMiddle_2/Arthromahre_MandibuleLeftMiddle_3
+        weight: 1
+      - path: root/Arthromahre_/Arthromahre_ Pelvis/Arthromahre_ Spine/Arthromahre_
+          Spine1/Arthromahre_ Spine2/Arthromahre_ Neck/Arthromahre_ Head/Arthromahre_MandibuleLeftUpper_1
+        weight: 1
+      - path: root/Arthromahre_/Arthromahre_ Pelvis/Arthromahre_ Spine/Arthromahre_
+          Spine1/Arthromahre_ Spine2/Arthromahre_ Neck/Arthromahre_ Head/Arthromahre_MandibuleLeftUpper_1/Arthromahre_MandibuleLeftUpper_2
+        weight: 1
+      - path: root/Arthromahre_/Arthromahre_ Pelvis/Arthromahre_ Spine/Arthromahre_
+          Spine1/Arthromahre_ Spine2/Arthromahre_ Neck/Arthromahre_ Head/Arthromahre_MandibuleLeftUpper_1/Arthromahre_MandibuleLeftUpper_2/Arthromahre_MandibuleLeftUpper_3
+        weight: 1
+      - path: root/Arthromahre_/Arthromahre_ Pelvis/Arthromahre_ Spine/Arthromahre_
+          Spine1/Arthromahre_ Spine2/Arthromahre_ Neck/Arthromahre_ Head/Arthromahre_MandibuleRightLower_1
+        weight: 1
+      - path: root/Arthromahre_/Arthromahre_ Pelvis/Arthromahre_ Spine/Arthromahre_
+          Spine1/Arthromahre_ Spine2/Arthromahre_ Neck/Arthromahre_ Head/Arthromahre_MandibuleRightLower_1/Arthromahre_MandibuleRightLower_2
+        weight: 1
+      - path: root/Arthromahre_/Arthromahre_ Pelvis/Arthromahre_ Spine/Arthromahre_
+          Spine1/Arthromahre_ Spine2/Arthromahre_ Neck/Arthromahre_ Head/Arthromahre_MandibuleRightLower_1/Arthromahre_MandibuleRightLower_2/Arthromahre_MandibuleRightLower_3
+        weight: 1
+      - path: root/Arthromahre_/Arthromahre_ Pelvis/Arthromahre_ Spine/Arthromahre_
+          Spine1/Arthromahre_ Spine2/Arthromahre_ Neck/Arthromahre_ Head/Arthromahre_MandibuleRightMiddle_1
+        weight: 1
+      - path: root/Arthromahre_/Arthromahre_ Pelvis/Arthromahre_ Spine/Arthromahre_
+          Spine1/Arthromahre_ Spine2/Arthromahre_ Neck/Arthromahre_ Head/Arthromahre_MandibuleRightMiddle_1/Arthromahre_MandibuleRightMiddle_2
+        weight: 1
+      - path: root/Arthromahre_/Arthromahre_ Pelvis/Arthromahre_ Spine/Arthromahre_
+          Spine1/Arthromahre_ Spine2/Arthromahre_ Neck/Arthromahre_ Head/Arthromahre_MandibuleRightMiddle_1/Arthromahre_MandibuleRightMiddle_2/Arthromahre_MandibuleRightMiddle_3
+        weight: 1
+      - path: root/Arthromahre_/Arthromahre_ Pelvis/Arthromahre_ Spine/Arthromahre_
+          Spine1/Arthromahre_ Spine2/Arthromahre_ Neck/Arthromahre_ Head/Arthromahre_MandibuleRightUpper_1
+        weight: 1
+      - path: root/Arthromahre_/Arthromahre_ Pelvis/Arthromahre_ Spine/Arthromahre_
+          Spine1/Arthromahre_ Spine2/Arthromahre_ Neck/Arthromahre_ Head/Arthromahre_MandibuleRightUpper_1/Arthromahre_MandibuleRightUpper_2
+        weight: 1
+      - path: root/Arthromahre_/Arthromahre_ Pelvis/Arthromahre_ Spine/Arthromahre_
+          Spine1/Arthromahre_ Spine2/Arthromahre_ Neck/Arthromahre_ Head/Arthromahre_MandibuleRightUpper_1/Arthromahre_MandibuleRightUpper_2/Arthromahre_MandibuleRightUpper_3
+        weight: 1
+      - path: root/Arthromahre_/Arthromahre_ Pelvis/Arthromahre_ Spine/Arthromahre_
+          Spine1/Arthromahre_ Spine2/Arthromahre_ R UpperArm
+        weight: 1
+      - path: root/Arthromahre_/Arthromahre_ Pelvis/Arthromahre_ Spine/Arthromahre_
+          Spine1/Arthromahre_ Spine2/Arthromahre_ R UpperArm/Arthromahre_ R Forearm
+        weight: 1
+      - path: root/Arthromahre_/Arthromahre_ Pelvis/Arthromahre_ Spine/Arthromahre_
+          Spine1/Arthromahre_ Spine2/Arthromahre_ R UpperArm/Arthromahre_ R Forearm/Arthromahre_
+          R Hand
+        weight: 1
+      - path: root/Arthromahre_/Arthromahre_ Pelvis/Arthromahre_ Spine/Arthromahre_
+          Spine1/Arthromahre_ Spine2/Arthromahre_ R UpperArm/Arthromahre_ R Forearm/Arthromahre_
+          R Hand/Arthromahre_ R Finger0
+        weight: 1
+      - path: root/Arthromahre_/Arthromahre_ Pelvis/Arthromahre_ Spine/Arthromahre_
+          Spine1/Arthromahre_ Spine2/Arthromahre_SpitterLeftA_1
+        weight: 1
+      - path: root/Arthromahre_/Arthromahre_ Pelvis/Arthromahre_ Spine/Arthromahre_
+          Spine1/Arthromahre_ Spine2/Arthromahre_SpitterLeftA_1/Arthromahre_SpitterLeftA_2
+        weight: 1
+      - path: root/Arthromahre_/Arthromahre_ Pelvis/Arthromahre_ Spine/Arthromahre_
+          Spine1/Arthromahre_ Spine2/Arthromahre_SpitterLeftA_1/Arthromahre_SpitterLeftA_2/Arthromahre_SpitterLeftA_3
+        weight: 1
+      - path: root/Arthromahre_/Arthromahre_ Pelvis/Arthromahre_ Spine/Arthromahre_
+          Spine1/Arthromahre_ Spine2/Arthromahre_SpitterRightA_1
+        weight: 1
+      - path: root/Arthromahre_/Arthromahre_ Pelvis/Arthromahre_ Spine/Arthromahre_
+          Spine1/Arthromahre_ Spine2/Arthromahre_SpitterRightA_1/Arthromahre_SpitterRightA_2
+        weight: 1
+      - path: root/Arthromahre_/Arthromahre_ Pelvis/Arthromahre_ Spine/Arthromahre_
+          Spine1/Arthromahre_ Spine2/Arthromahre_SpitterRightA_1/Arthromahre_SpitterRightA_2/Arthromahre_SpitterRightA_3
+        weight: 1
+      - path: root/Arthromahre_/Arthromahre_ Pelvis/Arthromahre_ Spine/Arthromahre_
+          Spine1/Arthromahre_SpitterLeftB_1
+        weight: 1
+      - path: root/Arthromahre_/Arthromahre_ Pelvis/Arthromahre_ Spine/Arthromahre_
+          Spine1/Arthromahre_SpitterLeftB_1/Arthromahre_SpitterLeftB_2
+        weight: 1
+      - path: root/Arthromahre_/Arthromahre_ Pelvis/Arthromahre_ Spine/Arthromahre_
+          Spine1/Arthromahre_SpitterLeftB_1/Arthromahre_SpitterLeftB_2/Arthromahre_SpitterLeftB_3
+        weight: 1
+      - path: root/Arthromahre_/Arthromahre_ Pelvis/Arthromahre_ Spine/Arthromahre_
+          Spine1/Arthromahre_SpitterRightB_1
+        weight: 1
+      - path: root/Arthromahre_/Arthromahre_ Pelvis/Arthromahre_ Spine/Arthromahre_
+          Spine1/Arthromahre_SpitterRightB_1/Arthromahre_SpitterRightB_2
+        weight: 1
+      - path: root/Arthromahre_/Arthromahre_ Pelvis/Arthromahre_ Spine/Arthromahre_
+          Spine1/Arthromahre_SpitterRightB_1/Arthromahre_SpitterRightB_2/Arthromahre_SpitterRightB_3
+        weight: 1
+      - path: root/Arthromahre_/Arthromahre_ Pelvis/Arthromahre_ Spine/Arthromahre_SpitterLeftC_1
+        weight: 1
+      - path: root/Arthromahre_/Arthromahre_ Pelvis/Arthromahre_ Spine/Arthromahre_SpitterLeftC_1/Arthromahre_SpitterLeftC_2
+        weight: 1
+      - path: root/Arthromahre_/Arthromahre_ Pelvis/Arthromahre_ Spine/Arthromahre_SpitterLeftC_1/Arthromahre_SpitterLeftC_2/Arthromahre_SpitterLeftC_3
+        weight: 1
+      - path: root/Arthromahre_/Arthromahre_ Pelvis/Arthromahre_ Spine/Arthromahre_SpitterRightC_1
+        weight: 1
+      - path: root/Arthromahre_/Arthromahre_ Pelvis/Arthromahre_ Spine/Arthromahre_SpitterRightC_1/Arthromahre_SpitterRightC_2
+        weight: 1
+      - path: root/Arthromahre_/Arthromahre_ Pelvis/Arthromahre_ Spine/Arthromahre_SpitterRightC_1/Arthromahre_SpitterRightC_2/Arthromahre_SpitterRightC_3
+        weight: 1
+      - path: root/Arthromahre_/Arthromahre_ Pelvis/Arthromahre_ Spine/Arthromahre_WeakPoint
+        weight: 1
+      - path: root/Arthromahre_/Arthromahre_ Pelvis/Arthromahre_ Tail
+        weight: 1
+      - path: root/Arthromahre_/Arthromahre_ Pelvis/Arthromahre_ Tail/Arthromahre_
+          Tail1
+        weight: 1
+      - path: root/Arthromahre_/Arthromahre_ Pelvis/Arthromahre_ Tail/Arthromahre_
+          Tail1/Arthromahre_ Tail2
+        weight: 1
+      - path: root/Arthromahre_/Arthromahre_ Pelvis/Arthromahre_ Tail/Arthromahre_
+          Tail1/Arthromahre_ Tail2/Arthromahre_ Tail3
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 1
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: root
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 9a74d1cad5de1cc4b87b9201920b9abb,
+    type: 3}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

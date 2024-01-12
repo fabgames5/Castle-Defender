@@ -1,0 +1,514 @@
+fileFormatVersion: 2
+guid: a15afcb5bb75c73408d212729b61a9e1
+timeCreated: 1519941420
+licenseType: Store
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: root
+    100002: //RootNode
+    100004: Telluropod_AntennaLeft_1
+    100006: Telluropod_AntennaLeft_2
+    100008: Telluropod_AntennaLeft_3
+    100010: Telluropod_AntennaLeft_4
+    100012: Telluropod_AntennaLeft_5
+    100014: Telluropod_AntennaLeft_6
+    100016: Telluropod_AntennaRight_1
+    100018: Telluropod_AntennaRight_2
+    100020: Telluropod_AntennaRight_3
+    100022: Telluropod_AntennaRight_4
+    100024: Telluropod_AntennaRight_5
+    100026: Telluropod_AntennaRight_6
+    100028: telluropod_Body
+    100030: Telluropod_Boil_Left_1
+    100032: Telluropod_Boil_Left_2
+    100034: Telluropod_Boil_Left_3
+    100036: Telluropod_Boil_Left_4
+    100038: Telluropod_Boil_Left_5
+    100040: Telluropod_Boil_Middle_1
+    100042: Telluropod_Boil_Middle_3
+    100044: Telluropod_Boil_Right_1
+    100046: Telluropod_Boil_Right_2
+    100048: Telluropod_Boil_Right_3
+    100050: Telluropod_Boil_Right_4
+    100052: Telluropod_Boil_Right_5
+    100054: Telluropod_JawLower
+    100056: Telluropod_JawUpper
+    100058: Telluropod_MandibuleLeft_1
+    100060: Telluropod_MandibuleLeft_2
+    100062: Telluropod_MandibuleLeft_3
+    100064: Telluropod_MandibuleRight_1
+    100066: Telluropod_MandibuleRight_2
+    100068: Telluropod_MandibuleRight_3
+    100070: Telluropod_TentacleFrontLeft_1
+    100072: Telluropod_TentacleFrontLeft_2
+    100074: Telluropod_TentacleFrontLeft_3
+    100076: Telluropod_TentacleFrontLeft_4
+    100078: Telluropod_TentacleFrontLeft_5
+    100080: Telluropod_TentacleFrontLeft_6
+    100082: Telluropod_TentacleFrontLeft_7
+    100084: Telluropod_TentacleFrontLeft_8
+    100086: Telluropod_TentacleFrontRight_1
+    100088: Telluropod_TentacleFrontRight_2
+    100090: Telluropod_TentacleFrontRight_3
+    100092: Telluropod_TentacleFrontRight_4
+    100094: Telluropod_TentacleFrontRight_5
+    100096: Telluropod_TentacleFrontRight_6
+    100098: Telluropod_TentacleFrontRight_7
+    100100: Telluropod_TentacleFrontRight_8
+    100102: Telluropod_TentacleRearLeft_1
+    100104: Telluropod_TentacleRearLeft_2
+    100106: Telluropod_TentacleRearLeft_3
+    100108: Telluropod_TentacleRearLeft_4
+    100110: Telluropod_TentacleRearLeft_5
+    100112: Telluropod_TentacleRearLeft_6
+    100114: Telluropod_TentacleRearLeft_7
+    100116: Telluropod_TentacleRearLeft_8
+    100118: Telluropod_TentacleRearRight_1
+    100120: Telluropod_TentacleRearRight_2
+    100122: Telluropod_TentacleRearRight_3
+    100124: Telluropod_TentacleRearRight_4
+    100126: Telluropod_TentacleRearRight_5
+    100128: Telluropod_TentacleRearRight_6
+    100130: Telluropod_TentacleRearRight_7
+    100132: Telluropod_TentacleRearRight_8
+    100134: Telluropod_Tongue_1
+    100136: Telluropod_Tongue_2
+    100138: Telluropod_Tongue_3
+    100140: Telluropod_Tongue_4
+    100142: Telluropod_Tongue_5
+    100144: Telluropod_Tongue_6
+    100146: Telluropod_Tongue_7
+    100148: Telluropod_Tongue_8
+    100150: Telluropod_Tongue_9
+    100152: Telluropod_tooth_LowerLeftA_1
+    100154: Telluropod_tooth_LowerLeftA_2
+    100156: Telluropod_tooth_LowerLeftB_1
+    100158: Telluropod_tooth_LowerLeftB_2
+    100160: Telluropod_tooth_LowerLeftC_1
+    100162: Telluropod_tooth_LowerLeftC_2
+    100164: Telluropod_tooth_LowerLeftD
+    100166: Telluropod_tooth_LowerRightA_1
+    100168: Telluropod_tooth_LowerRightA_2
+    100170: Telluropod_tooth_LowerRightB_1
+    100172: Telluropod_tooth_LowerRightB_2
+    100174: Telluropod_tooth_LowerRightC_1
+    100176: Telluropod_tooth_LowerRightC_2
+    100178: Telluropod_tooth_LowerRightD
+    100180: Telluropod_tooth_UpperLeftA_1
+    100182: Telluropod_tooth_UpperLeftA_2
+    100184: Telluropod_tooth_UpperLeftB_1
+    100186: Telluropod_tooth_UpperLeftB_2
+    100188: Telluropod_tooth_UpperLeftC_1
+    100190: Telluropod_tooth_UpperLeftC_2
+    100192: Telluropod_tooth_UpperMiddle_1
+    100194: Telluropod_tooth_UpperMiddle_2
+    100196: Telluropod_tooth_UpperRightA_1
+    100198: Telluropod_tooth_UpperRightA_2
+    100200: Telluropod_tooth_UpperRightB_1
+    100202: Telluropod_tooth_UpperRightB_2
+    100204: Telluropod_tooth_UpperRightC_1
+    100206: Telluropod_tooth_UpperRightC_2
+    400000: root
+    400002: //RootNode
+    400004: Telluropod_AntennaLeft_1
+    400006: Telluropod_AntennaLeft_2
+    400008: Telluropod_AntennaLeft_3
+    400010: Telluropod_AntennaLeft_4
+    400012: Telluropod_AntennaLeft_5
+    400014: Telluropod_AntennaLeft_6
+    400016: Telluropod_AntennaRight_1
+    400018: Telluropod_AntennaRight_2
+    400020: Telluropod_AntennaRight_3
+    400022: Telluropod_AntennaRight_4
+    400024: Telluropod_AntennaRight_5
+    400026: Telluropod_AntennaRight_6
+    400028: telluropod_Body
+    400030: Telluropod_Boil_Left_1
+    400032: Telluropod_Boil_Left_2
+    400034: Telluropod_Boil_Left_3
+    400036: Telluropod_Boil_Left_4
+    400038: Telluropod_Boil_Left_5
+    400040: Telluropod_Boil_Middle_1
+    400042: Telluropod_Boil_Middle_3
+    400044: Telluropod_Boil_Right_1
+    400046: Telluropod_Boil_Right_2
+    400048: Telluropod_Boil_Right_3
+    400050: Telluropod_Boil_Right_4
+    400052: Telluropod_Boil_Right_5
+    400054: Telluropod_JawLower
+    400056: Telluropod_JawUpper
+    400058: Telluropod_MandibuleLeft_1
+    400060: Telluropod_MandibuleLeft_2
+    400062: Telluropod_MandibuleLeft_3
+    400064: Telluropod_MandibuleRight_1
+    400066: Telluropod_MandibuleRight_2
+    400068: Telluropod_MandibuleRight_3
+    400070: Telluropod_TentacleFrontLeft_1
+    400072: Telluropod_TentacleFrontLeft_2
+    400074: Telluropod_TentacleFrontLeft_3
+    400076: Telluropod_TentacleFrontLeft_4
+    400078: Telluropod_TentacleFrontLeft_5
+    400080: Telluropod_TentacleFrontLeft_6
+    400082: Telluropod_TentacleFrontLeft_7
+    400084: Telluropod_TentacleFrontLeft_8
+    400086: Telluropod_TentacleFrontRight_1
+    400088: Telluropod_TentacleFrontRight_2
+    400090: Telluropod_TentacleFrontRight_3
+    400092: Telluropod_TentacleFrontRight_4
+    400094: Telluropod_TentacleFrontRight_5
+    400096: Telluropod_TentacleFrontRight_6
+    400098: Telluropod_TentacleFrontRight_7
+    400100: Telluropod_TentacleFrontRight_8
+    400102: Telluropod_TentacleRearLeft_1
+    400104: Telluropod_TentacleRearLeft_2
+    400106: Telluropod_TentacleRearLeft_3
+    400108: Telluropod_TentacleRearLeft_4
+    400110: Telluropod_TentacleRearLeft_5
+    400112: Telluropod_TentacleRearLeft_6
+    400114: Telluropod_TentacleRearLeft_7
+    400116: Telluropod_TentacleRearLeft_8
+    400118: Telluropod_TentacleRearRight_1
+    400120: Telluropod_TentacleRearRight_2
+    400122: Telluropod_TentacleRearRight_3
+    400124: Telluropod_TentacleRearRight_4
+    400126: Telluropod_TentacleRearRight_5
+    400128: Telluropod_TentacleRearRight_6
+    400130: Telluropod_TentacleRearRight_7
+    400132: Telluropod_TentacleRearRight_8
+    400134: Telluropod_Tongue_1
+    400136: Telluropod_Tongue_2
+    400138: Telluropod_Tongue_3
+    400140: Telluropod_Tongue_4
+    400142: Telluropod_Tongue_5
+    400144: Telluropod_Tongue_6
+    400146: Telluropod_Tongue_7
+    400148: Telluropod_Tongue_8
+    400150: Telluropod_Tongue_9
+    400152: Telluropod_tooth_LowerLeftA_1
+    400154: Telluropod_tooth_LowerLeftA_2
+    400156: Telluropod_tooth_LowerLeftB_1
+    400158: Telluropod_tooth_LowerLeftB_2
+    400160: Telluropod_tooth_LowerLeftC_1
+    400162: Telluropod_tooth_LowerLeftC_2
+    400164: Telluropod_tooth_LowerLeftD
+    400166: Telluropod_tooth_LowerRightA_1
+    400168: Telluropod_tooth_LowerRightA_2
+    400170: Telluropod_tooth_LowerRightB_1
+    400172: Telluropod_tooth_LowerRightB_2
+    400174: Telluropod_tooth_LowerRightC_1
+    400176: Telluropod_tooth_LowerRightC_2
+    400178: Telluropod_tooth_LowerRightD
+    400180: Telluropod_tooth_UpperLeftA_1
+    400182: Telluropod_tooth_UpperLeftA_2
+    400184: Telluropod_tooth_UpperLeftB_1
+    400186: Telluropod_tooth_UpperLeftB_2
+    400188: Telluropod_tooth_UpperLeftC_1
+    400190: Telluropod_tooth_UpperLeftC_2
+    400192: Telluropod_tooth_UpperMiddle_1
+    400194: Telluropod_tooth_UpperMiddle_2
+    400196: Telluropod_tooth_UpperRightA_1
+    400198: Telluropod_tooth_UpperRightA_2
+    400200: Telluropod_tooth_UpperRightB_1
+    400202: Telluropod_tooth_UpperRightB_2
+    400204: Telluropod_tooth_UpperRightC_1
+    400206: Telluropod_tooth_UpperRightC_2
+    7400000: Turn90Left
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 0
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Turn90Left
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: root
+        weight: 1
+      - path: root/telluropod_Body
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_AntennaLeft_1
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_AntennaLeft_1/Telluropod_AntennaLeft_2
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_AntennaLeft_1/Telluropod_AntennaLeft_2/Telluropod_AntennaLeft_3
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_AntennaLeft_1/Telluropod_AntennaLeft_2/Telluropod_AntennaLeft_3/Telluropod_AntennaLeft_4
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_AntennaLeft_1/Telluropod_AntennaLeft_2/Telluropod_AntennaLeft_3/Telluropod_AntennaLeft_4/Telluropod_AntennaLeft_5
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_AntennaLeft_1/Telluropod_AntennaLeft_2/Telluropod_AntennaLeft_3/Telluropod_AntennaLeft_4/Telluropod_AntennaLeft_5/Telluropod_AntennaLeft_6
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_AntennaRight_1
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_AntennaRight_1/Telluropod_AntennaRight_2
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_AntennaRight_1/Telluropod_AntennaRight_2/Telluropod_AntennaRight_3
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_AntennaRight_1/Telluropod_AntennaRight_2/Telluropod_AntennaRight_3/Telluropod_AntennaRight_4
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_AntennaRight_1/Telluropod_AntennaRight_2/Telluropod_AntennaRight_3/Telluropod_AntennaRight_4/Telluropod_AntennaRight_5
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_AntennaRight_1/Telluropod_AntennaRight_2/Telluropod_AntennaRight_3/Telluropod_AntennaRight_4/Telluropod_AntennaRight_5/Telluropod_AntennaRight_6
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_Boil_Left_1
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_Boil_Left_2
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_Boil_Left_3
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_Boil_Left_4
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_Boil_Left_5
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_Boil_Middle_1
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_Boil_Middle_3
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_Boil_Right_1
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_Boil_Right_2
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_Boil_Right_3
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_Boil_Right_4
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_Boil_Right_5
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_JawLower
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_JawLower/Telluropod_Tongue_1
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_JawLower/Telluropod_Tongue_1/Telluropod_Tongue_2
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_JawLower/Telluropod_Tongue_1/Telluropod_Tongue_2/Telluropod_Tongue_3
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_JawLower/Telluropod_Tongue_1/Telluropod_Tongue_2/Telluropod_Tongue_3/Telluropod_Tongue_4
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_JawLower/Telluropod_Tongue_1/Telluropod_Tongue_2/Telluropod_Tongue_3/Telluropod_Tongue_4/Telluropod_Tongue_5
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_JawLower/Telluropod_Tongue_1/Telluropod_Tongue_2/Telluropod_Tongue_3/Telluropod_Tongue_4/Telluropod_Tongue_5/Telluropod_Tongue_6
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_JawLower/Telluropod_Tongue_1/Telluropod_Tongue_2/Telluropod_Tongue_3/Telluropod_Tongue_4/Telluropod_Tongue_5/Telluropod_Tongue_6/Telluropod_Tongue_7
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_JawLower/Telluropod_Tongue_1/Telluropod_Tongue_2/Telluropod_Tongue_3/Telluropod_Tongue_4/Telluropod_Tongue_5/Telluropod_Tongue_6/Telluropod_Tongue_7/Telluropod_Tongue_8
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_JawLower/Telluropod_Tongue_1/Telluropod_Tongue_2/Telluropod_Tongue_3/Telluropod_Tongue_4/Telluropod_Tongue_5/Telluropod_Tongue_6/Telluropod_Tongue_7/Telluropod_Tongue_8/Telluropod_Tongue_9
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_JawLower/Telluropod_tooth_LowerLeftA_1
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_JawLower/Telluropod_tooth_LowerLeftA_1/Telluropod_tooth_LowerLeftA_2
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_JawLower/Telluropod_tooth_LowerLeftB_1
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_JawLower/Telluropod_tooth_LowerLeftB_1/Telluropod_tooth_LowerLeftB_2
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_JawLower/Telluropod_tooth_LowerLeftC_1
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_JawLower/Telluropod_tooth_LowerLeftC_1/Telluropod_tooth_LowerLeftC_2
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_JawLower/Telluropod_tooth_LowerLeftD
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_JawLower/Telluropod_tooth_LowerRightA_1
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_JawLower/Telluropod_tooth_LowerRightA_1/Telluropod_tooth_LowerRightA_2
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_JawLower/Telluropod_tooth_LowerRightB_1
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_JawLower/Telluropod_tooth_LowerRightB_1/Telluropod_tooth_LowerRightB_2
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_JawLower/Telluropod_tooth_LowerRightC_1
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_JawLower/Telluropod_tooth_LowerRightC_1/Telluropod_tooth_LowerRightC_2
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_JawLower/Telluropod_tooth_LowerRightD
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_JawUpper
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_JawUpper/Telluropod_MandibuleLeft_1
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_JawUpper/Telluropod_MandibuleLeft_1/Telluropod_MandibuleLeft_2
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_JawUpper/Telluropod_MandibuleLeft_1/Telluropod_MandibuleLeft_2/Telluropod_MandibuleLeft_3
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_JawUpper/Telluropod_MandibuleRight_1
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_JawUpper/Telluropod_MandibuleRight_1/Telluropod_MandibuleRight_2
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_JawUpper/Telluropod_MandibuleRight_1/Telluropod_MandibuleRight_2/Telluropod_MandibuleRight_3
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_JawUpper/Telluropod_tooth_UpperLeftA_1
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_JawUpper/Telluropod_tooth_UpperLeftA_1/Telluropod_tooth_UpperLeftA_2
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_JawUpper/Telluropod_tooth_UpperLeftB_1
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_JawUpper/Telluropod_tooth_UpperLeftB_1/Telluropod_tooth_UpperLeftB_2
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_JawUpper/Telluropod_tooth_UpperLeftC_1
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_JawUpper/Telluropod_tooth_UpperLeftC_1/Telluropod_tooth_UpperLeftC_2
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_JawUpper/Telluropod_tooth_UpperMiddle_1
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_JawUpper/Telluropod_tooth_UpperMiddle_1/Telluropod_tooth_UpperMiddle_2
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_JawUpper/Telluropod_tooth_UpperRightA_1
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_JawUpper/Telluropod_tooth_UpperRightA_1/Telluropod_tooth_UpperRightA_2
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_JawUpper/Telluropod_tooth_UpperRightB_1
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_JawUpper/Telluropod_tooth_UpperRightB_1/Telluropod_tooth_UpperRightB_2
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_JawUpper/Telluropod_tooth_UpperRightC_1
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_JawUpper/Telluropod_tooth_UpperRightC_1/Telluropod_tooth_UpperRightC_2
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_TentacleFrontLeft_1
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_TentacleFrontLeft_1/Telluropod_TentacleFrontLeft_2
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_TentacleFrontLeft_1/Telluropod_TentacleFrontLeft_2/Telluropod_TentacleFrontLeft_3
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_TentacleFrontLeft_1/Telluropod_TentacleFrontLeft_2/Telluropod_TentacleFrontLeft_3/Telluropod_TentacleFrontLeft_4
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_TentacleFrontLeft_1/Telluropod_TentacleFrontLeft_2/Telluropod_TentacleFrontLeft_3/Telluropod_TentacleFrontLeft_4/Telluropod_TentacleFrontLeft_5
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_TentacleFrontLeft_1/Telluropod_TentacleFrontLeft_2/Telluropod_TentacleFrontLeft_3/Telluropod_TentacleFrontLeft_4/Telluropod_TentacleFrontLeft_5/Telluropod_TentacleFrontLeft_6
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_TentacleFrontLeft_1/Telluropod_TentacleFrontLeft_2/Telluropod_TentacleFrontLeft_3/Telluropod_TentacleFrontLeft_4/Telluropod_TentacleFrontLeft_5/Telluropod_TentacleFrontLeft_6/Telluropod_TentacleFrontLeft_7
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_TentacleFrontLeft_1/Telluropod_TentacleFrontLeft_2/Telluropod_TentacleFrontLeft_3/Telluropod_TentacleFrontLeft_4/Telluropod_TentacleFrontLeft_5/Telluropod_TentacleFrontLeft_6/Telluropod_TentacleFrontLeft_7/Telluropod_TentacleFrontLeft_8
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_TentacleFrontRight_1
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_TentacleFrontRight_1/Telluropod_TentacleFrontRight_2
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_TentacleFrontRight_1/Telluropod_TentacleFrontRight_2/Telluropod_TentacleFrontRight_3
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_TentacleFrontRight_1/Telluropod_TentacleFrontRight_2/Telluropod_TentacleFrontRight_3/Telluropod_TentacleFrontRight_4
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_TentacleFrontRight_1/Telluropod_TentacleFrontRight_2/Telluropod_TentacleFrontRight_3/Telluropod_TentacleFrontRight_4/Telluropod_TentacleFrontRight_5
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_TentacleFrontRight_1/Telluropod_TentacleFrontRight_2/Telluropod_TentacleFrontRight_3/Telluropod_TentacleFrontRight_4/Telluropod_TentacleFrontRight_5/Telluropod_TentacleFrontRight_6
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_TentacleFrontRight_1/Telluropod_TentacleFrontRight_2/Telluropod_TentacleFrontRight_3/Telluropod_TentacleFrontRight_4/Telluropod_TentacleFrontRight_5/Telluropod_TentacleFrontRight_6/Telluropod_TentacleFrontRight_7
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_TentacleFrontRight_1/Telluropod_TentacleFrontRight_2/Telluropod_TentacleFrontRight_3/Telluropod_TentacleFrontRight_4/Telluropod_TentacleFrontRight_5/Telluropod_TentacleFrontRight_6/Telluropod_TentacleFrontRight_7/Telluropod_TentacleFrontRight_8
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_TentacleRearLeft_1
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_TentacleRearLeft_1/Telluropod_TentacleRearLeft_2
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_TentacleRearLeft_1/Telluropod_TentacleRearLeft_2/Telluropod_TentacleRearLeft_3
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_TentacleRearLeft_1/Telluropod_TentacleRearLeft_2/Telluropod_TentacleRearLeft_3/Telluropod_TentacleRearLeft_4
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_TentacleRearLeft_1/Telluropod_TentacleRearLeft_2/Telluropod_TentacleRearLeft_3/Telluropod_TentacleRearLeft_4/Telluropod_TentacleRearLeft_5
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_TentacleRearLeft_1/Telluropod_TentacleRearLeft_2/Telluropod_TentacleRearLeft_3/Telluropod_TentacleRearLeft_4/Telluropod_TentacleRearLeft_5/Telluropod_TentacleRearLeft_6
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_TentacleRearLeft_1/Telluropod_TentacleRearLeft_2/Telluropod_TentacleRearLeft_3/Telluropod_TentacleRearLeft_4/Telluropod_TentacleRearLeft_5/Telluropod_TentacleRearLeft_6/Telluropod_TentacleRearLeft_7
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_TentacleRearLeft_1/Telluropod_TentacleRearLeft_2/Telluropod_TentacleRearLeft_3/Telluropod_TentacleRearLeft_4/Telluropod_TentacleRearLeft_5/Telluropod_TentacleRearLeft_6/Telluropod_TentacleRearLeft_7/Telluropod_TentacleRearLeft_8
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_TentacleRearRight_1
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_TentacleRearRight_1/Telluropod_TentacleRearRight_2
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_TentacleRearRight_1/Telluropod_TentacleRearRight_2/Telluropod_TentacleRearRight_3
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_TentacleRearRight_1/Telluropod_TentacleRearRight_2/Telluropod_TentacleRearRight_3/Telluropod_TentacleRearRight_4
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_TentacleRearRight_1/Telluropod_TentacleRearRight_2/Telluropod_TentacleRearRight_3/Telluropod_TentacleRearRight_4/Telluropod_TentacleRearRight_5
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_TentacleRearRight_1/Telluropod_TentacleRearRight_2/Telluropod_TentacleRearRight_3/Telluropod_TentacleRearRight_4/Telluropod_TentacleRearRight_5/Telluropod_TentacleRearRight_6
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_TentacleRearRight_1/Telluropod_TentacleRearRight_2/Telluropod_TentacleRearRight_3/Telluropod_TentacleRearRight_4/Telluropod_TentacleRearRight_5/Telluropod_TentacleRearRight_6/Telluropod_TentacleRearRight_7
+        weight: 1
+      - path: root/telluropod_Body/Telluropod_TentacleRearRight_1/Telluropod_TentacleRearRight_2/Telluropod_TentacleRearRight_3/Telluropod_TentacleRearRight_4/Telluropod_TentacleRearRight_5/Telluropod_TentacleRearRight_6/Telluropod_TentacleRearRight_7/Telluropod_TentacleRearRight_8
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 1
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: root
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 67a1bc23bdfeb10428edd42707899f5a,
+    type: 3}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

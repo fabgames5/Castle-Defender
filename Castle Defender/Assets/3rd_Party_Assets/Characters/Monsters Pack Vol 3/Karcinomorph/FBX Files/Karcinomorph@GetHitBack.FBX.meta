@@ -1,0 +1,232 @@
+fileFormatVersion: 2
+guid: 21582190908ab0141ac14144806f6ddd
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Karcinomorph_AntennaLeft_1
+    100004: Karcinomorph_AntennaLeft_2
+    100006: Karcinomorph_AntennaLeft_3
+    100008: Karcinomorph_AntennaRight_1
+    100010: Karcinomorph_AntennaRight_2
+    100012: Karcinomorph_AntennaRight_3
+    100014: Karcinomorph_Body
+    100016: Karcinomorph_JawLowerLeft_1
+    100018: Karcinomorph_JawLowerLeft_2
+    100020: Karcinomorph_JawLowerRight_1
+    100022: Karcinomorph_JawLowerRight_2
+    100024: Karcinomorph_JawUpperLeft_1
+    100026: Karcinomorph_JawUpperLeft_2
+    100028: Karcinomorph_JawUpperRight_1
+    100030: Karcinomorph_JawUpperRight_2
+    100032: Karcinomorph_LegFrontLeft_1
+    100034: Karcinomorph_LegFrontLeft_2
+    100036: Karcinomorph_LegFrontLeft_3
+    100038: Karcinomorph_LegFrontLeft_4
+    100040: Karcinomorph_LegFrontLeft_5
+    100042: Karcinomorph_LegFrontRight_1
+    100044: Karcinomorph_LegFrontRight_2
+    100046: Karcinomorph_LegFrontRight_3
+    100048: Karcinomorph_LegFrontRight_4
+    100050: Karcinomorph_LegFrontRight_5
+    100052: Karcinomorph_LegMiddleLeft_1
+    100054: Karcinomorph_LegMiddleLeft_2
+    100056: Karcinomorph_LegMiddleLeft_3
+    100058: Karcinomorph_LegMiddleLeft_4
+    100060: Karcinomorph_LegMiddleLeft_5
+    100062: Karcinomorph_LegMiddleRight_1
+    100064: Karcinomorph_LegMiddleRight_3
+    100066: Karcinomorph_LegMiddleRight_4
+    100068: Karcinomorph_LegMiddleRight_5
+    100070: Karcinomorph_LegReartLeft_1
+    100072: Karcinomorph_LegReartLeft_2
+    100074: Karcinomorph_LegReartLeft_3
+    100076: Karcinomorph_LegReartLeft_4
+    100078: Karcinomorph_LegReartLeft_5
+    100080: Karcinomorph_LegReartRight_1
+    100082: Karcinomorph_LegReartRight_2
+    100084: Karcinomorph_LegReartRight_3
+    100086: Karcinomorph_LegReartRight_4
+    100088: Karcinomorph_LegReartRight_5
+    100090: Karcinomorph_LegtMiddleRight_2
+    100092: Karcinomorph_TongueLowerLeft_1
+    100094: Karcinomorph_TongueLowerLeft_2
+    100096: Karcinomorph_TongueLowerRight_1
+    100098: Karcinomorph_TongueLowerRight_2
+    100100: Karcinomorph_TongueUpperLeft_1
+    100102: Karcinomorph_TongueUpperLeft_2
+    100104: Karcinomorph_TongueUpperRight_1
+    100106: Karcinomorph_TongueUpperRight_2
+    100108: root
+    400000: //RootNode
+    400002: Karcinomorph_AntennaLeft_1
+    400004: Karcinomorph_AntennaLeft_2
+    400006: Karcinomorph_AntennaLeft_3
+    400008: Karcinomorph_AntennaRight_1
+    400010: Karcinomorph_AntennaRight_2
+    400012: Karcinomorph_AntennaRight_3
+    400014: Karcinomorph_Body
+    400016: Karcinomorph_JawLowerLeft_1
+    400018: Karcinomorph_JawLowerLeft_2
+    400020: Karcinomorph_JawLowerRight_1
+    400022: Karcinomorph_JawLowerRight_2
+    400024: Karcinomorph_JawUpperLeft_1
+    400026: Karcinomorph_JawUpperLeft_2
+    400028: Karcinomorph_JawUpperRight_1
+    400030: Karcinomorph_JawUpperRight_2
+    400032: Karcinomorph_LegFrontLeft_1
+    400034: Karcinomorph_LegFrontLeft_2
+    400036: Karcinomorph_LegFrontLeft_3
+    400038: Karcinomorph_LegFrontLeft_4
+    400040: Karcinomorph_LegFrontLeft_5
+    400042: Karcinomorph_LegFrontRight_1
+    400044: Karcinomorph_LegFrontRight_2
+    400046: Karcinomorph_LegFrontRight_3
+    400048: Karcinomorph_LegFrontRight_4
+    400050: Karcinomorph_LegFrontRight_5
+    400052: Karcinomorph_LegMiddleLeft_1
+    400054: Karcinomorph_LegMiddleLeft_2
+    400056: Karcinomorph_LegMiddleLeft_3
+    400058: Karcinomorph_LegMiddleLeft_4
+    400060: Karcinomorph_LegMiddleLeft_5
+    400062: Karcinomorph_LegMiddleRight_1
+    400064: Karcinomorph_LegMiddleRight_3
+    400066: Karcinomorph_LegMiddleRight_4
+    400068: Karcinomorph_LegMiddleRight_5
+    400070: Karcinomorph_LegReartLeft_1
+    400072: Karcinomorph_LegReartLeft_2
+    400074: Karcinomorph_LegReartLeft_3
+    400076: Karcinomorph_LegReartLeft_4
+    400078: Karcinomorph_LegReartLeft_5
+    400080: Karcinomorph_LegReartRight_1
+    400082: Karcinomorph_LegReartRight_2
+    400084: Karcinomorph_LegReartRight_3
+    400086: Karcinomorph_LegReartRight_4
+    400088: Karcinomorph_LegReartRight_5
+    400090: Karcinomorph_LegtMiddleRight_2
+    400092: Karcinomorph_TongueLowerLeft_1
+    400094: Karcinomorph_TongueLowerLeft_2
+    400096: Karcinomorph_TongueLowerRight_1
+    400098: Karcinomorph_TongueLowerRight_2
+    400100: Karcinomorph_TongueUpperLeft_1
+    400102: Karcinomorph_TongueUpperLeft_2
+    400104: Karcinomorph_TongueUpperRight_1
+    400106: Karcinomorph_TongueUpperRight_2
+    400108: root
+    7400000: GetHitBack
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 0
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: GetHitBack
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 1
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: root
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 75beee27aa6873c418042a081a9ce922,
+    type: 3}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

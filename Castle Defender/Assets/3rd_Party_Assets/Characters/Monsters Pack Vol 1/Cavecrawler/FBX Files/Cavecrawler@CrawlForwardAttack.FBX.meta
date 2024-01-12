@@ -1,0 +1,211 @@
+fileFormatVersion: 2
+guid: f8df2c3566da4264d8162c6b76b35ea3
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: CAVECRAWLER_
+    100004: CAVECRAWLER_ABDOMEN
+    100006: CAVECRAWLER_ARM_LEFT
+    100008: CAVECRAWLER_ARM_RIGHT
+    100010: CAVECRAWLER_CHEST
+    100012: CAVECRAWLER_CLAW_LEFT
+    100014: CAVECRAWLER_CLAW_RIGHT
+    100016: CAVECRAWLER_FOREARM_LEFT
+    100018: CAVECRAWLER_FOREARM_RIGHT
+    100020: CAVECRAWLER_HEAD
+    100022: CAVECRAWLER_JAW_LEFT
+    100024: CAVECRAWLER_JAW_RIGHT
+    100026: CAVECRAWLER_LEG_FRONT_LEFT_1
+    100028: CAVECRAWLER_LEG_FRONT_LEFT_2
+    100030: CAVECRAWLER_LEG_FRONT_LEFT_3
+    100032: CAVECRAWLER_LEG_FRONT_RIGHT_1
+    100034: CAVECRAWLER_LEG_FRONT_RIGHT_2
+    100036: CAVECRAWLER_LEG_FRONT_RIGHT_3
+    100038: CAVECRAWLER_LEG_MIDDLE_LEFT_1
+    100040: CAVECRAWLER_LEG_MIDDLE_LEFT_2
+    100042: CAVECRAWLER_LEG_MIDDLE_LEFT_3
+    100044: CAVECRAWLER_LEG_MIDDLE_RIGHT_1
+    100046: CAVECRAWLER_LEG_MIDDLE_RIGHT_2
+    100048: CAVECRAWLER_LEG_MIDDLE_RIGHT_3
+    100050: CAVECRAWLER_LEG_REAR_LEFT_1
+    100052: CAVECRAWLER_LEG_REAR_LEFT_2
+    100054: CAVECRAWLER_LEG_REAR_LEFT_3
+    100056: CAVECRAWLER_LEG_REAR_RIGHT_1
+    100058: CAVECRAWLER_LEG_REAR_RIGHT_2
+    100060: CAVECRAWLER_LEG_REAR_RIGHT_3
+    100062: CAVECRAWLER_MANDIBULE_LEFT_1
+    100064: CAVECRAWLER_MANDIBULE_LEFT_2
+    100066: CAVECRAWLER_MANDIBULE_RIGHT_1
+    100068: CAVECRAWLER_MANDIBULE_RIGHT_2
+    100070: CAVECRAWLER_MUSTACHE_LEFT_1
+    100072: CAVECRAWLER_MUSTACHE_LEFT_2
+    100074: CAVECRAWLER_MUSTACHE_LEFT_3
+    100076: CAVECRAWLER_MUSTACHE_RIGHT_1
+    100078: CAVECRAWLER_MUSTACHE_RIGHT_2
+    100080: CAVECRAWLER_MUSTACHE_RIGHT_3
+    100082: CAVECRAWLER_THORAX
+    100084: CAVECRAWLER_ROOT_
+    100086: root
+    400000: //RootNode
+    400002: CAVECRAWLER_
+    400004: CAVECRAWLER_ABDOMEN
+    400006: CAVECRAWLER_ARM_LEFT
+    400008: CAVECRAWLER_ARM_RIGHT
+    400010: CAVECRAWLER_CHEST
+    400012: CAVECRAWLER_CLAW_LEFT
+    400014: CAVECRAWLER_CLAW_RIGHT
+    400016: CAVECRAWLER_FOREARM_LEFT
+    400018: CAVECRAWLER_FOREARM_RIGHT
+    400020: CAVECRAWLER_HEAD
+    400022: CAVECRAWLER_JAW_LEFT
+    400024: CAVECRAWLER_JAW_RIGHT
+    400026: CAVECRAWLER_LEG_FRONT_LEFT_1
+    400028: CAVECRAWLER_LEG_FRONT_LEFT_2
+    400030: CAVECRAWLER_LEG_FRONT_LEFT_3
+    400032: CAVECRAWLER_LEG_FRONT_RIGHT_1
+    400034: CAVECRAWLER_LEG_FRONT_RIGHT_2
+    400036: CAVECRAWLER_LEG_FRONT_RIGHT_3
+    400038: CAVECRAWLER_LEG_MIDDLE_LEFT_1
+    400040: CAVECRAWLER_LEG_MIDDLE_LEFT_2
+    400042: CAVECRAWLER_LEG_MIDDLE_LEFT_3
+    400044: CAVECRAWLER_LEG_MIDDLE_RIGHT_1
+    400046: CAVECRAWLER_LEG_MIDDLE_RIGHT_2
+    400048: CAVECRAWLER_LEG_MIDDLE_RIGHT_3
+    400050: CAVECRAWLER_LEG_REAR_LEFT_1
+    400052: CAVECRAWLER_LEG_REAR_LEFT_2
+    400054: CAVECRAWLER_LEG_REAR_LEFT_3
+    400056: CAVECRAWLER_LEG_REAR_RIGHT_1
+    400058: CAVECRAWLER_LEG_REAR_RIGHT_2
+    400060: CAVECRAWLER_LEG_REAR_RIGHT_3
+    400062: CAVECRAWLER_MANDIBULE_LEFT_1
+    400064: CAVECRAWLER_MANDIBULE_LEFT_2
+    400066: CAVECRAWLER_MANDIBULE_RIGHT_1
+    400068: CAVECRAWLER_MANDIBULE_RIGHT_2
+    400070: CAVECRAWLER_MUSTACHE_LEFT_1
+    400072: CAVECRAWLER_MUSTACHE_LEFT_2
+    400074: CAVECRAWLER_MUSTACHE_LEFT_3
+    400076: CAVECRAWLER_MUSTACHE_RIGHT_1
+    400078: CAVECRAWLER_MUSTACHE_RIGHT_2
+    400080: CAVECRAWLER_MUSTACHE_RIGHT_3
+    400082: CAVECRAWLER_THORAX
+    400084: CAVECRAWLER_ROOT_
+    400086: root
+    7400000: CrawlForwardAttack
+    9500000: //RootNode
+    11100000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 0
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: CrawlForwardAttack
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 1
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: root
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: b598a6d6e366c2b4697923164327b18d,
+    type: 3}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
