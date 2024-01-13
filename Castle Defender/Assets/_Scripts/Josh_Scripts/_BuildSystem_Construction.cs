@@ -71,13 +71,15 @@ public class _BuildSystem_Construction : MonoBehaviour
         if (getBuildingData)
         {
             getBuildingData = false;
-            mesh = GetComponent<MeshFilter>().sharedMesh;          
+            mesh = GetComponent<MeshFilter>().sharedMesh;
+            mesh.RecalculateBounds();
             boundingBox = mesh.bounds;
             meshCollider = gameObject.GetComponent<MeshCollider>();
             if (meshCollider == null)
             {
                 meshCollider = gameObject.AddComponent<MeshCollider>();
             }
+
 
             boxCollider = gameObject.GetComponent<BoxCollider>();
             {
@@ -170,18 +172,18 @@ public class _BuildSystem_Construction : MonoBehaviour
             }
 
             //this.Actor.AddScript<_BuildSystem_Building>();
-        }
+        }       
+    }
 
-        void OnDrawGizmos()
+    void OnDrawGizmosSelected()
+    {
+        if (showbox)
         {
-            if (showbox)
-            {
-                Gizmos.color = Color.red;
-                Gizmos.DrawWireCube(boundingBox.center, boundingBox.size);
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireCube(boundingBox.center, boundingBox.size);
 
-                // Debug..DrawWireBox(Actor.Box, Color.Red, 1 / 60, true);
-                // Debug.Log("Draw Bounding Box...");
-            }
+            // Debug..DrawWireBox(Actor.Box, Color.Red, 1 / 60, true);
+            Debug.Log("Draw Bounding Box...");
         }
     }
 }
