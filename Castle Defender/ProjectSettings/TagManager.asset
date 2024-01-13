@@ -24,10 +24,10 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
+  - Terrain
+  - Building
+  - ConnectionPoint
+  - placingBuilding
   - 
   - 
   - 
