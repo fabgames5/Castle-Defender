@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6662688336047848570}
   - component: {fileID: 4368029422083065203}
   - component: {fileID: 4563451882825383475}
-  m_Layer: 0
+  m_Layer: 21
   m_Name: ConnectionPointSphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -123,4 +123,5 @@ MonoBehaviour:
     m_Bits: 5767223
   _collider: {fileID: 0}
   parentBuilding: {fileID: 0}
+  isConnected: 0
   cols: []

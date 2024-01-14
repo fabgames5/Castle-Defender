@@ -19,11 +19,11 @@ public class AgentMoveTo : MonoBehaviour
     {
         surface.BuildNavMesh();
 
-        agent = this.gameObject.GetComponent<NavMeshAgent>();
+       
         if (updateSpeed > 0)
         {
             usingInvoke = true;
-            InvokeRepeating("SetAgentDestination", updateSpeed, updateSpeed);
+            InvokeRepeating("SetAgentDestination", updateSpeed *8, updateSpeed);
         }
     }
     private void OnDisable()
@@ -46,6 +46,14 @@ public class AgentMoveTo : MonoBehaviour
 
     public void SetAgentDestination()
     {
+        if (agent == null)
+        {
+            agent = this.gameObject.GetComponent<NavMeshAgent>();
+            if (agent.enabled == false)
+            {
+                agent.enabled = true;
+            }
+        }
         agent.SetDestination(target.position);
     }
 }
