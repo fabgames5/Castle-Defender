@@ -120,7 +120,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   connectionLayer:
     serializedVersion: 2
-    m_Bits: 5767223
+    m_Bits: 55
   _collider: {fileID: 0}
   parentBuilding: {fileID: 0}
   isConnected: 0
