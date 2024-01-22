@@ -52,7 +52,7 @@ MonoBehaviour:
   rotationDeceleration: 5
   zoomSpeed: 10
   maxBounds: {x: 1000, y: 1000}
-  minZoom: 1
+  minZoom: 1.5
   maxZoom: 90
   zoomVelocity: 0
   zoomDeceleration: 5
