@@ -16,6 +16,7 @@ TagManager:
   - Enemy
   - Distractable
   - CoverTrigger
+  - CinemachineTarget
   layers:
   - Default
   - TransparentFX
