@@ -28,7 +28,7 @@ public class _BuildSystem_Connection : MonoBehaviour
 
             for (int i = 0; i < hit.Length; i++)
             {
-                //     Debug.Log(hit[i].Name + ".......");
+              //  Debug.Log(hit[i].gameObject.name + ".......");
 
                 cols.Add(hit[i]);
                 for (int j = 0; j < parentBuilding.GetComponent<_BuildSystem_Construction>().spherePoints.Count; j++)

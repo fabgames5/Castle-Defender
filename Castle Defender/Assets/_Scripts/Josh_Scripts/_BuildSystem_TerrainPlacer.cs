@@ -12,13 +12,15 @@ public class _BuildSystem_TerrainPlacer : MonoBehaviour
 
     [Tooltip("Set this to True, for placing objects ")]
     public bool placeobjectMousePos = false;
+    [Tooltip("if true rotating buildings is based on mouse wheel else its based on Q,E")]
+    public bool useMouseScrollToRotate = false;
     [Space(5)]
     [Tooltip("Add Terrain here")]
     public Terrain terrain;
    // [Tooltip("Add NavMesh Setup script here")]
   //  public NavmeshSetup navMeshSetup;
-    [Tooltip("Select all layers that should be ignored while placing buildings, Note: Terrain and buildings must not be checked")]
-    public LayerMask layersMaskIgnore = new LayerMask();
+    [Tooltip("Select the Terrain layer")]
+    public LayerMask terrainLayer = new LayerMask();
     [Tooltip("Select only the Placing Layer, only one layer can be selected")]
     public LayerMask placingLayer = new LayerMask();
     private int placingLayerRef = -1;
@@ -69,9 +71,10 @@ public class _BuildSystem_TerrainPlacer : MonoBehaviour
     [Space(5)]
    // public UIControl uiControl;
     public GameObject uiThumbnailPrefab;
-  //  public UIControl uiVerticalRight;
+    //  public UIControl uiVerticalRight;
 
     //private
+    [SerializeField]
     private GameObject newPrefab;
    // private Material[] slots = new Material[0];
    // private Material[] materialInstances;
@@ -153,22 +156,46 @@ public class _BuildSystem_TerrainPlacer : MonoBehaviour
         //  Debug.Log(Input.MouseScrollDelta + " Mouse Scroll Delta");
 
         //mouse scroll middle only y is used
-        if (Input.mouseScrollDelta.y < 0)
+        if (useMouseScrollToRotate)
         {
-            prefabRot += rotatonAmount;
-            if (prefabRot >= 360)
+            if (Input.mouseScrollDelta.y < 0)
             {
-                prefabRot = -360 + prefabRot;
+                prefabRot += rotatonAmount;
+                if (prefabRot >= 360)
+                {
+                    prefabRot = -360 + prefabRot;
+                }
+            }
+
+            //mouse scroll middle only y is used
+            if (Input.mouseScrollDelta.y > 0)
+            {
+                prefabRot -= rotatonAmount;
+                if (prefabRot <= -360)
+                {
+                    prefabRot = 360 + prefabRot;
+                }
             }
         }
-
-        //mouse scroll middle only y is used
-        if (Input.mouseScrollDelta.y > 0)
+        //building rotation based on Q,E
+        else
         {
-            prefabRot -= rotatonAmount;
-            if (prefabRot <= -360)
+            if (Input.GetKeyUp(KeyCode.Q))
             {
-                prefabRot = 360 + prefabRot;
+                prefabRot += rotatonAmount;
+                if (prefabRot >= 360)
+                {
+                    prefabRot = -360 + prefabRot;
+                }
+            }
+
+            if (Input.GetKeyUp(KeyCode.E))
+            {
+                prefabRot -= rotatonAmount;
+                if (prefabRot <= -360)
+                {
+                    prefabRot = 360 + prefabRot;
+                }
             }
         }
 
@@ -192,11 +219,11 @@ public class _BuildSystem_TerrainPlacer : MonoBehaviour
                     mouseLocation = Input.mousePosition;                                    
                     var ray = Camera.main.ScreenPointToRay(mouseLocation);
                     RaycastHit hit;
-                    if (Physics.Raycast(ray.origin, ray.direction,out hit,2000, layersMaskIgnore ,QueryTriggerInteraction.Ignore))
+                    if (Physics.Raycast(ray.origin, ray.direction,out hit,2000, terrainLayer ,QueryTriggerInteraction.Ignore))
                     {
                         if (hit.collider == terrain.GetComponent<Collider>())
                         {
-               //             Debug.Log("Hit Terrain");
+                            Debug.Log("Hit Terrain");
                             // get Json asset..
                             //var building = (JBR_Building_Resources.BuildingResources)buildingsJsons[prefabRef].Instance;
 
@@ -275,12 +302,12 @@ public class _BuildSystem_TerrainPlacer : MonoBehaviour
                 }
 
                 // while mouse button is still down 
-                if (Input.GetMouseButton(1))
+                if (Input.GetMouseButton(1) && newPrefab != null)
                 {
                     mouseLocation = Input.mousePosition;
                     var ray = Camera.main.ScreenPointToRay(mouseLocation);
                     RaycastHit hit;
-                    if (Physics.Raycast(ray.origin, ray.direction, out hit, 2000, layersMaskIgnore, QueryTriggerInteraction.Ignore))
+                    if (Physics.Raycast(ray.origin, ray.direction, out hit, 2000, terrainLayer, QueryTriggerInteraction.Ignore))
                     {
                         if (hit.collider == terrain.GetComponent<Collider>())
                         {
@@ -336,7 +363,7 @@ public class _BuildSystem_TerrainPlacer : MonoBehaviour
                     }
                 }
 
-                if (Input.GetMouseButtonUp(1))
+                if (Input.GetMouseButtonUp(1) && newPrefab != null)
                 {
                     if (isConnected || placedBuildings.Count <= 0)
                     {
@@ -382,7 +409,7 @@ public class _BuildSystem_TerrainPlacer : MonoBehaviour
 
     public void SetConnection(bool canConnect)
     {
-        Debug.Log("Connected >>>>>>>>>>>>>");
+    //    Debug.Log("Connected >>>>>>>>>>>>>");
         isConnected = canConnect;
     }
 

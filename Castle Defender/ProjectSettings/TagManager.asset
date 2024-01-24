@@ -17,6 +17,7 @@ TagManager:
   - Distractable
   - CoverTrigger
   - CinemachineTarget
+  - Terrain
   layers:
   - Default
   - TransparentFX
@@ -38,9 +39,9 @@ TagManager:
   - Trigger
   - TaskAtlas
   - 
-  - 
-  - 
-  - 
+  - Building
+  - ConnectionPoint
+  - PlacingBuilding
   - 
   - 
   - 

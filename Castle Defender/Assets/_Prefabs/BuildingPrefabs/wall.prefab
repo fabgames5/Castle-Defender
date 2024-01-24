@@ -104,7 +104,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   setBuildingData: 0
   flip_Y_Z_axis: 1
-  placementPointPrefab: {fileID: 7177773458430976785, guid: 6051e6572be699e4b93af38bab88f5b8, type: 3}
+  placementPointPrefab: {fileID: 7177773458430976785, guid: 6051e6572be699e4b93af38bab88f5b8,
+    type: 3}
   placementScale: {x: 1, y: 1, z: 1}
   placeFront: 1
   offsetForward: {x: 0, y: 0.01574534, z: 0}
@@ -319,7 +320,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   connectionLayer:
     serializedVersion: 2
-    m_Bits: 5767223
+    m_Bits: 5766967
   _collider: {fileID: 0}
   parentBuilding: {fileID: 75383044721712493}
   isConnected: 0
@@ -444,7 +445,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   connectionLayer:
     serializedVersion: 2
-    m_Bits: 5767223
+    m_Bits: 5766967
   _collider: {fileID: 0}
   parentBuilding: {fileID: 75383044721712493}
   isConnected: 0
@@ -569,7 +570,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   connectionLayer:
     serializedVersion: 2
-    m_Bits: 5767223
+    m_Bits: 5766967
   _collider: {fileID: 0}
   parentBuilding: {fileID: 75383044721712493}
   isConnected: 0
