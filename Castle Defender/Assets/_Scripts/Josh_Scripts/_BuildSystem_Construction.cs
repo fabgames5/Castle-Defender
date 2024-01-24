@@ -99,6 +99,7 @@ public class _BuildSystem_Construction : MonoBehaviour
     [HideInInspector]
     public bool isPlacing = false;
     public _BuildSystem_TerrainPlacer terrainPlacer;
+    public int prefabRefID = -1;
     //  private _BuildSystem_Building building;
     
     // Update is called once per frame

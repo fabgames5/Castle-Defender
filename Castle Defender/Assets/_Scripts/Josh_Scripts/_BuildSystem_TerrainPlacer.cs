@@ -235,6 +235,7 @@ public class _BuildSystem_TerrainPlacer : MonoBehaviour
 
                             newPrefab.GetComponent<_BuildSystem_Construction>().isPlacing = true;
                             newPrefab.GetComponent<_BuildSystem_Construction>().terrainPlacer = this;
+                            newPrefab.GetComponent<_BuildSystem_Construction>().prefabRefID = prefabRef;
 
                             rots = newPrefab.GetComponent<_BuildSystem_Construction>().localEulerRotations;
                             newPrefab.transform.localEulerAngles = new Vector3(rots.x, rots.y + prefabRot, rots.z);
