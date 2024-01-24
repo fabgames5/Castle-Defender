@@ -126,6 +126,185 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &393297788 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1005806008958709862, guid: 24482ef7632aa6042b45735370df80ec,
+    type: 3}
+  m_PrefabInstance: {fileID: 1987818296}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &393297791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 393297788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ab99fe2df4c36145a26b0b9727d1bc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  componentName: Block
+  enabledBehavior: 1
+  forceUpdate: 0
+  forceFixedUpdate: 0
+  forceSlowUpdate: 0
+  behaviorActivators:
+  - trigger: 1
+    triggerRange: 0
+    triggerIsTrue: 0
+    OncePerEvent: 0
+    activationCooldown: 0
+    lastTime: 0
+    hasChanged: 0
+  - trigger: 13
+    triggerRange: 0
+    triggerIsTrue: 0
+    OncePerEvent: 0
+    activationCooldown: 0
+    lastTime: 0
+    hasChanged: 0
+  animationSet: []
+  animationOverRideClipName: Throw
+  forceBehaviour: 0
+  playRandomAnimationClip: 0
+  playAllAnimationClips: 0
+  randomClipRef: -1
+  audioClips: []
+  playRandomAudioClip: 0
+  OnEnterBehaviorEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnExitBehaviorEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_AI_Controller: {fileID: 0}
+  m_AI_Agent: {fileID: 0}
+  m_AI_Animator: {fileID: 0}
+  m_AI_AudioSource: {fileID: 0}
+  timer: 0
+  playRandomSounds: 0
+  randomTimeSpacing: 5
+  AnimationLayer: 0
+  updateHeight: 0
+  ai_BodyRoot: {fileID: 0}
+  moveUp: 0
+  flyheight: 3
+--- !u!114 &393297792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 393297788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fa439d4891427746af02966294f1ca5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeBehavior: 
+  slowUpdate: 1
+  groundLayerMasks:
+    serializedVersion: 2
+    m_Bits: 2049
+  behaviorNames: []
+  behavior: []
+  isTrigger1: 0
+  isTrigger2: 0
+  isGrounded: 0
+  isIdle: 0
+  isFalling: 0
+  isDead: 0
+  isWandering: 0
+  isAttacking: 0
+  isDefending: 0
+  canSeeTarget: 0
+  canHearTarget: 0
+  behaviourTimer: 0
+  currentHealth: 0
+  maxHealth: 100
+  mask:
+    serializedVersion: 2
+    m_Bits: 0
+  targetTags:
+  - Player
+  - NPC
+  canHaveTarget: 0
+  currentTarget: {fileID: 0}
+  distanceToTarget: 0
+  damageTaken: 0
+  damageGiven: 0
+  time: 0
+  OnHealthChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  OnControllerDied:
+    m_PersistentCalls:
+      m_Calls: []
+  OnDamageChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  OnTargetChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  OnDistanceChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  OnSeeTargetChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  OnHearTargetChanged:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!54 &393297793
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 393297788}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!195 &393297794
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 393297788}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.25
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 1.75
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &542508511
 GameObject:
   m_ObjectHideFlags: 0
@@ -1513,6 +1692,90 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f7f3dde7ae722a4aafffe20691ad702, type: 3}
+--- !u!1001 &1987818296
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1005806008958217286, guid: 24482ef7632aa6042b45735370df80ec,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 14.222781
+      objectReference: {fileID: 0}
+    - target: {fileID: 1005806008958217286, guid: 24482ef7632aa6042b45735370df80ec,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.31086826
+      objectReference: {fileID: 0}
+    - target: {fileID: 1005806008958217286, guid: 24482ef7632aa6042b45735370df80ec,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 14.725654
+      objectReference: {fileID: 0}
+    - target: {fileID: 1005806008958217286, guid: 24482ef7632aa6042b45735370df80ec,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1005806008958217286, guid: 24482ef7632aa6042b45735370df80ec,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1005806008958217286, guid: 24482ef7632aa6042b45735370df80ec,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1005806008958217286, guid: 24482ef7632aa6042b45735370df80ec,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1005806008958217286, guid: 24482ef7632aa6042b45735370df80ec,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1005806008958217286, guid: 24482ef7632aa6042b45735370df80ec,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1005806008958217286, guid: 24482ef7632aa6042b45735370df80ec,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1005806008958709862, guid: 24482ef7632aa6042b45735370df80ec,
+        type: 3}
+      propertyPath: m_Name
+      value: SkeletonKnight_PBR
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1005806008958709862, guid: 24482ef7632aa6042b45735370df80ec,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 393297794}
+    - targetCorrespondingSourceObject: {fileID: 1005806008958709862, guid: 24482ef7632aa6042b45735370df80ec,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 393297793}
+    - targetCorrespondingSourceObject: {fileID: 1005806008958709862, guid: 24482ef7632aa6042b45735370df80ec,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 393297792}
+    - targetCorrespondingSourceObject: {fileID: 1005806008958709862, guid: 24482ef7632aa6042b45735370df80ec,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 393297791}
+  m_SourcePrefab: {fileID: 100100000, guid: 24482ef7632aa6042b45735370df80ec, type: 3}
 --- !u!1 &2114283753834967212
 GameObject:
   m_ObjectHideFlags: 0
@@ -1643,6 +1906,696 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2114283753834967213}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!95 &6860530972546814805
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6860530972554076311}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: a9d978931c8237341b11b6350511c1c9, type: 3}
+  m_Controller: {fileID: 9100000, guid: 44d14a8ce3bfe6747a414fa4fd133a22, type: 2}
+  m_CullingMode: 1
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!4 &6860530972553723063
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6860530972554076311}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.9663642, z: -0, w: 0.25717753}
+  m_LocalPosition: {x: 12.564739, y: 0.44, z: 14.8132515}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 150.195, z: 0}
+--- !u!114 &6860530972554076298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6860530972554076311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ab99fe2df4c36145a26b0b9727d1bc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  componentName: Dead
+  enabledBehavior: 1
+  forceUpdate: 0
+  forceFixedUpdate: 0
+  forceSlowUpdate: 0
+  behaviorActivators:
+  - trigger: 19
+    triggerRange: 1
+    triggerIsTrue: 0
+    OncePerEvent: 0
+    activationCooldown: 0
+    lastTime: -1
+    hasChanged: 1
+  animationSet:
+  - {fileID: -203655887218126122, guid: 5ed955a462239e847b55030ea35f185d, type: 3}
+  animationOverRideClipName: Throw
+  forceBehaviour: 1
+  playRandomAnimationClip: 0
+  playAllAnimationClips: 0
+  randomClipRef: -1
+  audioClips:
+  - {fileID: 8300000, guid: d143daeec119dca4d87b8930c8c03341, type: 3}
+  - {fileID: 8300000, guid: 8a44344c70e523d4493c05466ce257de, type: 3}
+  - {fileID: 8300000, guid: 2b4a4cd9e8823704e8fa4c9c526da671, type: 3}
+  playRandomAudioClip: 1
+  OnEnterBehaviorEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnExitBehaviorEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6860530973473389718}
+        m_TargetAssemblyTypeName: JBR_AI_ControllerSystem, Assembly-CSharp
+        m_MethodName: Die
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_AI_Controller: {fileID: 0}
+  m_AI_Agent: {fileID: 0}
+  m_AI_Animator: {fileID: 0}
+  m_AI_AudioSource: {fileID: 0}
+  timer: 0
+  playRandomSounds: 0
+  randomTimeSpacing: 5
+  AnimationLayer: 0
+  updateHeight: 0
+  ai_BodyRoot: {fileID: 0}
+  moveUp: 0
+  flyheight: 3
+--- !u!114 &6860530972554076299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6860530972554076311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ab99fe2df4c36145a26b0b9727d1bc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  componentName: RandomSounds
+  enabledBehavior: 1
+  forceUpdate: 1
+  forceFixedUpdate: 0
+  forceSlowUpdate: 0
+  behaviorActivators: []
+  animationSet: []
+  animationOverRideClipName: 
+  forceBehaviour: 0
+  playRandomAnimationClip: 0
+  playAllAnimationClips: 0
+  randomClipRef: -1
+  audioClips:
+  - {fileID: 8300000, guid: ec510d02168d0064fa28d40fa4646ff9, type: 3}
+  - {fileID: 8300000, guid: a96cba00b73314b4d86eff48f537da51, type: 3}
+  - {fileID: 8300000, guid: 3844ee5372991624ab179ebae498fd8a, type: 3}
+  - {fileID: 8300000, guid: 690cbe546cad6bb43a68fa050560dbf0, type: 3}
+  - {fileID: 8300000, guid: dfb0cf8d09bc1b148b41f4b0126334e4, type: 3}
+  - {fileID: 8300000, guid: 2bc0269b4b991b34c8430eca7add5b5b, type: 3}
+  - {fileID: 8300000, guid: d505d56ead6385a4680790e240d7ee0c, type: 3}
+  - {fileID: 8300000, guid: 0465c7ef048731a43a27713674bf6c62, type: 3}
+  - {fileID: 8300000, guid: df0d8e323c203d943ad903d3b95b5c87, type: 3}
+  - {fileID: 8300000, guid: 9e0bde38a4af7534db0561b0427b8b99, type: 3}
+  - {fileID: 8300000, guid: 088adcf3b1f281c4d97e058381875c05, type: 3}
+  - {fileID: 8300000, guid: 1ef44cbb4d00f7b42ab065e789f50ebc, type: 3}
+  - {fileID: 8300000, guid: 72e824d1b733ad7459b38adf3fbff023, type: 3}
+  - {fileID: 8300000, guid: 0f6770c173e5c684abe36f56d9e637ed, type: 3}
+  - {fileID: 8300000, guid: 7aca607999528b44a8ee1fad294f34ba, type: 3}
+  - {fileID: 8300000, guid: 24beda8ddce91604aa93247f69a94fc8, type: 3}
+  - {fileID: 8300000, guid: 2b8c4472d9953fd4d9edeb0803a9c231, type: 3}
+  - {fileID: 8300000, guid: 23aba3a81f0dc7445978a847be75949f, type: 3}
+  - {fileID: 8300000, guid: 1fc27e9aef0302f49a117ba60db422f5, type: 3}
+  - {fileID: 8300000, guid: ef9f814f478b76642b4c9743c6869a4d, type: 3}
+  - {fileID: 8300000, guid: 5a0b8c0dab3c29d40828295af4562aa7, type: 3}
+  - {fileID: 8300000, guid: 0cec5fb1395b2554cb7e52a074c905dd, type: 3}
+  - {fileID: 8300000, guid: 2f7803d56c9e0914aa7a6ab3c9ee0b32, type: 3}
+  - {fileID: 8300000, guid: 474214231b9a7d14da62e7f9d4aabad4, type: 3}
+  - {fileID: 8300000, guid: 6f3f61ae0f3bec0479d70a4cbee5f39f, type: 3}
+  - {fileID: 8300000, guid: 7db421a6b9b1c324b90bbc8720c8e6cd, type: 3}
+  - {fileID: 8300000, guid: e969783a8e1185940b6d022a942ea6b6, type: 3}
+  - {fileID: 8300000, guid: 3fb6927368a25e1469e8f4c087e6bd90, type: 3}
+  - {fileID: 8300000, guid: 2145a7e927a47eb479cdaec86f231ca4, type: 3}
+  - {fileID: 8300000, guid: b9055382027423b4387dba34620e87d4, type: 3}
+  - {fileID: 8300000, guid: ff5ceef974f56cc43987535a6e9a2eaa, type: 3}
+  - {fileID: 8300000, guid: e68045d07c1d5694d864ff572d0e940c, type: 3}
+  - {fileID: 8300000, guid: a6c110dcef169cf4382dd4e91f742134, type: 3}
+  - {fileID: 8300000, guid: 0fc7be370e2cb6e4bbe41d47006a5f4c, type: 3}
+  - {fileID: 8300000, guid: d601fba7e6e5a4e49bc9afa238302ca3, type: 3}
+  - {fileID: 8300000, guid: 80b7797ef9b213c488e5ac1526ad65e4, type: 3}
+  - {fileID: 8300000, guid: df0a5a74bafd3154fb531bd0502bf126, type: 3}
+  - {fileID: 8300000, guid: 6640698cc56789f4fbc7ae35e4938b47, type: 3}
+  - {fileID: 8300000, guid: c7c6904cdbcdb8e46acd9d9a0fc5552d, type: 3}
+  - {fileID: 8300000, guid: 25db30254b8a6904f9998ef748a99363, type: 3}
+  - {fileID: 8300000, guid: f97e7b2655b8d3a41bb380de02908c0f, type: 3}
+  - {fileID: 8300000, guid: 0233bd884c5374745a1b3bc1429e943d, type: 3}
+  - {fileID: 8300000, guid: 47aa4efb50fdaef45bc2154685b95650, type: 3}
+  - {fileID: 8300000, guid: 70f92264e7fc0e646833e6e0c7c41796, type: 3}
+  - {fileID: 8300000, guid: 1640235c25c32c84fa85828280581112, type: 3}
+  - {fileID: 8300000, guid: 2af6fe0d2b445ad46a310fafdf0150b2, type: 3}
+  - {fileID: 8300000, guid: 1f9f3fa3376633d479172362b188d27f, type: 3}
+  - {fileID: 8300000, guid: b2a3b868cc2d7654e82ced0e3af53785, type: 3}
+  - {fileID: 8300000, guid: 27785b25e79dc714782ef6e9e7c57ca3, type: 3}
+  playRandomAudioClip: 1
+  OnEnterBehaviorEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnExitBehaviorEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_AI_Controller: {fileID: 0}
+  m_AI_Agent: {fileID: 0}
+  m_AI_Animator: {fileID: 0}
+  m_AI_AudioSource: {fileID: 0}
+  timer: 0
+  playRandomSounds: 1
+  randomTimeSpacing: 5
+  AnimationLayer: 0
+  updateHeight: 0
+  ai_BodyRoot: {fileID: 0}
+  moveUp: 0
+  flyheight: 3
+--- !u!114 &6860530972554076308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6860530972554076311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2be5d28a6299f90408566e0bf5914608, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  componentName: JBR_Attack
+  enabledBehavior: 1
+  forceUpdate: 0
+  forceFixedUpdate: 0
+  forceSlowUpdate: 0
+  behaviorActivators:
+  - trigger: 11
+    triggerRange: 2
+    triggerIsTrue: 0
+    OncePerEvent: 0
+    activationCooldown: 0
+    lastTime: -1
+    hasChanged: 1
+  - trigger: 12
+    triggerRange: 0.5
+    triggerIsTrue: 0
+    OncePerEvent: 0
+    activationCooldown: 0
+    lastTime: -1
+    hasChanged: 1
+  - trigger: 7
+    triggerRange: 0.5
+    triggerIsTrue: 1
+    OncePerEvent: 0
+    activationCooldown: 0
+    lastTime: -1
+    hasChanged: 1
+  animationSet:
+  - {fileID: -203655887218126122, guid: a9d978931c8237341b11b6350511c1c9, type: 3}
+  - {fileID: -203655887218126122, guid: a9d978931c8237341b11b6350511c1c9, type: 3}
+  - {fileID: -203655887218126122, guid: 3a6f3d0e5929eae4da21bad95903471d, type: 3}
+  animationOverRideClipName: Throw
+  forceBehaviour: 0
+  playRandomAnimationClip: 0
+  playAllAnimationClips: 0
+  randomClipRef: -1
+  audioClips:
+  - {fileID: 8300000, guid: 81c1e07af3dafe24cbeebf436d021aa5, type: 3}
+  - {fileID: 8300000, guid: 8399339799340124ebbe369dc520e53e, type: 3}
+  - {fileID: 8300000, guid: 674901a33d03a074fbb1bc2c0719c033, type: 3}
+  - {fileID: 8300000, guid: 726070a84718c1c4dbeab545edbbe1ab, type: 3}
+  - {fileID: 8300000, guid: ebbcb299d9cd5c64daff8d02d4a28009, type: 3}
+  - {fileID: 8300000, guid: b1d3a91bbc1305d4787b2accaa1003ef, type: 3}
+  - {fileID: 8300000, guid: 126a4ad73d1c02e439c3d532cc871b9e, type: 3}
+  playRandomAudioClip: 1
+  OnEnterBehaviorEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SendMessage
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Attacking
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnExitBehaviorEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SendMessageUpwards
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: EndAttack
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_AI_Controller: {fileID: 0}
+  m_AI_Agent: {fileID: 0}
+  m_AI_Animator: {fileID: 0}
+  m_AI_AudioSource: {fileID: 0}
+  weaponType: 0
+  weaponActiveDelay: 0
+  weapons:
+  - {fileID: 0}
+  - {fileID: 0}
+  AnimationLayer: 0
+--- !u!114 &6860530972554076309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6860530972554076311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ab99fe2df4c36145a26b0b9727d1bc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  componentName: Scream
+  enabledBehavior: 1
+  forceUpdate: 0
+  forceFixedUpdate: 0
+  forceSlowUpdate: 0
+  behaviorActivators:
+  - trigger: 7
+    triggerRange: -1
+    triggerIsTrue: 1
+    OncePerEvent: 0
+    activationCooldown: 0
+    lastTime: -1
+    hasChanged: 1
+  - trigger: 6
+    triggerRange: -1
+    triggerIsTrue: 1
+    OncePerEvent: 1
+    activationCooldown: 0
+    lastTime: -1
+    hasChanged: 1
+  animationSet:
+  - {fileID: -203655887218126122, guid: e7bbf07e61dfbd7409747452ed603e5d, type: 3}
+  animationOverRideClipName: Throw
+  forceBehaviour: 0
+  playRandomAnimationClip: 0
+  playAllAnimationClips: 0
+  randomClipRef: -1
+  audioClips:
+  - {fileID: 8300000, guid: f4af3a60ab2da31469fc4a18f97fce1e, type: 3}
+  - {fileID: 8300000, guid: 9089a8dd737bc844da833f08c7ea524d, type: 3}
+  - {fileID: 8300000, guid: a9e807cb828737e40a5739b7315e10af, type: 3}
+  - {fileID: 8300000, guid: 9abba6e2dd9e4c344b6d6fefd632be78, type: 3}
+  - {fileID: 8300000, guid: f1807a916c554964cb369d1dd9df7164, type: 3}
+  - {fileID: 8300000, guid: dbdaefb181e910b46814670819725947, type: 3}
+  - {fileID: 8300000, guid: 61a6ed5b4c2467a48894b19df9583130, type: 3}
+  - {fileID: 8300000, guid: b354fd6cc4c064744878d4a3e311dd83, type: 3}
+  - {fileID: 8300000, guid: 1bef173780a389b44ab74f2b80a1d2fc, type: 3}
+  - {fileID: 8300000, guid: f1981b46150f9fe43a0481afeac79699, type: 3}
+  - {fileID: 8300000, guid: ca47aaa206c99f74ba63b46411c35c0e, type: 3}
+  - {fileID: 8300000, guid: bef566fd6ddb3f944935ff75ecf7e24c, type: 3}
+  - {fileID: 8300000, guid: 04d5cd3cb1800ec41a4a60d73cdfb3a1, type: 3}
+  - {fileID: 8300000, guid: 1b2a679003782184ca2e0f8235dd54fa, type: 3}
+  - {fileID: 8300000, guid: 1816d0281e0937045a37b5f11a4403cb, type: 3}
+  playRandomAudioClip: 1
+  OnEnterBehaviorEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnExitBehaviorEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_AI_Controller: {fileID: 0}
+  m_AI_Agent: {fileID: 0}
+  m_AI_Animator: {fileID: 0}
+  m_AI_AudioSource: {fileID: 0}
+  timer: 0
+  playRandomSounds: 0
+  randomTimeSpacing: 5
+  AnimationLayer: 0
+  updateHeight: 0
+  ai_BodyRoot: {fileID: 0}
+  moveUp: 0
+  flyheight: 3
+--- !u!114 &6860530972554076310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6860530972554076311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ab99fe2df4c36145a26b0b9727d1bc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  componentName: Take Hit
+  enabledBehavior: 1
+  forceUpdate: 0
+  forceFixedUpdate: 0
+  forceSlowUpdate: 0
+  behaviorActivators:
+  - trigger: 16
+    triggerRange: 1
+    triggerIsTrue: 0
+    OncePerEvent: 1
+    activationCooldown: 0
+    lastTime: -1
+    hasChanged: 1
+  animationSet:
+  - {fileID: -203655887218126122, guid: f1b6025af61817e4fb710195bb199895, type: 3}
+  animationOverRideClipName: Throw
+  forceBehaviour: 1
+  playRandomAnimationClip: 0
+  playAllAnimationClips: 0
+  randomClipRef: -1
+  audioClips: []
+  playRandomAudioClip: 0
+  OnEnterBehaviorEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnExitBehaviorEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_AI_Controller: {fileID: 0}
+  m_AI_Agent: {fileID: 0}
+  m_AI_Animator: {fileID: 0}
+  m_AI_AudioSource: {fileID: 0}
+  timer: 0
+  playRandomSounds: 0
+  randomTimeSpacing: 5
+  AnimationLayer: 0
+  updateHeight: 0
+  ai_BodyRoot: {fileID: 0}
+  moveUp: 0
+  flyheight: 3
+--- !u!1 &6860530972554076311
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6860530972553723063}
+  - component: {fileID: 6860530972546814805}
+  - component: {fileID: 6860530973473389712}
+  - component: {fileID: 6860530973473389718}
+  - component: {fileID: 6860530972554076298}
+  - component: {fileID: 6860530972554076309}
+  - component: {fileID: 6860530972554076310}
+  - component: {fileID: 6860530972554076331}
+  - component: {fileID: 6860530972554076308}
+  - component: {fileID: 6860530973473389719}
+  - component: {fileID: 6860530972554076330}
+  - component: {fileID: 6860530972554076329}
+  - component: {fileID: 6860530972554076299}
+  m_Layer: 9
+  m_Name: AI_Test Controller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!136 &6860530972554076329
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6860530972554076311}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.2
+  m_Height: 1.8
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.9, z: 0}
+--- !u!54 &6860530972554076330
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6860530972554076311}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &6860530972554076331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6860530972554076311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21059b47d915ef74faf76f18de969e6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  componentName: JBR_LookForTarget
+  enabledBehavior: 1
+  forceUpdate: 0
+  forceFixedUpdate: 0
+  forceSlowUpdate: 1
+  behaviorActivators: []
+  animationSet: []
+  animationOverRideClipName: 
+  forceBehaviour: 0
+  playRandomAnimationClip: 0
+  playAllAnimationClips: 0
+  randomClipRef: -1
+  audioClips: []
+  playRandomAudioClip: 0
+  OnEnterBehaviorEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnExitBehaviorEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_AI_Controller: {fileID: 0}
+  m_AI_Agent: {fileID: 0}
+  m_AI_Animator: {fileID: 0}
+  m_AI_AudioSource: {fileID: 0}
+  targets: []
+  maxViewDistance: 100
+  lookOrigin: {fileID: 0}
+  fieldOfView: 165
+  mask:
+    serializedVersion: 2
+    m_Bits: 321
+--- !u!195 &6860530973473389712
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6860530972554076311}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.25
+  m_Speed: 3.5
+  m_Acceleration: 15
+  avoidancePriority: 50
+  m_AngularSpeed: 1080
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 0
+  m_Height: 1.8
+  m_BaseOffset: 0
+  m_WalkableMask: 1
+  m_ObstacleAvoidanceType: 2
+--- !u!114 &6860530973473389718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6860530972554076311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fa439d4891427746af02966294f1ca5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeBehavior: 
+  slowUpdate: 0.25
+  groundLayerMasks:
+    serializedVersion: 2
+    m_Bits: 1
+  behaviorNames: []
+  behavior: []
+  isTrigger1: 0
+  isTrigger2: 0
+  isGrounded: 0
+  isIdle: 0
+  isFalling: 0
+  isDead: 0
+  isWandering: 0
+  isAttacking: 0
+  isDefending: 0
+  canSeeTarget: 0
+  canHearTarget: 0
+  behaviourTimer: 0
+  currentHealth: 100
+  maxHealth: 100
+  mask:
+    serializedVersion: 2
+    m_Bits: 1
+  targetTags:
+  - Player
+  - NPC
+  canHaveTarget: 1
+  currentTarget: {fileID: 0}
+  distanceToTarget: 0
+  damageTaken: 0
+  damageGiven: 0
+  time: 0
+  OnHealthChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  OnControllerDied:
+    m_PersistentCalls:
+      m_Calls: []
+  OnDamageChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  OnTargetChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  OnDistanceChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  OnSeeTargetChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  OnHearTargetChanged:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &6860530973473389719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6860530972554076311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5632a613bb93ec542b512a583f7998f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  componentName: JBR_Locamotion
+  enabledBehavior: 1
+  forceUpdate: 0
+  forceFixedUpdate: 0
+  forceSlowUpdate: 0
+  behaviorActivators:
+  - trigger: 0
+    triggerRange: 0
+    triggerIsTrue: 1
+    OncePerEvent: 0
+    activationCooldown: 0
+    lastTime: -1
+    hasChanged: 1
+  - trigger: 6
+    triggerRange: 0
+    triggerIsTrue: 1
+    OncePerEvent: 0
+    activationCooldown: 0
+    lastTime: -1
+    hasChanged: 1
+  - trigger: 12
+    triggerRange: 2
+    triggerIsTrue: 0
+    OncePerEvent: 0
+    activationCooldown: 0
+    lastTime: -1
+    hasChanged: 1
+  animationSet: []
+  animationOverRideClipName: 
+  forceBehaviour: 0
+  playRandomAnimationClip: 0
+  playAllAnimationClips: 0
+  randomClipRef: -1
+  audioClips: []
+  playRandomAudioClip: 0
+  OnEnterBehaviorEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnExitBehaviorEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_AI_Controller: {fileID: 0}
+  m_AI_Agent: {fileID: 0}
+  m_AI_Animator: {fileID: 0}
+  m_AI_AudioSource: {fileID: 0}
+  ai_StopDistance: 1
+  speedDampTime: 0.5
+  directionDampTime: 0.5
+  speed: 0
+  angle: 0
 --- !u!1001 &8345070700268369567
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1880,3 +2833,5 @@ SceneRoots:
   - {fileID: 1762682258}
   - {fileID: 1979352518}
   - {fileID: 746329221}
+  - {fileID: 6860530972553723063}
+  - {fileID: 1987818296}
