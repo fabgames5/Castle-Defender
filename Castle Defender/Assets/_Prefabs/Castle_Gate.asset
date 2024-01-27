@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 968f3ed76d42dea41ac164665250992f, type: 3}
+  m_Name: Castle_Gate
+  m_EditorClassIdentifier: 
+  prefabReferenceGO: {fileID: 5206349095977324073, guid: 9bba335c04ea2174fbd2a0a640f09738,
+    type: 3}
+  thumbnail: {fileID: 21300000, guid: 0cfba68f91ce48f4298efa4c02b347ea, type: 3}
+  cost: 100

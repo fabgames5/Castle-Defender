@@ -54,7 +54,14 @@ public class JBR_LogFileReader : MonoBehaviour {
 
     public void ClearText()
     {
-        logInfo.text = "";
-        tmp_LogInfo.text = "";
+        if (logInfo != null)
+        {
+            logInfo.text = "";
+        }
+
+        if (tmp_LogInfo == null)
+        {
+            tmp_LogInfo.text = "";
+        }
     }
 }

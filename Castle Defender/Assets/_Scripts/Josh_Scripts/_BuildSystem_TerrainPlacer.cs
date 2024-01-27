@@ -4,7 +4,6 @@ using Unity.Mathematics;
 using UnityEngine;
 using System.IO;
 using System.Linq;
-using UnityEngine.UIElements;
 
 
 public class _BuildSystem_TerrainPlacer : MonoBehaviour
@@ -30,11 +29,11 @@ public class _BuildSystem_TerrainPlacer : MonoBehaviour
     [Space(5)]
     [Tooltip("Dynamically sets a list of placeable prefabs based on current  building style")]
     public List<GameObject> stylePrefabBuildings = new List<GameObject>();
-    private List<int> jsonRefID = new List<int>();
-
-  //  [Tooltip("Add All building Jsons here")]
-  //  public JsonAsset[] buildingsJsons;
-
+   // private List<int> Building_SORef = new List<int>();
+    [Space(5)]
+    [Tooltip("Add All building Scriptable Objects here")]
+    public _Building_SO[] buildingsSO;
+    [Space(5)]
     [Tooltip("Reference ID to the current prefab that is selected to be placed")]
     public int prefabRef;
 
@@ -199,13 +198,33 @@ public class _BuildSystem_TerrainPlacer : MonoBehaviour
             }
         }
 
-        // mouse 2 is middle button
-        if (Input.GetMouseButtonDown(2))
+        // Keyboard 1,2 building select
+        if (Input.GetKeyUp(KeyCode.Alpha1))
         {
             prefabRef += 1;
             if (prefabRef >= stylePrefabBuildings.Count)
             {
                 prefabRef = 0;
+            }
+
+            if(newPrefab != null)
+            {
+                Destroy(newPrefab);
+                InstantiateBuiling();
+            }
+        }
+
+        if (Input.GetKeyUp(KeyCode.Alpha2))
+        {
+            prefabRef -= 1;
+            if (prefabRef < 0)
+            {
+                prefabRef = stylePrefabBuildings.Count -1;
+            }
+            if (newPrefab != null)
+            {
+                Destroy(newPrefab);
+                InstantiateBuiling();
             }
         }
 
@@ -228,75 +247,42 @@ public class _BuildSystem_TerrainPlacer : MonoBehaviour
                             //var building = (JBR_Building_Resources.BuildingResources)buildingsJsons[prefabRef].Instance;
 
                             hitPosition = hit.point;
-                            newPrefab = Instantiate(stylePrefabBuildings[prefabRef], hitPosition + placementOffset, Quaternion.identity) as GameObject; 
-                         //   placementOffset = newPrefab.GetScript<JBR_Building>()._buildingResources.placingOffset;
-                            
-                            newPrefab.name = (newPrefab.name + "_Placed_" + count);
+                            // instanctiate building prefab into scene
+                            bool buildingAdded = InstantiateBuiling();
 
-                            newPrefab.GetComponent<_BuildSystem_Construction>().isPlacing = true;
-                            newPrefab.GetComponent<_BuildSystem_Construction>().terrainPlacer = this;
-                            newPrefab.GetComponent<_BuildSystem_Construction>().prefabRefID = prefabRef;
-
-                            rots = newPrefab.GetComponent<_BuildSystem_Construction>().localEulerRotations;
-                            newPrefab.transform.localEulerAngles = new Vector3(rots.x, rots.y + prefabRot, rots.z);
-                            count++;
-                            // newPrefab.BreakPrefabLink();
-                            //check if already has a rigidbody if not add one
-                            rb = newPrefab.GetComponent<Rigidbody>();
-                            if (rb == null)
+                            if (buildingAdded)
                             {
-                                Debug.Log("Setting Up Trigger System...");
-                                rb = newPrefab.AddComponent<Rigidbody>();
-                            }
-                            rb.useGravity = false;
-                            rb.constraints = RigidbodyConstraints.FreezeRotationX;
-                            rb.constraints = RigidbodyConstraints.FreezeRotationZ;
-                            newPrefab.GetComponent<_BuildSystem_Construction>().rb = rb;
-
-                            //check if already has a boxCollider if not add one
-                            boxCollider = newPrefab.GetComponent<BoxCollider>();                        
-                            if (boxCollider == null)
-                            {
-                                Debug.Log("No Box Collider was added ... do better...");
-                            }
-                            
-                            boxCollider.isTrigger = true;
-                            newPrefab.layer = placingLayerRef;
-
-                            // get mesh collider
-                            mC = newPrefab.GetComponent<MeshCollider>();                         
-                            mC.enabled = false;
-
-                            // set all connecetion spheres active
-                            if (placedBuildings.Count > 0)
-                            {
-                                for (int i = 0; i < placedBuildings.Count; i++)
+                                // set all connecetion spheres active
+                                if (placedBuildings.Count > 0)
                                 {
-                                    placedBuildings[i].GetComponent<MeshCollider>().enabled = false;
-                                    
-                                    placedBuildings[i].GetComponent<BoxCollider>().enabled = true;
-                                    if (placedBuildings[i].GetComponent<_BuildSystem_Construction>().spherePoints.Count > 0)
+                                    for (int i = 0; i < placedBuildings.Count; i++)
                                     {
-                                        for (int s = 0; s < placedBuildings[i].GetComponent<_BuildSystem_Construction>().spherePoints.Count; s++)
+                                        placedBuildings[i].GetComponent<MeshCollider>().enabled = false;
+
+                                        placedBuildings[i].GetComponent<BoxCollider>().enabled = true;
+                                        if (placedBuildings[i].GetComponent<_BuildSystem_Construction>().spherePoints.Count > 0)
                                         {
-                                            placedBuildings[i].GetComponent<_BuildSystem_Construction>().spherePoints[s].SetActive(true);
+                                            for (int s = 0; s < placedBuildings[i].GetComponent<_BuildSystem_Construction>().spherePoints.Count; s++)
+                                            {
+                                                placedBuildings[i].GetComponent<_BuildSystem_Construction>().spherePoints[s].SetActive(true);
+                                            }
                                         }
                                     }
                                 }
-                            }
 
-                            for (int i = 0;i < newPrefab.GetComponent<MeshRenderer>().materials.Length; i++)
-                            {
-                                newPrefab.GetComponent<MeshRenderer>().materials[i].color = colors[refColor];
-                            }
+                                for (int i = 0; i < newPrefab.GetComponent<MeshRenderer>().materials.Length; i++)
+                                {
+                                    newPrefab.GetComponent<MeshRenderer>().materials[i].color = colors[refColor];
+                                }
 
-                            if (newPrefab.GetComponent<_BuildSystem_Construction>().spherePoints.Count > 0)
-                            {
-                                refColor = 2;
-                            }
-                            else
-                            {
-                                refColor = 1;
+                                if (newPrefab.GetComponent<_BuildSystem_Construction>().spherePoints.Count > 0)
+                                {
+                                    refColor = 2;
+                                }
+                                else
+                                {
+                                    refColor = 1;
+                                }
                             }
                         }
                     }
@@ -375,6 +361,8 @@ public class _BuildSystem_TerrainPlacer : MonoBehaviour
                         }
                         newPrefab.GetComponent<_BuildSystem_Construction>().isPlacing = false;
                         placedBuildings.Add(newPrefab.GetComponent<_BuildSystem_Construction>());
+
+                        // Cost
                     }
                     else
                     {
@@ -407,6 +395,57 @@ public class _BuildSystem_TerrainPlacer : MonoBehaviour
 
 
     }
+
+    public bool InstantiateBuiling()
+    {
+        newPrefab = Instantiate(stylePrefabBuildings[prefabRef], hitPosition + placementOffset, Quaternion.identity) as GameObject;
+        //   placementOffset = newPrefab.GetScript<JBR_Building>()._buildingResources.placingOffset;
+
+        newPrefab.name = (newPrefab.name + "_Placed_" + count);
+
+        newPrefab.GetComponent<_BuildSystem_Construction>().isPlacing = true;
+        newPrefab.GetComponent<_BuildSystem_Construction>().terrainPlacer = this;
+        newPrefab.GetComponent<_BuildSystem_Construction>().prefabRefID = prefabRef;
+
+        rots = newPrefab.GetComponent<_BuildSystem_Construction>().localEulerRotations;
+        newPrefab.transform.localEulerAngles = new Vector3(rots.x, rots.y + prefabRot, rots.z);
+        count++;
+        // newPrefab.BreakPrefabLink();
+        //check if already has a rigidbody if not add one
+        rb = newPrefab.GetComponent<Rigidbody>();
+        if (rb == null)
+        {
+            Debug.Log("Setting Up Trigger System...");
+            rb = newPrefab.AddComponent<Rigidbody>();
+        }
+        rb.useGravity = false;
+        rb.isKinematic = true;
+        rb.constraints = RigidbodyConstraints.FreezeRotationX;
+        rb.constraints = RigidbodyConstraints.FreezeRotationZ;
+        newPrefab.GetComponent<_BuildSystem_Construction>().rb = rb;
+
+        //check if already has a boxCollider if not add one
+        boxCollider = newPrefab.GetComponent<BoxCollider>();
+        if (boxCollider == null)
+        {
+            Debug.Log("No Box Collider was added ... do better...");
+        }
+
+        boxCollider.isTrigger = true;
+        newPrefab.layer = placingLayerRef;
+
+        // get mesh collider
+        mC = newPrefab.GetComponent<MeshCollider>();
+        mC.enabled = false;
+
+        if(newPrefab != null)
+        {
+            return true;
+        }
+
+        return false;
+    }
+
 
     public void SetConnection(bool canConnect)
     {
