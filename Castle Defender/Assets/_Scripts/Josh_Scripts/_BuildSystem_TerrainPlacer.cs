@@ -93,16 +93,15 @@ public class _BuildSystem_TerrainPlacer : MonoBehaviour
     private List<Vector3> buildingVectorPoints = new List<Vector3>();
     //navmesh locations to regenerate
     private List<int> navRegions = new List<int>();
+    private Vector3 rots;
 
     [Space(5)]
     [Header("Saving")]
-    public string DataSaveName = "PlacerSave.txt";
-    
-    [Tooltip("Dynamically set, the generated path to put the save text file")]
-    public string textAssetPath = "";
-    private string Text_Data;
-
-    private Vector3 rots;
+    [Tooltip("Ref Id for saving")]
+    public int savePathRef = 1;
+    public bool savePlacement;
+    public bool loadPlacement;
+    public JBR_JSON_Saving buildingSave;
 
     // Start is called before the first frame update
     void Start()
@@ -118,15 +117,9 @@ public class _BuildSystem_TerrainPlacer : MonoBehaviour
         int p = ToLayer(placingLayer);
         placingLayerRef = p;
         Debug.Log(placingLayer.ToString() + " " + p);
-      
-        bool isloaded = LoadListData();
-        if (isloaded && buildingSaveLocations.Count > 0)
-        {
-            for (int i = 0; i < buildingSaveLocations.Count; i++)
-            {
-                // spawn prefab and add to placed building list..
-            }
-        }
+
+        buildingSave = this.gameObject.GetComponent<JBR_JSON_Saving>();
+     //   loadPlacement = true;
     }
 
     //trigger enter
@@ -156,10 +149,32 @@ public class _BuildSystem_TerrainPlacer : MonoBehaviour
         }
     }
 
+    public void SaveBuildingProgress()
+    {
+        savePlacement = true;
+    }
+
+    public void LoadBuildingProgress()
+    {
+        loadPlacement = true;
+    }
+
     // Update is called once per frame
     void Update()
     {
         //  Debug.Log(Input.MouseScrollDelta + " Mouse Scroll Delta");
+
+        if (loadPlacement)
+        {
+            loadPlacement = false;
+            buildingSave.LoadPlayerData();
+        }
+
+        if (savePlacement)
+        {
+            savePlacement = false;
+            buildingSave.SavePlayerData();
+        }
 
         //mouse scroll middle only y is used
         if (useMouseScrollToRotate)
@@ -369,12 +384,18 @@ public class _BuildSystem_TerrainPlacer : MonoBehaviour
                         newPrefab.GetComponent<_BuildSystem_Construction>().isPlacing = false;
                         placedBuildings.Add(newPrefab.GetComponent<_BuildSystem_Construction>());
 
+                        //add to saving list
+                        buildingSave.AddGameobjectToList(stylePrefabBuildings[prefabRef], prefabRef, newPrefab);
+
                         // Cost
+
+                        newPrefab = null;
                     }
                     else
                     {
                         refColor = 1;
                         Destroy(newPrefab);
+                        newPrefab = null;
                     }
 
                     //disable connection points
@@ -399,8 +420,6 @@ public class _BuildSystem_TerrainPlacer : MonoBehaviour
 
             }
         }
-
-
     }
 
     public bool InstantiateBuiling()
@@ -458,47 +477,6 @@ public class _BuildSystem_TerrainPlacer : MonoBehaviour
     {
     //    Debug.Log("Connected >>>>>>>>>>>>>");
         isConnected = canConnect;
-    }
-
-    /// <summary>
-    /// Loads and Sets Data for all NPC Units
-    /// </summary>
-    public bool LoadListData()
-    {
-        bool loaded = false;
-        if (FindTextFile(textAssetPath))
-        {
-            loaded = LoadTextFile(textAssetPath);
-        }
-        return loaded;
-    }
-
-    /// <summary>
-    /// Loads from Text file data
-    /// </summary>
-    /// <param name="pathJ"></param>
-    bool LoadTextFile(string pathJ)
-    {
-        Text_Data = File.ReadAllText(pathJ);
-        Debug.Log("loading Text Data...");
-       // JsonSerializer.Deserialize(buildingSaveLocations, Text_Data);
-        return true;
-    }
-
-    /// <summary>
-    /// Returns a bool true/false if a text File is found
-    /// </summary>
-    /// <param name="path"></param>
-    /// <returns></returns>
-    bool FindTextFile(string path)
-    {
-        if (System.IO.File.Exists(path))
-        {
-            Debug.Log("Found Text File !");
-            return true;
-        }
-        Debug.Log("NO Text File Found !!!");
-        return false;
     }
 
     /// <summary>

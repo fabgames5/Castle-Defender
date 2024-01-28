@@ -19,7 +19,7 @@ public class JBR_JSON_Saving : MonoBehaviour
     public bool load;
     [Space]
     public bool isBuilding = false;
-
+    private _BuildSystem_TerrainPlacer terrainPlacer;
 
     private void OnEnable()
     {
@@ -28,8 +28,14 @@ public class JBR_JSON_Saving : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+       
         //testing only
      //   saveData = this.GetComponent<JBR_PlayerSaveData>();
+    }
+
+    private void Awake()
+    {
+        terrainPlacer = this.gameObject.GetComponent<_BuildSystem_TerrainPlacer>();
     }
 
     // Update is called once per frame
@@ -80,8 +86,6 @@ public class JBR_JSON_Saving : MonoBehaviour
         {
             Debug.LogError("Loading ...... " +"\n"+ "No Data Found at Path !!!!");
         }
-
-
     }
 
     public void SetPaths(int saveFileRef)
@@ -97,7 +101,7 @@ public class JBR_JSON_Saving : MonoBehaviour
     /// <param name="sceneGO"></param>
     public void AddGameobjectToList(GameObject prefabGO, int id, GameObject sceneGO )
     {
-        JBR_PlayerSaveData newData = new JBR_PlayerSaveData(prefabGO.name,id,sceneGO.transform.position,sceneGO.transform.rotation);
+        JBR_PlayerSaveData newData = new JBR_PlayerSaveData(prefabGO.name,id,sceneGO.transform.position,sceneGO.transform.localEulerAngles);
         saveData.data.Add(newData);
     }
 
@@ -105,24 +109,13 @@ public class JBR_JSON_Saving : MonoBehaviour
     {
         for (int i = 0; i < saveData.data.Count; i++)
         {
-            if (Resources.Load(saveData.data[i].partName))
-            {
-             GameObject part = Instantiate (Resources.Load(saveData.data[i].partName), saveData.data[i].partlocation, saveData.data[i].partRotation) as GameObject;
+           
+             Quaternion newRot = Quaternion.Euler(saveData.data[i].partRotation);
+             GameObject part = Instantiate(terrainPlacer.stylePrefabBuildings[saveData.data[i].partID], saveData.data[i].partlocation, newRot) as GameObject;     
+             Debug.Log("Loading... " + saveData.data[i].partName);
                 
-             //       for (int b = 0; b < part.GetComponent<JBR_SpaceShipDesignStats>().buildPoints.Count; b++)
-            //        {
-            //            if (isBuilding)
-            //            {
-            //                part.GetComponent<JBR_SpaceShipDesignStats>().buildPoints[b].gameObject.SetActive(true);
-            //            }
-             //           else
-              //          {
-               //             part.GetComponent<JBR_SpaceShipDesignStats>().buildPoints[b].gameObject.SetActive(false);
-              //          }
-             //       }
-                
-                Debug.Log("Loading... " + saveData.data[i].partName);
-            }
+                terrainPlacer.placedBuildings.Add(part.GetComponent<_BuildSystem_Construction>());
+            
         }
     }
 }

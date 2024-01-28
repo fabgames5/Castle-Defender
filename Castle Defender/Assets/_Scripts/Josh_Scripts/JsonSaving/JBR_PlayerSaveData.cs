@@ -10,10 +10,10 @@ public class JBR_PlayerSaveData
     public string partName;
     public int partID;
     public Vector3 partlocation;
-    public Quaternion partRotation;
+    public Vector3 partRotation;
 
 
-    public JBR_PlayerSaveData(string name,int id, Vector3 loc, Quaternion rot)
+    public JBR_PlayerSaveData(string name,int id, Vector3 loc, Vector3 rot)
     {
         this.partName = name;
         this.partID = id;
