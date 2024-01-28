@@ -18,6 +18,7 @@ TagManager:
   - CoverTrigger
   - CinemachineTarget
   - Terrain
+  - TownHall
   layers:
   - Default
   - TransparentFX

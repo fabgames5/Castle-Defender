@@ -1,133 +1,377 @@
 fileFormatVersion: 2
 guid: 83934524c6951cd4c968e974ac9779d4
 ModelImporter:
-  serializedVersion: 23
-  fileIDToRecycleName:
-    100000: root
-    100002: //RootNode
-    100004: SkeletonKnight_
-    100006: SkeletonKnight_ Head
-    100008: SkeletonKnight_ L Calf
-    100010: SkeletonKnight_ L Clavicle
-    100012: SkeletonKnight_ L Finger0
-    100014: SkeletonKnight_ L Finger01
-    100016: SkeletonKnight_ L Finger02
-    100018: SkeletonKnight_ L Finger1
-    100020: SkeletonKnight_ L Finger11
-    100022: SkeletonKnight_ L Finger12
-    100024: SkeletonKnight_ L Finger2
-    100026: SkeletonKnight_ L Finger21
-    100028: SkeletonKnight_ L Finger22
-    100030: SkeletonKnight_ L Finger3
-    100032: SkeletonKnight_ L Finger31
-    100034: SkeletonKnight_ L Finger32
-    100036: SkeletonKnight_ L Finger4
-    100038: SkeletonKnight_ L Finger41
-    100040: SkeletonKnight_ L Finger42
-    100042: SkeletonKnight_ L Foot
-    100044: SkeletonKnight_ L Forearm
-    100046: SkeletonKnight_ L Hand
-    100048: SkeletonKnight_ L Thigh
-    100050: SkeletonKnight_ L Toe0
-    100052: SkeletonKnight_ L Toe01
-    100054: SkeletonKnight_ L Toe02
-    100056: SkeletonKnight_ L UpperArm
-    100058: SkeletonKnight_ Neck
-    100060: SkeletonKnight_ Neck1
-    100062: SkeletonKnight_ Pelvis
-    100064: SkeletonKnight_ R Calf
-    100066: SkeletonKnight_ R Clavicle
-    100068: SkeletonKnight_ R Finger0
-    100070: SkeletonKnight_ R Finger01
-    100072: SkeletonKnight_ R Finger02
-    100074: SkeletonKnight_ R Finger1
-    100076: SkeletonKnight_ R Finger11
-    100078: SkeletonKnight_ R Finger12
-    100080: SkeletonKnight_ R Finger2
-    100082: SkeletonKnight_ R Finger21
-    100084: SkeletonKnight_ R Finger22
-    100086: SkeletonKnight_ R Finger3
-    100088: SkeletonKnight_ R Finger31
-    100090: SkeletonKnight_ R Finger32
-    100092: SkeletonKnight_ R Finger4
-    100094: SkeletonKnight_ R Finger41
-    100096: SkeletonKnight_ R Finger42
-    100098: SkeletonKnight_ R Foot
-    100100: SkeletonKnight_ R Forearm
-    100102: SkeletonKnight_ R Hand
-    100104: SkeletonKnight_ R Thigh
-    100106: SkeletonKnight_ R Toe0
-    100108: SkeletonKnight_ R Toe01
-    100110: SkeletonKnight_ R Toe02
-    100112: SkeletonKnight_ R UpperArm
-    100114: SkeletonKnight_ Spine
-    100116: SkeletonKnight_ Spine1
-    100118: SkeletonKnight_ Spine2
-    400000: root
-    400002: //RootNode
-    400004: SkeletonKnight_
-    400006: SkeletonKnight_ Head
-    400008: SkeletonKnight_ L Calf
-    400010: SkeletonKnight_ L Clavicle
-    400012: SkeletonKnight_ L Finger0
-    400014: SkeletonKnight_ L Finger01
-    400016: SkeletonKnight_ L Finger02
-    400018: SkeletonKnight_ L Finger1
-    400020: SkeletonKnight_ L Finger11
-    400022: SkeletonKnight_ L Finger12
-    400024: SkeletonKnight_ L Finger2
-    400026: SkeletonKnight_ L Finger21
-    400028: SkeletonKnight_ L Finger22
-    400030: SkeletonKnight_ L Finger3
-    400032: SkeletonKnight_ L Finger31
-    400034: SkeletonKnight_ L Finger32
-    400036: SkeletonKnight_ L Finger4
-    400038: SkeletonKnight_ L Finger41
-    400040: SkeletonKnight_ L Finger42
-    400042: SkeletonKnight_ L Foot
-    400044: SkeletonKnight_ L Forearm
-    400046: SkeletonKnight_ L Hand
-    400048: SkeletonKnight_ L Thigh
-    400050: SkeletonKnight_ L Toe0
-    400052: SkeletonKnight_ L Toe01
-    400054: SkeletonKnight_ L Toe02
-    400056: SkeletonKnight_ L UpperArm
-    400058: SkeletonKnight_ Neck
-    400060: SkeletonKnight_ Neck1
-    400062: SkeletonKnight_ Pelvis
-    400064: SkeletonKnight_ R Calf
-    400066: SkeletonKnight_ R Clavicle
-    400068: SkeletonKnight_ R Finger0
-    400070: SkeletonKnight_ R Finger01
-    400072: SkeletonKnight_ R Finger02
-    400074: SkeletonKnight_ R Finger1
-    400076: SkeletonKnight_ R Finger11
-    400078: SkeletonKnight_ R Finger12
-    400080: SkeletonKnight_ R Finger2
-    400082: SkeletonKnight_ R Finger21
-    400084: SkeletonKnight_ R Finger22
-    400086: SkeletonKnight_ R Finger3
-    400088: SkeletonKnight_ R Finger31
-    400090: SkeletonKnight_ R Finger32
-    400092: SkeletonKnight_ R Finger4
-    400094: SkeletonKnight_ R Finger41
-    400096: SkeletonKnight_ R Finger42
-    400098: SkeletonKnight_ R Foot
-    400100: SkeletonKnight_ R Forearm
-    400102: SkeletonKnight_ R Hand
-    400104: SkeletonKnight_ R Thigh
-    400106: SkeletonKnight_ R Toe0
-    400108: SkeletonKnight_ R Toe01
-    400110: SkeletonKnight_ R Toe02
-    400112: SkeletonKnight_ R UpperArm
-    400114: SkeletonKnight_ Spine
-    400116: SkeletonKnight_ Spine1
-    400118: SkeletonKnight_ Spine2
-    7400000: 1Handed3hitCombo
-    9500000: //RootNode
+  serializedVersion: 22200
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: root
+  - first:
+      1: 100002
+    second: //RootNode
+  - first:
+      1: 100004
+    second: SkeletonKnight_
+  - first:
+      1: 100006
+    second: SkeletonKnight_ Head
+  - first:
+      1: 100008
+    second: SkeletonKnight_ L Calf
+  - first:
+      1: 100010
+    second: SkeletonKnight_ L Clavicle
+  - first:
+      1: 100012
+    second: SkeletonKnight_ L Finger0
+  - first:
+      1: 100014
+    second: SkeletonKnight_ L Finger01
+  - first:
+      1: 100016
+    second: SkeletonKnight_ L Finger02
+  - first:
+      1: 100018
+    second: SkeletonKnight_ L Finger1
+  - first:
+      1: 100020
+    second: SkeletonKnight_ L Finger11
+  - first:
+      1: 100022
+    second: SkeletonKnight_ L Finger12
+  - first:
+      1: 100024
+    second: SkeletonKnight_ L Finger2
+  - first:
+      1: 100026
+    second: SkeletonKnight_ L Finger21
+  - first:
+      1: 100028
+    second: SkeletonKnight_ L Finger22
+  - first:
+      1: 100030
+    second: SkeletonKnight_ L Finger3
+  - first:
+      1: 100032
+    second: SkeletonKnight_ L Finger31
+  - first:
+      1: 100034
+    second: SkeletonKnight_ L Finger32
+  - first:
+      1: 100036
+    second: SkeletonKnight_ L Finger4
+  - first:
+      1: 100038
+    second: SkeletonKnight_ L Finger41
+  - first:
+      1: 100040
+    second: SkeletonKnight_ L Finger42
+  - first:
+      1: 100042
+    second: SkeletonKnight_ L Foot
+  - first:
+      1: 100044
+    second: SkeletonKnight_ L Forearm
+  - first:
+      1: 100046
+    second: SkeletonKnight_ L Hand
+  - first:
+      1: 100048
+    second: SkeletonKnight_ L Thigh
+  - first:
+      1: 100050
+    second: SkeletonKnight_ L Toe0
+  - first:
+      1: 100052
+    second: SkeletonKnight_ L Toe01
+  - first:
+      1: 100054
+    second: SkeletonKnight_ L Toe02
+  - first:
+      1: 100056
+    second: SkeletonKnight_ L UpperArm
+  - first:
+      1: 100058
+    second: SkeletonKnight_ Neck
+  - first:
+      1: 100060
+    second: SkeletonKnight_ Neck1
+  - first:
+      1: 100062
+    second: SkeletonKnight_ Pelvis
+  - first:
+      1: 100064
+    second: SkeletonKnight_ R Calf
+  - first:
+      1: 100066
+    second: SkeletonKnight_ R Clavicle
+  - first:
+      1: 100068
+    second: SkeletonKnight_ R Finger0
+  - first:
+      1: 100070
+    second: SkeletonKnight_ R Finger01
+  - first:
+      1: 100072
+    second: SkeletonKnight_ R Finger02
+  - first:
+      1: 100074
+    second: SkeletonKnight_ R Finger1
+  - first:
+      1: 100076
+    second: SkeletonKnight_ R Finger11
+  - first:
+      1: 100078
+    second: SkeletonKnight_ R Finger12
+  - first:
+      1: 100080
+    second: SkeletonKnight_ R Finger2
+  - first:
+      1: 100082
+    second: SkeletonKnight_ R Finger21
+  - first:
+      1: 100084
+    second: SkeletonKnight_ R Finger22
+  - first:
+      1: 100086
+    second: SkeletonKnight_ R Finger3
+  - first:
+      1: 100088
+    second: SkeletonKnight_ R Finger31
+  - first:
+      1: 100090
+    second: SkeletonKnight_ R Finger32
+  - first:
+      1: 100092
+    second: SkeletonKnight_ R Finger4
+  - first:
+      1: 100094
+    second: SkeletonKnight_ R Finger41
+  - first:
+      1: 100096
+    second: SkeletonKnight_ R Finger42
+  - first:
+      1: 100098
+    second: SkeletonKnight_ R Foot
+  - first:
+      1: 100100
+    second: SkeletonKnight_ R Forearm
+  - first:
+      1: 100102
+    second: SkeletonKnight_ R Hand
+  - first:
+      1: 100104
+    second: SkeletonKnight_ R Thigh
+  - first:
+      1: 100106
+    second: SkeletonKnight_ R Toe0
+  - first:
+      1: 100108
+    second: SkeletonKnight_ R Toe01
+  - first:
+      1: 100110
+    second: SkeletonKnight_ R Toe02
+  - first:
+      1: 100112
+    second: SkeletonKnight_ R UpperArm
+  - first:
+      1: 100114
+    second: SkeletonKnight_ Spine
+  - first:
+      1: 100116
+    second: SkeletonKnight_ Spine1
+  - first:
+      1: 100118
+    second: SkeletonKnight_ Spine2
+  - first:
+      4: 400000
+    second: root
+  - first:
+      4: 400002
+    second: //RootNode
+  - first:
+      4: 400004
+    second: SkeletonKnight_
+  - first:
+      4: 400006
+    second: SkeletonKnight_ Head
+  - first:
+      4: 400008
+    second: SkeletonKnight_ L Calf
+  - first:
+      4: 400010
+    second: SkeletonKnight_ L Clavicle
+  - first:
+      4: 400012
+    second: SkeletonKnight_ L Finger0
+  - first:
+      4: 400014
+    second: SkeletonKnight_ L Finger01
+  - first:
+      4: 400016
+    second: SkeletonKnight_ L Finger02
+  - first:
+      4: 400018
+    second: SkeletonKnight_ L Finger1
+  - first:
+      4: 400020
+    second: SkeletonKnight_ L Finger11
+  - first:
+      4: 400022
+    second: SkeletonKnight_ L Finger12
+  - first:
+      4: 400024
+    second: SkeletonKnight_ L Finger2
+  - first:
+      4: 400026
+    second: SkeletonKnight_ L Finger21
+  - first:
+      4: 400028
+    second: SkeletonKnight_ L Finger22
+  - first:
+      4: 400030
+    second: SkeletonKnight_ L Finger3
+  - first:
+      4: 400032
+    second: SkeletonKnight_ L Finger31
+  - first:
+      4: 400034
+    second: SkeletonKnight_ L Finger32
+  - first:
+      4: 400036
+    second: SkeletonKnight_ L Finger4
+  - first:
+      4: 400038
+    second: SkeletonKnight_ L Finger41
+  - first:
+      4: 400040
+    second: SkeletonKnight_ L Finger42
+  - first:
+      4: 400042
+    second: SkeletonKnight_ L Foot
+  - first:
+      4: 400044
+    second: SkeletonKnight_ L Forearm
+  - first:
+      4: 400046
+    second: SkeletonKnight_ L Hand
+  - first:
+      4: 400048
+    second: SkeletonKnight_ L Thigh
+  - first:
+      4: 400050
+    second: SkeletonKnight_ L Toe0
+  - first:
+      4: 400052
+    second: SkeletonKnight_ L Toe01
+  - first:
+      4: 400054
+    second: SkeletonKnight_ L Toe02
+  - first:
+      4: 400056
+    second: SkeletonKnight_ L UpperArm
+  - first:
+      4: 400058
+    second: SkeletonKnight_ Neck
+  - first:
+      4: 400060
+    second: SkeletonKnight_ Neck1
+  - first:
+      4: 400062
+    second: SkeletonKnight_ Pelvis
+  - first:
+      4: 400064
+    second: SkeletonKnight_ R Calf
+  - first:
+      4: 400066
+    second: SkeletonKnight_ R Clavicle
+  - first:
+      4: 400068
+    second: SkeletonKnight_ R Finger0
+  - first:
+      4: 400070
+    second: SkeletonKnight_ R Finger01
+  - first:
+      4: 400072
+    second: SkeletonKnight_ R Finger02
+  - first:
+      4: 400074
+    second: SkeletonKnight_ R Finger1
+  - first:
+      4: 400076
+    second: SkeletonKnight_ R Finger11
+  - first:
+      4: 400078
+    second: SkeletonKnight_ R Finger12
+  - first:
+      4: 400080
+    second: SkeletonKnight_ R Finger2
+  - first:
+      4: 400082
+    second: SkeletonKnight_ R Finger21
+  - first:
+      4: 400084
+    second: SkeletonKnight_ R Finger22
+  - first:
+      4: 400086
+    second: SkeletonKnight_ R Finger3
+  - first:
+      4: 400088
+    second: SkeletonKnight_ R Finger31
+  - first:
+      4: 400090
+    second: SkeletonKnight_ R Finger32
+  - first:
+      4: 400092
+    second: SkeletonKnight_ R Finger4
+  - first:
+      4: 400094
+    second: SkeletonKnight_ R Finger41
+  - first:
+      4: 400096
+    second: SkeletonKnight_ R Finger42
+  - first:
+      4: 400098
+    second: SkeletonKnight_ R Foot
+  - first:
+      4: 400100
+    second: SkeletonKnight_ R Forearm
+  - first:
+      4: 400102
+    second: SkeletonKnight_ R Hand
+  - first:
+      4: 400104
+    second: SkeletonKnight_ R Thigh
+  - first:
+      4: 400106
+    second: SkeletonKnight_ R Toe0
+  - first:
+      4: 400108
+    second: SkeletonKnight_ R Toe01
+  - first:
+      4: 400110
+    second: SkeletonKnight_ R Toe02
+  - first:
+      4: 400112
+    second: SkeletonKnight_ R UpperArm
+  - first:
+      4: 400114
+    second: SkeletonKnight_ Spine
+  - first:
+      4: 400116
+    second: SkeletonKnight_ Spine1
+  - first:
+      4: 400118
+    second: SkeletonKnight_ Spine2
+  - first:
+      74: 7400000
+    second: 1Handed3hitCombo
+  - first:
+      95: 9500000
+    second: //RootNode
   externalObjects: {}
   materials:
-    importMaterials: 1
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -136,6 +380,7 @@ ModelImporter:
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
     motionNodeName: 
     rigImportErrors: 
     rigImportWarnings: 
@@ -156,6 +401,7 @@ ModelImporter:
     - serializedVersion: 16
       name: 1Handed3hitCombo
       takeName: Take 001
+      internalID: 0
       firstFrame: 0
       lastFrame: 50
       wrapMode: 0
@@ -188,25 +434,36 @@ ModelImporter:
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
+    nodeNameCollisionStrategy: 0
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    bakeAxisConversion: 0
     preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 0.01
-    hasPreviousCalculatedGlobalScale: 1
+    strictVertexDataChecks: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -215,10 +472,10 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
-  copyAvatar: 1
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -228,14 +485,20 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: root
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 5bdb723f10fa9bd498f304f0a10f2ec4,
     type: 3}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
+  avatarSetup: 2
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
+  importBlendShapeDeformPercent: 0
+  remapMaterialsIfMaterialImportModeIsNone: 1
   additionalBone: 0
   userData: 
   assetBundleName: 
