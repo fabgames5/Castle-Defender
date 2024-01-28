@@ -1,0 +1,107 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1203126188345550539
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4484232123251617727}
+  - component: {fileID: 1052109199703965848}
+  - component: {fileID: 5661267735315247224}
+  m_Layer: 0
+  m_Name: PlacingManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4484232123251617727
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1203126188345550539}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1052109199703965848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1203126188345550539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9044461b6253864eb4a08980837aa10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  placeobjectMousePos: 1
+  useMouseScrollToRotate: 0
+  terrain: {fileID: 0}
+  terrainLayer:
+    serializedVersion: 2
+    m_Bits: 2048
+  placingLayer:
+    serializedVersion: 2
+    m_Bits: 4194304
+  buildingLayerRef: 5
+  stylePrefabBuildings:
+  - {fileID: 75383044721712493, guid: 43ca1224fdec3a1428a6d5609ce2e6cf, type: 3}
+  - {fileID: 5206349095977324073, guid: 9bba335c04ea2174fbd2a0a640f09738, type: 3}
+  - {fileID: 655150847253942615, guid: 5cef9762dfc1755438a79f30c33cc08b, type: 3}
+  - {fileID: 4966921962560316217, guid: 92851fb5653acae458ca552f0b42310f, type: 3}
+  - {fileID: 1168803668302997798, guid: e3243c69a77372049a6fae5d163e1f0a, type: 3}
+  buildingsSO:
+  - {fileID: 11400000, guid: 2eee8ce50c7857d448e17670da9e8352, type: 2}
+  prefabRef: 0
+  mC: {fileID: 0}
+  placementOffset: {x: 0, y: 0, z: 0}
+  rb: {fileID: 0}
+  boxCollider: {fileID: 0}
+  isConnected: 1
+  isContacted: 0
+  maxConnectionDistance: 1
+  mouseLocation: {x: 0, y: 0, z: 0}
+  hitPosition: {x: 0, y: 0, z: 0}
+  prefabRot: 0
+  rotatonAmount: 45
+  uiThumbnailPrefab: {fileID: 0}
+  newPrefab: {fileID: 0}
+  placedBuildings: []
+  startSession: 0
+  stopSession: 1
+  buildingSaveLocations: []
+  DataSaveName: PlacerSave.txt
+  textAssetPath: 
+--- !u!114 &5661267735315247224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1203126188345550539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db8fe2ecb4150bb4fb23bbcafde2b381, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  saveData:
+    coins: 0
+    data: []
+  path: 
+  persistantPath: 
+  setPaths: 1
+  savePathRef: 0
+  save: 0
+  load: 0
+  isBuilding: 0

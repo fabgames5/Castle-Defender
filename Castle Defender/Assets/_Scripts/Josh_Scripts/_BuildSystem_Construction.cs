@@ -258,10 +258,10 @@ public class _BuildSystem_Construction : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        Debug.Log("OnTriggerEnter >" + other.gameObject.name + " <");
+       // Debug.Log("OnTriggerEnter >" + other.gameObject.name + " <");
        if(isPlacing && terrainPlacer != null)
         {
-            Debug.Log("OnTriggerEnter yes >" + other.gameObject.name + " <" + this.gameObject.name);
+            Debug.Log("OnTriggerEnter >" + other.gameObject.name + " <" + this.gameObject.name + " "+ Time.timeSinceLevelLoad);
             terrainPlacer.OnTriggerEnters(other, this.gameObject);
         } 
     }
@@ -270,8 +270,17 @@ public class _BuildSystem_Construction : MonoBehaviour
     {
         if (isPlacing && terrainPlacer != null)
         {
+            Debug.Log("OnTriggerExit >" + other.gameObject.name + " <" + this.gameObject.name + " " + Time.timeSinceLevelLoad);
             terrainPlacer.OnTriggerExits(other, this.gameObject);
         }
+    }
 
+    public void OnTriggerStay(Collider other)
+    {
+        if (isPlacing && terrainPlacer != null)
+        {
+            Debug.Log("OnTriggerStay > " + Time.timeSinceLevelLoad);
+            terrainPlacer.OnTriggerEnters(other, this.gameObject);
+        }
     }
 }

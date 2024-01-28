@@ -106,7 +106,14 @@ public class _BuildSystem_TerrainPlacer : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
-    {       
+    {    
+        //find terrain
+        if(terrain == null)
+        {
+            terrain = GameObject.FindGameObjectWithTag("Terrain").GetComponent<Terrain>();
+            terrain.gameObject.layer = LayerMask.NameToLayer("Terrain");
+        }
+
         //get layer by number         
         int p = ToLayer(placingLayer);
         placingLayerRef = p;
