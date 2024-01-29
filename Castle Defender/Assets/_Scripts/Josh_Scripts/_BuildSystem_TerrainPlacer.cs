@@ -305,6 +305,11 @@ public class _BuildSystem_TerrainPlacer : MonoBehaviour
                                 {
                                     refColor = 1;
                                 }
+
+                                for (int i = 0; i < newPrefab.GetComponent<MeshRenderer>().materials.Length; i++)
+                                {
+                                    newPrefab.GetComponent<MeshRenderer>().materials[i].color = colors[refColor];
+                                }
                             }
                         }
                     }
@@ -390,11 +395,13 @@ public class _BuildSystem_TerrainPlacer : MonoBehaviour
                         // Cost
 
                         newPrefab = null;
+                        isConnected = false;
                     }
                     else
                     {
                         refColor = 1;
                         Destroy(newPrefab);
+                        isConnected = false;
                         newPrefab = null;
                     }
 
