@@ -1,0 +1,634 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Clouds
+  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: _ALPHABLEND_ON _EMISSION _IBLDIFF_UNITYSH _LAYERCOUNT_FOUR _OVERLAYFOG_OFF
+  m_LightmapFlags: 0
+  m_CustomRenderQueue: 3000
+  stringTagMap:
+    RenderType: Transparent
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: ce967e51243890043b41efe8e958ee70, type: 3}
+          m_Scale: {x: 2, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _BumpMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _DetailNormalMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _MetallicGlossMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _ParallaxMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _OcclusionMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _EmissionMap
+        second:
+          m_Texture: {fileID: 2800000, guid: ce967e51243890043b41efe8e958ee70, type: 3}
+          m_Scale: {x: 2, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _DetailMask
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _DetailAlbedoMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _SpecGlossMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _TranslucencyMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _GlossMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _ShadowOffset
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _MaskRBlend1GBlend2BBlend3AWater
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _BaseColormap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _BaseNormalmap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _BlendColorMap1
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _BlendNormalmap1
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _BlendColormap2
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _BlendNormalmap2
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _BlendColormap3
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _BlendNormalmap3
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _DetailColormap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _DetailNormalmap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _WaterNormalmap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Shimmer
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _SrcBlend
+        second: 5
+      data:
+        first:
+          name: _DstBlend
+        second: 10
+      data:
+        first:
+          name: _Cutoff
+        second: 0.554
+      data:
+        first:
+          name: _Shininess
+        second: 0.202
+      data:
+        first:
+          name: PixelSnap
+        second: 0
+      data:
+        first:
+          name: _ZWrite
+        second: 0
+      data:
+        first:
+          name: _Glossiness
+        second: 0
+      data:
+        first:
+          name: _Metallic
+        second: 0.199
+      data:
+        first:
+          name: _BumpScale
+        second: 1
+      data:
+        first:
+          name: _Parallax
+        second: 0.02
+      data:
+        first:
+          name: _OcclusionStrength
+        second: 1
+      data:
+        first:
+          name: _DetailNormalMapScale
+        second: 1
+      data:
+        first:
+          name: _UVSec
+        second: 0
+      data:
+        first:
+          name: _Mode
+        second: 2
+      data:
+        first:
+          name: _EmissionScaleUI
+        second: 1
+      data:
+        first:
+          name: _InvFade
+        second: 0.01
+      data:
+        first:
+          name: _Detail
+        second: 0
+      data:
+        first:
+          name: _TranslucencyViewDependency
+        second: 0.7
+      data:
+        first:
+          name: _ShadowStrength
+        second: 1
+      data:
+        first:
+          name: _SquashAmount
+        second: 1
+      data:
+        first:
+          name: dummy_begin
+        second: 1
+      data:
+        first:
+          name: _LayerCount
+        second: 3
+      data:
+        first:
+          name: _IBLDiff
+        second: 3
+      data:
+        first:
+          name: _DirectSpec
+        second: 1
+      data:
+        first:
+          name: _IBLSpec
+        second: 0
+      data:
+        first:
+          name: _Normalmaps
+        second: 0
+      data:
+        first:
+          name: _Emissiveness
+        second: 0
+      data:
+        first:
+          name: _Water
+        second: 0
+      data:
+        first:
+          name: _OverlayFog
+        second: 0
+      data:
+        first:
+          name: _Snow
+        second: 0
+      data:
+        first:
+          name: dummy_main
+        second: 1
+      data:
+        first:
+          name: _AmbientIBL
+        second: 1
+      data:
+        first:
+          name: _GlobalNormalmapIntensity
+        second: 1
+      data:
+        first:
+          name: dummy_layer1
+        second: 0
+      data:
+        first:
+          name: _BaseGloss
+        second: 0
+      data:
+        first:
+          name: _BaseEmission
+        second: 0
+      data:
+        first:
+          name: _BaseDetailIntensity
+        second: 1
+      data:
+        first:
+          name: dummy_layer2
+        second: 0
+      data:
+        first:
+          name: _BlendGloss1
+        second: 0
+      data:
+        first:
+          name: _BlendEmission1
+        second: 0
+      data:
+        first:
+          name: _BlendDetailIntensity1
+        second: 1
+      data:
+        first:
+          name: dummy_layer3
+        second: 0
+      data:
+        first:
+          name: _BlendGloss2
+        second: 0
+      data:
+        first:
+          name: _BlendEmission2
+        second: 0
+      data:
+        first:
+          name: _BlendDetailIntensity2
+        second: 1
+      data:
+        first:
+          name: dummy_layer4
+        second: 0
+      data:
+        first:
+          name: _BlendGloss3
+        second: 0
+      data:
+        first:
+          name: _BlendEmission3
+        second: 0
+      data:
+        first:
+          name: _BlendDetailIntensity3
+        second: 1
+      data:
+        first:
+          name: dummy_detail
+        second: 1
+      data:
+        first:
+          name: _DetailColormapIntensity
+        second: 1
+      data:
+        first:
+          name: _DetailNormalmapIntensity
+        second: 1
+      data:
+        first:
+          name: dummy_water
+        second: 1
+      data:
+        first:
+          name: _WaterBlend
+        second: 0
+      data:
+        first:
+          name: _WaterWaves
+        second: 1
+      data:
+        first:
+          name: _WaterWaveSpeed
+        second: 1
+      data:
+        first:
+          name: dummy_fog
+        second: 1
+      data:
+        first:
+          name: _OverlayFogAmount
+        second: 0
+      data:
+        first:
+          name: _OverlayFogAmountFromReflCubemap
+        second: 0.5
+      data:
+        first:
+          name: _OverlayFogStartDistance
+        second: 2000
+      data:
+        first:
+          name: _OverlayFogDistanceTransition
+        second: 3000
+      data:
+        first:
+          name: _OverlayFogStartHeight
+        second: 0
+      data:
+        first:
+          name: _OverlayFogHeightTransition
+        second: 100
+      data:
+        first:
+          name: _OverlayFogDistance2Height
+        second: 100
+      data:
+        first:
+          name: _OverlayFogEmissivePunchThru
+        second: 0
+      data:
+        first:
+          name: dummy_snow
+        second: 1
+      data:
+        first:
+          name: _SnowAmount
+        second: 1
+      data:
+        first:
+          name: _SnowHeight
+        second: 300
+      data:
+        first:
+          name: _SnowHeightTransition
+        second: 50
+      data:
+        first:
+          name: _SnowSlopeDamp
+        second: 1
+      data:
+        first:
+          name: _SnowOutputColorBrightness2Coverage
+        second: 0.2
+      data:
+        first:
+          name: dummy_ambient
+        second: 1
+      data:
+        first:
+          name: _DiffIBLMulti
+        second: 1
+      data:
+        first:
+          name: dummy_specular
+        second: 1
+      data:
+        first:
+          name: _IBLSpecRoughMIP
+        second: 5
+      data:
+        first:
+          name: _IBLMIPDim_Rough
+        second: 1
+      data:
+        first:
+          name: _IBLSpecGlossMIP
+        second: 0
+      data:
+        first:
+          name: _IBLMIPDim_Gloss
+        second: 1
+      data:
+        first:
+          name: _AmbientLightFactor
+        second: 0
+      data:
+        first:
+          name: dummy_disk
+        second: 1
+      data:
+        first:
+          name: _ScaleInner
+        second: 1
+      data:
+        first:
+          name: _ScaleOuter
+        second: 1
+      data:
+        first:
+          name: _ScaleHeight
+        second: 1
+    m_Colors:
+      data:
+        first:
+          name: _EmissionColor
+        second: {r: 0.98, g: 0.98, b: 0.98, a: 1}
+      data:
+        first:
+          name: _Color
+        second: {r: 0, g: 0, b: 0, a: 0.947}
+      data:
+        first:
+          name: _SpecColor
+        second: {r: 0.2, g: 0.2, b: 0.2, a: 1}
+      data:
+        first:
+          name: _EmissionColorUI
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _TintColor
+        second: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
+      data:
+        first:
+          name: _TranslucencyColor
+        second: {r: 0.73, g: 0.85, b: 0.41, a: 1}
+      data:
+        first:
+          name: _MapScaleOffset
+        second: {r: 1000, g: 1000, b: 0, a: 0}
+      data:
+        first:
+          name: _Anchor
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _Tint
+        second: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+      data:
+        first:
+          name: _AmbientOverrideAAmount
+        second: {r: 0.5086505, g: 0.5635247, b: 0.6176471, a: 0}
+      data:
+        first:
+          name: _TintSaturation
+        second: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
+      data:
+        first:
+          name: _SpecGloss
+        second: {r: 0.1, g: 0.1, b: 0.1, a: 0.2}
+      data:
+        first:
+          name: _TintSaturationBlend1
+        second: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
+      data:
+        first:
+          name: _SpecGlossBlend1
+        second: {r: 0.1, g: 0.1, b: 0.1, a: 0.2}
+      data:
+        first:
+          name: _TintSaturationBlend2
+        second: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
+      data:
+        first:
+          name: _SpecGlossBlend2
+        second: {r: 0.1, g: 0.1, b: 0.1, a: 0.2}
+      data:
+        first:
+          name: _TintSaturationBlend3
+        second: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
+      data:
+        first:
+          name: _SpecGlossBlend3
+        second: {r: 0.1, g: 0.1, b: 0.1, a: 0.2}
+      data:
+        first:
+          name: _WaterColorAColorBlend
+        second: {r: 0.201449, g: 0.3554559, b: 0.5073529, a: 1}
+      data:
+        first:
+          name: _WaterSpecGloss
+        second: {r: 0.2, g: 0.2, b: 0.2, a: 0.9}
+      data:
+        first:
+          name: _OverlayFogColorAfromAmbient
+        second: {r: 0.7189662, g: 0.7639169, b: 0.8014706, a: 0}
+      data:
+        first:
+          name: _SnowColor
+        second: {r: 0.8, g: 0.8, b: 0.8, a: 0}
+      data:
+        first:
+          name: _SnowSpecGloss
+        second: {r: 0.2, g: 0.2, b: 0.2, a: 0.3}
+      data:
+        first:
+          name: _TreeInstanceColor
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _TreeInstanceScale
+        second: {r: 1, g: 1, b: 1, a: 1}
