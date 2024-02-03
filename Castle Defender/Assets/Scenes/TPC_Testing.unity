@@ -241,12 +241,48 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &786925063 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5656939699206289332, guid: 37750db927a5dcb44a25acfe0ee64779,
+    type: 3}
+  m_PrefabInstance: {fileID: 6338601274628788090}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &937441667 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2708669958008274183, guid: 37750db927a5dcb44a25acfe0ee64779,
+    type: 3}
+  m_PrefabInstance: {fileID: 6338601274628788090}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70b342d8ce5c2fd48b8fa3147d48d1d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &941776561 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8969665659172937354, guid: 37750db927a5dcb44a25acfe0ee64779,
+    type: 3}
+  m_PrefabInstance: {fileID: 6338601274628788090}
+  m_PrefabAsset: {fileID: 0}
 --- !u!20 &963194227 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 6592703726193069175, guid: a1f6283d47ef63849bce037e1fa1c73b,
     type: 3}
   m_PrefabInstance: {fileID: 1749090459316680174}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1076892538 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7714074807270562020, guid: 37750db927a5dcb44a25acfe0ee64779,
+    type: 3}
+  m_PrefabInstance: {fileID: 6338601274628788090}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70b342d8ce5c2fd48b8fa3147d48d1d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1272255031 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2661106918049397239, guid: 13486e2301371084489c0630f6e8eac6,
@@ -560,7 +596,7 @@ PrefabInstance:
     - target: {fileID: 2772005188257447002, guid: fff8c5fadf563974d8c6124fb2baa470,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.057265975
+      value: 0.05726598
       objectReference: {fileID: 0}
     - target: {fileID: 2772005188257447002, guid: fff8c5fadf563974d8c6124fb2baa470,
         type: 3}
@@ -675,6 +711,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5656939699206289332, guid: 37750db927a5dcb44a25acfe0ee64779,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6230442243153916733, guid: 37750db927a5dcb44a25acfe0ee64779,
         type: 3}
       propertyPath: m_Camera
@@ -697,13 +738,48 @@ PrefabInstance:
       objectReference: {fileID: 1272255031}
     - target: {fileID: 7375309578944775185, guid: 37750db927a5dcb44a25acfe0ee64779,
         type: 3}
+      propertyPath: bowModel
+      value: 
+      objectReference: {fileID: 786925063}
+    - target: {fileID: 7375309578944775185, guid: 37750db927a5dcb44a25acfe0ee64779,
+        type: 3}
+      propertyPath: arrowModel
+      value: 
+      objectReference: {fileID: 941776561}
+    - target: {fileID: 7375309578944775185, guid: 37750db927a5dcb44a25acfe0ee64779,
+        type: 3}
       propertyPath: _camera_Aim
       value: 
       objectReference: {fileID: 352675243}
+    - target: {fileID: 7375309578944775185, guid: 37750db927a5dcb44a25acfe0ee64779,
+        type: 3}
+      propertyPath: bowModelInUse
+      value: 
+      objectReference: {fileID: 786925063}
+    - target: {fileID: 7375309578944775185, guid: 37750db927a5dcb44a25acfe0ee64779,
+        type: 3}
+      propertyPath: leftHandRigIK
+      value: 
+      objectReference: {fileID: 1076892538}
+    - target: {fileID: 7375309578944775185, guid: 37750db927a5dcb44a25acfe0ee64779,
+        type: 3}
+      propertyPath: leftHandRigAim
+      value: 
+      objectReference: {fileID: 937441667}
+    - target: {fileID: 7661980366338972453, guid: 37750db927a5dcb44a25acfe0ee64779,
+        type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[0]
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7969903238368289204, guid: 37750db927a5dcb44a25acfe0ee64779,
         type: 3}
       propertyPath: m_Name
       value: MedievalCivil&Soldier_Complete
+      objectReference: {fileID: 0}
+    - target: {fileID: 8969665659172937354, guid: 37750db927a5dcb44a25acfe0ee64779,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

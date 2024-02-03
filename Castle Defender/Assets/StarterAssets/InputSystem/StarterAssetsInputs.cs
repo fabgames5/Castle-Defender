@@ -13,6 +13,7 @@ namespace StarterAssets
 		public bool jump;
 		public bool sprint;
 		public bool aim;
+		public bool fire;
 
 		[Header("Movement Settings")]
 		public bool analogMovement;
@@ -49,10 +50,17 @@ namespace StarterAssets
 		{
 			AimInput(value.isPressed);
 		}
+
+		public void OnFire(InputValue value)
+		{
+			FireInput(value.isPressed);
+		}
+
+        
 #endif
 
 
-		public void MoveInput(Vector2 newMoveDirection)
+        public void MoveInput(Vector2 newMoveDirection)
 		{
 			move = newMoveDirection;
 		} 
@@ -72,11 +80,19 @@ namespace StarterAssets
 			sprint = newSprintState;
 		}
 
+		//added aim
 		public void AimInput(bool newAimState)
 		{
 			aim = newAimState;
 		}
-		private void OnApplicationFocus(bool hasFocus)
+		//added fire
+        public void FireInput(bool newFireState)
+        {
+            fire = newFireState;
+        }
+		
+
+        private void OnApplicationFocus(bool hasFocus)
 		{
 			SetCursorState(cursorLocked);
 		}

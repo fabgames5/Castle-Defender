@@ -27,5 +27,5 @@ EditorBuildSettings:
     path: Assets/Demo/Demo Scenes/Vehicle AI Demo.unity
     guid: c8fc78b16527a1b47a862fe8743b0fd8
   m_configObjects:
-    com.unity.input.settings: {fileID: 11400000, guid: 2ec44aec0dd0a564fa6de8ea4b3c5852,
+    com.unity.input.settings: {fileID: 11400000, guid: 9e7be553448fa2546aea5752021cbcf7,
       type: 2}

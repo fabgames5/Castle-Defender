@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using StarterAssets;
 using Cinemachine;
+using UnityEngine.Animations.Rigging;
+
 
 #if ENABLE_INPUT_SYSTEM
 using UnityEngine.InputSystem;
@@ -14,6 +16,15 @@ using UnityEngine.InputSystem;
 
 public class JBR_StarterAssets_Aim : MonoBehaviour
 {
+    public bool fireHold = false;
+    public bool bowEquiped = false;
+    public GameObject bowModelInUse;
+    public GameObject arrowModel;
+    public GameObject bowModelMounted;
+    public SkinnedMeshRenderer bowRenderer;
+    public Rig leftHandRigAim;
+    public Rig leftHandRigIK;
+
 
 #if ENABLE_INPUT_SYSTEM
     [SerializeField]
@@ -45,12 +56,36 @@ public class JBR_StarterAssets_Aim : MonoBehaviour
 
         _animator = GetComponent<Animator>();
 
+        bowRenderer = bowModelInUse.GetComponent<SkinnedMeshRenderer>();
+        bowModelInUse.SetActive(false);
+        leftHandRigAim.weight = 0;
+        leftHandRigIK.weight = 0;
+
 
     }
 
     // Update is called once per frame
     void Update()
     {
+        //weapon select
+        if(Input.GetKeyDown(KeyCode.Alpha1)) 
+        {
+            if (bowEquiped == false)
+            {
+                bowEquiped = true;
+                _animator.SetBool("EquipBow", true);
+
+                SetModelActive(true, bowModelInUse);
+            }
+            else
+            {
+                bowEquiped = false;
+                _animator.SetBool("AimingBow", false);
+                _animator.SetBool("EquipBow", false);
+                bowModelInUse.SetActive(false);
+            }
+        }
+
         Aim();
         
     }
@@ -64,7 +99,7 @@ public class JBR_StarterAssets_Aim : MonoBehaviour
             if(isAiming)
             {
                 Debug.Log("Aiming ******");
-                _animator.SetBool("AimingBow", true);
+               // _animator.SetBool("AimingBow", true);
             }
             // start aiming
             else
@@ -79,9 +114,54 @@ public class JBR_StarterAssets_Aim : MonoBehaviour
         else
         {
             isAiming = false;
-            _animator.SetBool("AimingBow", false);
+           // _animator.SetBool("AimingBow", false);
             _camera_Aim.Priority = 2;
             _thirdPersonController.CinemachineCameraTargetCurrent = _thirdPersonController.CinemachineCameraTarget3rd;
         }
+
+
+        if (bowEquiped == true)
+        {
+            if (_input.fire)
+            {
+                if (fireHold == false)
+                {
+                    fireHold = true;
+                    leftHandRigAim.weight = 1;
+                    leftHandRigIK.weight = 1;
+                    _animator.SetBool("AimingBow", true);
+
+                    // //needs to be set over time
+                    bowRenderer.SetBlendShapeWeight(0, 100);
+
+                    arrowModel.SetActive(true);
+                }
+            }
+            else
+            {
+                if (fireHold)
+                {
+                    fireHold = false;
+                    leftHandRigIK.weight = 0;
+                    leftHandRigAim.weight = 0;
+                    // fire now
+                    _animator.SetBool("AimingBow", false);
+                    _animator.SetTrigger("FireArrow");
+                    // //needs to be set over time
+                    bowRenderer.SetBlendShapeWeight(0, 0);
+                    arrowModel.SetActive(false);
+                }
+            }
+        }
+    }
+
+    /// <summary>
+    /// Sets model active or Inactive
+    /// </summary>
+    /// <param name="active"></param>
+    /// <param name="model"></param>
+    public void SetModelActive(bool active, GameObject model)
+    {
+        model.SetActive(active);
     }
 }
