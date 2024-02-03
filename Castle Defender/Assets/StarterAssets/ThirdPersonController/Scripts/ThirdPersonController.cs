@@ -61,7 +61,9 @@ namespace StarterAssets
 
         [Header("Cinemachine")]
         [Tooltip("The follow target set in the Cinemachine Virtual Camera that the camera will follow")]
-        public GameObject CinemachineCameraTarget;
+        public GameObject CinemachineCameraTarget3rd;
+        public GameObject CinemachineCameraTargetAim;
+        public GameObject CinemachineCameraTargetCurrent;
 
         [Tooltip("How far in degrees can you move the camera up")]
         public float TopClamp = 70.0f;
@@ -76,16 +78,19 @@ namespace StarterAssets
         public bool LockCameraPosition = false;
 
         // cinemachine
-        private float _cinemachineTargetYaw;
+        private float _cinemachineTargetYaw = 0;
         private float _cinemachineTargetPitch;
 
         // player
+        [SerializeField]
         private float _speed;
         private float _animationBlend;
         private float _targetRotation = 0.0f;
         private float _rotationVelocity;
         private float _verticalVelocity;
         private float _terminalVelocity = 53.0f;
+
+        public float rotation;
 
         // timeout deltatime
         private float _jumpTimeoutDelta;
@@ -134,7 +139,7 @@ namespace StarterAssets
 
         private void Start()
         {
-            _cinemachineTargetYaw = CinemachineCameraTarget.transform.rotation.eulerAngles.y;
+            _cinemachineTargetYaw = CinemachineCameraTargetCurrent.transform.rotation.eulerAngles.y;
             
             _hasAnimator = TryGetComponent(out _animator);
             _controller = GetComponent<CharacterController>();
@@ -207,8 +212,9 @@ namespace StarterAssets
             _cinemachineTargetPitch = ClampAngle(_cinemachineTargetPitch, BottomClamp, TopClamp);
 
             // Cinemachine will follow this target
-            CinemachineCameraTarget.transform.rotation = Quaternion.Euler(_cinemachineTargetPitch + CameraAngleOverride,
-                _cinemachineTargetYaw, 0.0f);
+
+            CinemachineCameraTargetCurrent.transform.rotation = Quaternion.Euler(_cinemachineTargetPitch + CameraAngleOverride, transform.localEulerAngles.y
+                , 0.0f);
         }
 
         private void Move()
@@ -255,20 +261,33 @@ namespace StarterAssets
             // if there is a move input rotate player when the player is moving
             if (_input.move != Vector2.zero)
             {
-                _targetRotation = Mathf.Atan2(inputDirection.x, inputDirection.z) * Mathf.Rad2Deg +
+                _targetRotation = Mathf.Atan2(1, 1) * Mathf.Rad2Deg +
                                   _mainCamera.transform.eulerAngles.y;
-                float rotation = Mathf.SmoothDampAngle(transform.eulerAngles.y, _targetRotation, ref _rotationVelocity,
-                    RotationSmoothTime);
+            //    float rotation = Mathf.SmoothDampAngle(transform.eulerAngles.y, _targetRotation, ref _rotationVelocity,RotationSmoothTime);
+           
+            }
+
+            if(_input.look != Vector2.zero)
+            {
+                rotation += (_input.look.x * 2.0f);
+                if (rotation > 360)
+                {
+                    rotation = rotation - 360;
+                }
+                if (rotation < -360)
+                {
+                    rotation = rotation + 360;
+                }
 
                 // rotate to face input direction relative to camera position
                 transform.rotation = Quaternion.Euler(0.0f, rotation, 0.0f);
             }
 
 
-            Vector3 targetDirection = Quaternion.Euler(0.0f, _targetRotation, 0.0f) * Vector3.forward;
+            Vector3 targetDirection = Quaternion.Euler(0.0f, transform.localEulerAngles.y, 0.0f) * Vector3.forward;
 
             // move the player
-            _controller.Move(targetDirection.normalized * (_speed * Time.deltaTime) +
+            _controller.Move(targetDirection.normalized * (_speed * inputDirection.z * Time.deltaTime)+ new Vector3(transform.right.x,transform.right.y,transform.right.z) * (inputDirection.x * _speed * Time.deltaTime) +
                              new Vector3(0.0f, _verticalVelocity, 0.0f) * Time.deltaTime);
 
             // update animator if using character
