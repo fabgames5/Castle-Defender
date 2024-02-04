@@ -1,16 +1,18 @@
 
+using StarterAssets;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using JBR;
 
 public class JBR_Trajectory : MonoBehaviour
 {
+    public ShootType shootType = ShootType.ShootAtTarget;
+
+    public bool checkDirection = false;
     public bool fire = false;
-  //  public bool repeatFire = false;
   
-    [Tooltip("Select a ignoring layer for collsion calculation")]
-    public LayerMask ignoreLayer;
+    [Tooltip("Select all hit layers for collsion calculation")]
+    public LayerMask hitlayers;
 
     [Range(0, 90)]
     public float shootAngle;
@@ -26,10 +28,31 @@ public class JBR_Trajectory : MonoBehaviour
 
     private float spdVec;
     private Vector3 shootVec;
+
+    [Tooltip("the arch points of a trajectory")]
+    [SerializeField]
+    private List<GameObject> archObj;
+    public int archLineCount;//Count of of points. Starting from hit position.
+    public float archCalcInterval;//Resolution of trajectory arch
+    public float archCountLimit = 20;
+    public List<Vector3> archVerts = new List<Vector3>();
+    [Tooltip("if checked, Shows the projectile path")]
+    public bool showProjectilePath = false;
+    public float shootForce = 20;
+         
+    [Tooltip("Required when showTrajectory is true, just a point on the projectile arch")]
+    public GameObject markPref;//Used to visualize arch vertices
+
+    public GameObject hitMarker;
+    public GameObject currentCamera;
+
     public Transform target;
     public Vector3 hitPosition;
+    public Vector3 forwardDirection;
 
     public float distance;
+    public float timer;
+
 
     public void CheckVector(Vector3 hitPos)
     {
@@ -137,7 +160,7 @@ public class JBR_Trajectory : MonoBehaviour
         Vector3 force = shootVec * rig.mass;
         rig.AddForce(force, ForceMode.Impulse);
 
-        obj.GetComponent<JBR.JBR_Projectile>().Fire();
+        obj.GetComponent<JBR_Projectile>().Fire(shootObj);
 
     }
 
@@ -152,26 +175,139 @@ public class JBR_Trajectory : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //get distance
-        distance = Vector3.Distance(actor.transform.position, target.transform.position);
-        //percentage of max distance away
-        float percentage = distance / shootMaxRange;
-        if(percentage > 1)
+        if (shootType == ShootType.ShootAtTarget)
         {
-            percentage = 1;
+            //get distance
+            distance = Vector3.Distance(actor.transform.position, target.transform.position);
+            //percentage of max distance away
+            float percentage = distance / shootMaxRange;
+            if (percentage > 1)
+            {
+                percentage = 1;
+            }
+            shootAngle = percentage * shootMaxangle;
+
+            //testing code only
+            pivotPoint.transform.localEulerAngles = new Vector3(-shootAngle, pivotPoint.transform.localEulerAngles.y, pivotPoint.transform.localEulerAngles.z);
+            // looks at target
+            Vector3 targetPostition = new Vector3(target.position.x, actor.transform.position.y, target.position.z);
+            actor.transform.LookAt(targetPostition);
+
+            if (fire)
+            {
+                fire = false;
+                ShootAtObject(projectile, new Vector3(target.transform.position.x, target.transform.position.y + heightOffset, target.transform.position.z));
+            }
         }
-        shootAngle = percentage * shootMaxangle;
 
-        //testing code only
-        pivotPoint.transform.localEulerAngles = new Vector3(-shootAngle, pivotPoint.transform.localEulerAngles.y, pivotPoint.transform.localEulerAngles.z );
-        // looks at target
-        Vector3 targetPostition = new Vector3(target.position.x, actor.transform.position.y, target.position.z);
-        actor.transform.LookAt(targetPostition);
-
-        if (fire)
+        if(shootType ==ShootType.ShootByDirection)
         {
-            fire = false;
-            ShootAtObject(projectile, new Vector3(target.transform.position.x,target.transform.position.y + heightOffset, target.transform.position.z));
+            if(timer > 0)
+            {
+                timer -= Time.deltaTime;
+                if(timer <= 0)
+                {
+                    checkDirection = true;
+                }
+            }
+
+
+            if(checkDirection)
+            {
+            //    pivotPoint.transform.localEulerAngles = new Vector3(-shootAngle, pivotPoint.transform.localEulerAngles.y, pivotPoint.transform.localEulerAngles.z);
+                Debug.Log(360 - pivotPoint.transform.localEulerAngles.x);
+                currentCamera = this.gameObject.GetComponent<ThirdPersonController>().CinemachineCameraTargetCurrent;
+                forwardDirection = this.transform.forward;
+                shootAngle = 360 - pivotPoint.transform.localEulerAngles.x;
+                DisplayTrajectoryByDirection(pivotPoint.transform.forward, shootForce);
+                timer = .1f;
+                checkDirection = false;
+              
+
+            }
+
         }
+    }
+
+    public void DisplayTrajectoryByDirection(Vector3 dir, float force)
+    {
+        //remove old objects
+        if (archObj.Count > 0)
+        {
+            foreach (GameObject obj in archObj)
+            {
+                Destroy(obj, 0f);
+            }
+            archObj.Clear();
+        }
+        archVerts.Clear();
+         
+        Vector3 dirNor = dir.normalized;
+
+        float x;
+        float y = shootPoint.transform.position.y;
+        float y0 = y;
+        float g = Physics.gravity.y;
+        float rad = shootAngle * Mathf.Deg2Rad;
+        float cos = Mathf.Cos(rad);        
+        float sin = Mathf.Sin(rad);
+        float time;
+     //   Debug.Log("Cos " + cos + " Sin " + sin);
+
+        Vector3 shootPos3 = shootPoint.transform.position;
+        float spd = force;
+
+            Quaternion yawRot = Quaternion.FromToRotation(this.transform.forward,this.transform.forward);
+        RaycastHit hit;
+
+        for (int i = 0; i < archCountLimit; i++)
+        {
+         //   Debug.Log("ArchHeightLimit " + i);
+            time = archCalcInterval * i;
+            x = spd * cos * time;
+            y = spd * sin * time + y0 + g * time * time / 2;
+            archVerts.Add(new Vector3(x, y, x));
+            archVerts[i] = new Vector3(forwardDirection.x * x, archVerts[i].y, forwardDirection.z * x);
+            archVerts[i] = new Vector3(archVerts[i].x + shootPos3.x, archVerts[i].y, archVerts[i].z + shootPos3.z);
+
+            if (i > 0)
+            {
+                if (Physics.Linecast(archVerts[i - 1], archVerts[i], out hit, hitlayers))
+                {
+                    archVerts[i] = hit.point;
+                    Debug.Log("Hit " + hit.collider.gameObject.name);
+                    if (showProjectilePath)
+                    {
+                        GameObject mark = Instantiate(markPref, hit.point, Quaternion.identity) as GameObject;
+                        archObj.Add(mark);
+                    }
+                        hitMarker.transform.position = hit.point +( hit.normal * .05f);
+                        hitMarker.transform.rotation = Quaternion.FromToRotation(Vector3.forward, hit.normal);
+                      //  hitMarker.transform.LookAt(currentCamera.transform);
+                     //   archObj[i].transform.parent = shootPoint.transform;
+                    
+                    break;
+                }
+            }
+            if (showProjectilePath)
+            {
+                GameObject mark = Instantiate(markPref, archVerts[i], Quaternion.identity) as GameObject;
+                archObj.Add(mark);              
+             //   archObj[i].transform.parent = shootPoint.transform;
+            }
+        }
+      //  int lineLength = archLineCount;
+       // archVerts.Reverse();
+     //   if (archVerts.Count < lineLength)
+     //   {
+     //       lineLength = archVerts.Count;
+     //   }
+    }
+
+    public enum ShootType
+    {
+        
+        ShootAtTarget,
+        ShootByDirection
     }
 }
