@@ -16,7 +16,7 @@ ModelImporter:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
     resampleCurves: 1
-    optimizeGameObjects: 0
+    optimizeGameObjects: 1
     removeConstantScaleCurves: 0
     motionNodeName: 
     rigImportErrors: 
@@ -32,7 +32,8 @@ ModelImporter:
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
-    extraExposedTransformPaths: []
+    extraExposedTransformPaths:
+    - root
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
@@ -42,8 +43,8 @@ ModelImporter:
       firstFrame: 0
       lastFrame: 65
       wrapMode: 0
-      orientationOffsetY: -4.09
-      level: 0
+      orientationOffsetY: -132.19
+      level: 0.02
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
@@ -52,7 +53,7 @@ ModelImporter:
       loopBlendOrientation: 1
       loopBlendPositionY: 1
       loopBlendPositionXZ: 1
-      keepOriginalOrientation: 1
+      keepOriginalOrientation: 0
       keepOriginalPositionY: 1
       keepOriginalPositionXZ: 1
       heightFromFeet: 0

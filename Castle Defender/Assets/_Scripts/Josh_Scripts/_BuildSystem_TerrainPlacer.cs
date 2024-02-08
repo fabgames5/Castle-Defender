@@ -467,7 +467,7 @@ public class _BuildSystem_TerrainPlacer : MonoBehaviour
         boxCollider.isTrigger = true;
         newPrefab.layer = placingLayerRef;
 
-        // get mesh collider
+        // get mesh col
         mC = newPrefab.GetComponent<MeshCollider>();
         mC.enabled = false;
 

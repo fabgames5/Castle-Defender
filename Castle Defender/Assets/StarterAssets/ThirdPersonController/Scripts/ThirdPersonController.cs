@@ -213,7 +213,7 @@ namespace StarterAssets
 
             // Cinemachine will follow this target
 
-            CinemachineCameraTargetCurrent.transform.rotation = Quaternion.Euler(_cinemachineTargetPitch + CameraAngleOverride, transform.localEulerAngles.y
+            CinemachineCameraTargetCurrent.transform.rotation = Quaternion.Euler(_cinemachineTargetPitch , transform.localEulerAngles.y + CameraAngleOverride
                 , 0.0f);
         }
 
@@ -382,7 +382,7 @@ namespace StarterAssets
             if (Grounded) Gizmos.color = transparentGreen;
             else Gizmos.color = transparentRed;
 
-            // when selected, draw a gizmo in the position of, and matching radius of, the grounded collider
+            // when selected, draw a gizmo in the position of, and matching radius of, the grounded col
             Gizmos.DrawSphere(
                 new Vector3(transform.position.x, transform.position.y - GroundedOffset, transform.position.z),
                 GroundedRadius);

@@ -69,10 +69,10 @@ public class _BuildSystem_Construction : MonoBehaviour
     [Tooltip("Check to make boxCollider a Trigger, True by default")]
     [SerializeField]
     private bool boxColliderIsTrigger = true;
-    [Tooltip("how much to offSet the box collider Size, for collision detection during build mode ")]
+    [Tooltip("how much to offSet the box col Size, for collision detection during build mode ")]
     [SerializeField]
     private Vector3 boxColliderSize = new Vector3(-0.1f, -0.1f, -0.1f);
-    [Tooltip("how much to offSet the box collider center, for collision detection during build mode ")]
+    [Tooltip("how much to offSet the box col center, for collision detection during build mode ")]
     [SerializeField]
     private Vector3 boxColliderCenter = new Vector3(0, 0, 0);
     [Space(5)]
@@ -112,7 +112,7 @@ public class _BuildSystem_Construction : MonoBehaviour
             mesh.RecalculateBounds();
             boundingBox = mesh.bounds;
 
-            //get or add mesh collider          
+            //get or add mesh col          
             meshCollider = this.gameObject.GetComponent<MeshCollider>();
             if (meshCollider == null && addMeshCollider)
             {

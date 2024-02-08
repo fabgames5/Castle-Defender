@@ -8,7 +8,7 @@ public class JBR_Weapon_Hands : JBR_Weapon_Base
     [Tooltip("Dynamically set to true if this uses triggers")]
     public bool useTrigger = true;
     public SphereCollider col;
-    [Tooltip("How big the sphere collider should be..")]
+    [Tooltip("How big the sphere col should be..")]
     public float colliderSize = .1f;
     [Tooltip("the cool down only allows damage to be sent once per time allowed")]
     public float cooldown = .5f;
@@ -73,7 +73,7 @@ public class JBR_Weapon_Hands : JBR_Weapon_Base
 
             if (col == null)
             {
-                //make sure we have a collider and if not add one and set size
+                //make sure we have a col and if not add one and set size
                 if (this.gameObject.GetComponent<SphereCollider>() != null)
                 {
                     col = this.gameObject.GetComponent<SphereCollider>();

@@ -6,10 +6,12 @@ using UnityEngine;
 
 public class JBR_Trajectory : MonoBehaviour
 {
+    [Tooltip("ShootAtTarget is for AI, SHootByDirection is for player aiming")]
     public ShootType shootType = ShootType.ShootAtTarget;
 
     public bool checkDirection = false;
     public bool fire = false;
+
   
     [Tooltip("Select all hit layers for collsion calculation")]
     public LayerMask hitlayers;
@@ -19,6 +21,7 @@ public class JBR_Trajectory : MonoBehaviour
     public float shootMaxangle = 75;
     public float shootMaxRange = 200;
     public float heightOffset = 0.0f;
+    public float fireRate = 3.0f;
 
     [Tooltip("Required")]
     public GameObject shootPoint;
@@ -50,9 +53,15 @@ public class JBR_Trajectory : MonoBehaviour
     public Vector3 hitPosition;
     public Vector3 forwardDirection;
 
+    [Tooltip("Distance to the Target for the AI")]
     public float distance;
-    public float timer;
 
+    private float timer;
+    private float fireTimer;
+
+    private StarterAssets.StarterAssetsInputs _Inputs;
+    public bool fireReleased;
+    public bool firePressed;
 
     public void CheckVector(Vector3 hitPos)
     {
@@ -135,10 +144,14 @@ public class JBR_Trajectory : MonoBehaviour
     public void ShootObjectByDirection(GameObject shootObj, Vector3 dir, float force)
     {
         
-        GameObject obj = Instantiate(shootObj, shootPoint.transform.position, shootPoint.transform.rotation);
+        GameObject obj = Instantiate(shootObj, shootPoint.transform.position, pivotPoint.transform.rotation) as GameObject;
         Rigidbody rig = obj.GetComponent<Rigidbody>();
-        Vector3 forceDir = dir * rig.mass * force;
+        Vector3 newDir = new Vector3(this.transform.forward.x,dir.y,this.transform.forward.z);
+
+        Vector3 forceDir = newDir * rig.mass * force;
         rig.AddForce(forceDir, ForceMode.Impulse);
+
+        obj.GetComponent<JBR.JBR_Projectile_>().Fire();
     }
 
     public void ShootAtObject(GameObject shootObj, Vector3 hitPos)
@@ -160,7 +173,7 @@ public class JBR_Trajectory : MonoBehaviour
         Vector3 force = shootVec * rig.mass;
         rig.AddForce(force, ForceMode.Impulse);
 
-        obj.GetComponent<JBR_Projectile>().Fire(shootObj);
+        obj.GetComponent<JBR.JBR_Projectile_>().Fire();
 
     }
 
@@ -169,12 +182,21 @@ public class JBR_Trajectory : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       
+        _Inputs = this.gameObject.GetComponent<StarterAssets.StarterAssetsInputs>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(fireTimer > 0)
+        {
+            fireTimer -= Time.deltaTime;
+        }
+        if(fireTimer<=0)
+        {
+            fire = true;
+        }
+
         if (shootType == ShootType.ShootAtTarget)
         {
             //get distance
@@ -196,6 +218,7 @@ public class JBR_Trajectory : MonoBehaviour
             if (fire)
             {
                 fire = false;
+                fireTimer = fireRate;
                 ShootAtObject(projectile, new Vector3(target.transform.position.x, target.transform.position.y + heightOffset, target.transform.position.z));
             }
         }
@@ -211,19 +234,39 @@ public class JBR_Trajectory : MonoBehaviour
                 }
             }
 
+            //inputs
+            if(_Inputs.fire == true)
+            {
+                firePressed = true;
+                fireReleased = false;
+            }
+
+            if(_Inputs.fire == false && firePressed == true)
+            {
+                firePressed = false;
+                fireReleased = true;
+            }
+
 
             if(checkDirection)
             {
             //    pivotPoint.transform.localEulerAngles = new Vector3(-shootAngle, pivotPoint.transform.localEulerAngles.y, pivotPoint.transform.localEulerAngles.z);
-                Debug.Log(360 - pivotPoint.transform.localEulerAngles.x);
+            //    Debug.Log(360 - pivotPoint.transform.localEulerAngles.x);
                 currentCamera = this.gameObject.GetComponent<ThirdPersonController>().CinemachineCameraTargetCurrent;
                 forwardDirection = this.transform.forward;
+               // shootPoint.transform.forward = new Vector3(forwardDirection.x, shootPoint.transform.forward.y, forwardDirection.z);
                 shootAngle = 360 - pivotPoint.transform.localEulerAngles.x;
                 DisplayTrajectoryByDirection(pivotPoint.transform.forward, shootForce);
                 timer = .1f;
                 checkDirection = false;
-              
+            }
 
+            if (fireReleased == true && fire == true)
+            {
+                fire = false;
+                fireReleased = false;
+                fireTimer = fireRate;
+                ShootObjectByDirection(projectile, shootPoint.transform.forward, shootForce);
             }
 
         }
@@ -275,7 +318,7 @@ public class JBR_Trajectory : MonoBehaviour
                 if (Physics.Linecast(archVerts[i - 1], archVerts[i], out hit, hitlayers))
                 {
                     archVerts[i] = hit.point;
-                    Debug.Log("Hit " + hit.collider.gameObject.name);
+              //      Debug.Log("Hit " + hit.collider.gameObject.name);
                     if (showProjectilePath)
                     {
                         GameObject mark = Instantiate(markPref, hit.point, Quaternion.identity) as GameObject;

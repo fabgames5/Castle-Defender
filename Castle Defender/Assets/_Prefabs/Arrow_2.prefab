@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1475114811986298328}
   - component: {fileID: 2982066394178699809}
   - component: {fileID: 9035729358135994884}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Arrow_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51,17 +51,17 @@ Rigidbody:
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 1050625
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 23069734
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 2
   m_Constraints: 0
-  m_CollisionDetection: 3
+  m_CollisionDetection: 2
 --- !u!136 &2982066394178699809
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -72,19 +72,19 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 193
+    m_Bits: 1276177
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 23463168
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.02
-  m_Height: 0.2
+  m_Radius: 0.04
+  m_Height: 0.4
   m_Direction: 2
-  m_Center: {x: 0, y: 0, z: 0.3}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &9035729358135994884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -97,7 +97,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53aeb81a69d4a04fbdc5f8838143074, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  velocity: {x: 0, y: 0, z: 0}
   rot: {x: 0, y: 0, z: 0, w: 0}
+  updateProjectile: 0
 --- !u!1 &1749222707806338635
 GameObject:
   m_ObjectHideFlags: 0
@@ -109,7 +111,7 @@ GameObject:
   - component: {fileID: 8879658344141395708}
   - component: {fileID: 1903364734904933508}
   - component: {fileID: 8828435334039558387}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Arrow_
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -126,7 +128,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2225397922402243534}

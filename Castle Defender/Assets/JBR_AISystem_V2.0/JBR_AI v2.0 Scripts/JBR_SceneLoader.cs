@@ -63,16 +63,16 @@ public class JBR_SceneLoader : MonoBehaviour
         }
         
         isTeleporting = false;
-        //check for box collider, if no collider then add one
+        //check for box col, if no col then add one
         boxCol = this.gameObject.GetComponent<BoxCollider>();
         if (boxCol == null)
         {
-            Debug.LogWarning("***Warning*** !!  No Box Collider was found on JBR_SceneLoader > " + this.gameObject.name + " A box collider was added but you should add one in editor that fits your needed size requirements..");
+            Debug.LogWarning("***Warning*** !!  No Box Collider was found on JBR_SceneLoader > " + this.gameObject.name + " A box col was added but you should add one in editor that fits your needed size requirements..");
             boxCol = this.gameObject.AddComponent<BoxCollider>();
         }
         if (useTriggers)
         {
-            //box collider must be a trigger
+            //box col must be a trigger
             boxCol.isTrigger = true;
         }
 
