@@ -13,10 +13,12 @@ GameObject:
   - component: {fileID: 5344677777734510330}
   - component: {fileID: 7047413520720853405}
   - component: {fileID: 3837016981317345078}
+  - component: {fileID: -4074634640902329837}
   - component: {fileID: 5794041803613220757}
+  - component: {fileID: -4901155458330758114}
   m_Layer: 20
   m_Name: stairs
-  m_TagString: Untagged
+  m_TagString: building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -119,7 +121,7 @@ MonoBehaviour:
   spherePoints:
   - {fileID: 2827144556982322640}
   rb: {fileID: 0}
-  addRigidbody: 0
+  addRigidbody: 1
   meshCollider: {fileID: 3837016981317345078}
   addMeshCollider: 1
   localEulerRotations: {x: 270, y: 0, z: 0}
@@ -143,11 +145,38 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 3d53bdb06508e5545a059e0412b2eee2, type: 3}
+--- !u!54 &-4074634640902329837
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 655150847253942615}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!65 &5794041803613220757
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -169,6 +198,22 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.34, y: 1.7000005, z: 3.700001}
   m_Center: {x: 0.5000005, y: 0, z: 2.0000005}
+--- !u!208 &-4901155458330758114
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 655150847253942615}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.5000001, y: 1, z: 2}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0.5, y: 0, z: 2}
+  m_TimeToStationary: 0.5
 --- !u!1 &2827144556982322640
 GameObject:
   m_ObjectHideFlags: 0
