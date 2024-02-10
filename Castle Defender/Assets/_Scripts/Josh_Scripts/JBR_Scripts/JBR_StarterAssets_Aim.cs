@@ -24,6 +24,8 @@ public class JBR_StarterAssets_Aim : MonoBehaviour
     public SkinnedMeshRenderer bowRenderer;
     public Rig leftHandRigAim;
     public Rig leftHandRigIK;
+    public float ik_Weight = 0;
+    public float ik_WeightMulti = 1.0f;
 
 
 #if ENABLE_INPUT_SYSTEM
@@ -40,6 +42,7 @@ public class JBR_StarterAssets_Aim : MonoBehaviour
     [SerializeField]
     private CinemachineVirtualCamera _camera_Aim;
     private ThirdPersonController _thirdPersonController;
+    private JBR_Trajectory _Trajectory;
 
     // Start is called before the first frame update
     void Start()
@@ -55,6 +58,7 @@ public class JBR_StarterAssets_Aim : MonoBehaviour
 #endif 
 
         _animator = GetComponent<Animator>();
+        _Trajectory = this.gameObject.GetComponent<JBR_Trajectory>();
 
         bowRenderer = bowModelInUse.GetComponent<SkinnedMeshRenderer>();
         bowModelInUse.SetActive(false);
@@ -87,7 +91,36 @@ public class JBR_StarterAssets_Aim : MonoBehaviour
         }
 
         Aim();
-        
+
+        if (fireHold)
+        {
+            if(ik_Weight < 1)
+            {
+                ik_Weight = Mathf.Lerp(ik_Weight, 1, Time.deltaTime * ik_WeightMulti);
+                leftHandRigAim.weight = ik_Weight;
+                leftHandRigIK.weight = ik_Weight;
+                if (ik_Weight >= .85f)
+                {
+                    arrowModel.SetActive(true);
+                    _Trajectory.showProjectilePath = true;
+                }
+                else
+                {
+                    _Trajectory.showProjectilePath = false;
+                }
+            }
+           
+        }
+        else
+        {
+            if(ik_Weight > 0)
+            {
+                ik_Weight = Mathf.Lerp(ik_Weight, 0, Time.deltaTime * ik_WeightMulti);
+                leftHandRigAim.weight = ik_Weight;
+                leftHandRigIK.weight = ik_Weight;
+            }
+            _Trajectory.showProjectilePath = false;
+        }
     }
 
 
@@ -127,14 +160,14 @@ public class JBR_StarterAssets_Aim : MonoBehaviour
                 if (fireHold == false)
                 {
                     fireHold = true;
-                    leftHandRigAim.weight = 1;
-                    leftHandRigIK.weight = 1;
+               //     leftHandRigAim.weight = ik_Weight;
+              //      leftHandRigIK.weight = 1;
                     _animator.SetBool("AimingBow", true);
 
                     // //needs to be set over time
                     bowRenderer.SetBlendShapeWeight(0, 100);
 
-                    arrowModel.SetActive(true);
+                  //  arrowModel.SetActive(true);
                 }
             }
             else
@@ -142,8 +175,8 @@ public class JBR_StarterAssets_Aim : MonoBehaviour
                 if (fireHold)
                 {
                     fireHold = false;
-                    leftHandRigIK.weight = 0;
-                    leftHandRigAim.weight = 0;
+                //    leftHandRigIK.weight = ik_Weight;
+                //    leftHandRigAim.weight = 0;
                     // fire now
                     _animator.SetBool("AimingBow", false);
                     _animator.SetTrigger("FireArrow");

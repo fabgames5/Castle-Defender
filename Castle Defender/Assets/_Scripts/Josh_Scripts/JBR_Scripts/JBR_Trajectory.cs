@@ -28,6 +28,7 @@ public class JBR_Trajectory : MonoBehaviour
     public GameObject pivotPoint;
     public GameObject actor;
     public GameObject projectile;
+    public LineRenderer lineRenderer;
 
     private float spdVec;
     private Vector3 shootVec;
@@ -42,6 +43,8 @@ public class JBR_Trajectory : MonoBehaviour
     [Tooltip("if checked, Shows the projectile path")]
     public bool showProjectilePath = false;
     public float shootForce = 20;
+    public float gravityOffset = .2f;
+    public float shootAngleOffset = 2.0f;
          
     [Tooltip("Required when showTrajectory is true, just a point on the projectile arch")]
     public GameObject markPref;//Used to visualize arch vertices
@@ -256,7 +259,9 @@ public class JBR_Trajectory : MonoBehaviour
                 forwardDirection = this.transform.forward;
                // shootPoint.transform.forward = new Vector3(forwardDirection.x, shootPoint.transform.forward.y, forwardDirection.z);
                 shootAngle = 360 - pivotPoint.transform.localEulerAngles.x;
-                DisplayTrajectoryByDirection(pivotPoint.transform.forward, shootForce);
+               
+                    DisplayTrajectoryByDirection(pivotPoint.transform.forward, shootForce);
+                
                 timer = .1f;
                 checkDirection = false;
             }
@@ -284,67 +289,97 @@ public class JBR_Trajectory : MonoBehaviour
             archObj.Clear();
         }
         archVerts.Clear();
-         
-        Vector3 dirNor = dir.normalized;
+        lineRenderer.positionCount = 0;
+        hitMarker.SetActive(false);
 
-        float x;
-        float y = shootPoint.transform.position.y;
-        float y0 = y;
-        float g = Physics.gravity.y;
-        float rad = shootAngle * Mathf.Deg2Rad;
-        float cos = Mathf.Cos(rad);        
-        float sin = Mathf.Sin(rad);
-        float time;
-     //   Debug.Log("Cos " + cos + " Sin " + sin);
-
-        Vector3 shootPos3 = shootPoint.transform.position;
-        float spd = force;
-
-            Quaternion yawRot = Quaternion.FromToRotation(this.transform.forward,this.transform.forward);
-        RaycastHit hit;
-
-        for (int i = 0; i < archCountLimit; i++)
+        if (showProjectilePath)
         {
-         //   Debug.Log("ArchHeightLimit " + i);
-            time = archCalcInterval * i;
-            x = spd * cos * time;
-            y = spd * sin * time + y0 + g * time * time / 2;
-            archVerts.Add(new Vector3(x, y, x));
-            archVerts[i] = new Vector3(forwardDirection.x * x, archVerts[i].y, forwardDirection.z * x);
-            archVerts[i] = new Vector3(archVerts[i].x + shootPos3.x, archVerts[i].y, archVerts[i].z + shootPos3.z);
 
-            if (i > 0)
+            Vector3 dirNor = dir.normalized;
+
+            float x;
+            float y = shootPoint.transform.position.y;
+            float y0 = y;
+            float g = Physics.gravity.y + gravityOffset;
+            float rad = (shootAngle + shootAngleOffset )* Mathf.Deg2Rad;
+            float cos = Mathf.Cos(rad);
+            float sin = Mathf.Sin(rad);
+            float time;
+            //   Debug.Log("Cos " + cos + " Sin " + sin);
+
+            Vector3 shootPos3 = shootPoint.transform.position;
+            float spd = force;
+
+            Quaternion yawRot = Quaternion.FromToRotation(this.transform.forward, this.transform.forward);
+            RaycastHit hit;
+
+            for (int i = 0; i < archCountLimit; i++)
             {
-                if (Physics.Linecast(archVerts[i - 1], archVerts[i], out hit, hitlayers))
+                //   Debug.Log("ArchHeightLimit " + i);
+                time = archCalcInterval * i;
+                x = spd * cos * time;
+                y = spd * sin * time + y0 + g * time * time / 2;
+                archVerts.Add(new Vector3(x, y, x));
+                archVerts[i] = new Vector3(forwardDirection.x * x, archVerts[i].y, forwardDirection.z * x);
+                archVerts[i] = new Vector3(archVerts[i].x + shootPos3.x, archVerts[i].y, archVerts[i].z + shootPos3.z);
+
+                if (i > 0)
                 {
-                    archVerts[i] = hit.point;
-              //      Debug.Log("Hit " + hit.collider.gameObject.name);
-                    if (showProjectilePath)
+                    if (Physics.Linecast(archVerts[i - 1], archVerts[i], out hit, hitlayers))
                     {
-                        GameObject mark = Instantiate(markPref, hit.point, Quaternion.identity) as GameObject;
-                        archObj.Add(mark);
-                    }
-                        hitMarker.transform.position = hit.point +( hit.normal * .05f);
+                        archVerts[i] = hit.point;
+                        //      Debug.Log("Hit " + hit.collider.gameObject.name);
+                        if (showProjectilePath)
+                        {
+                            GameObject mark = Instantiate(markPref, hit.point, Quaternion.identity) as GameObject;
+                            archObj.Add(mark);
+                        }
+                        hitMarker.SetActive(true);
+                        hitMarker.transform.position = hit.point + (hit.normal * .05f);
                         hitMarker.transform.rotation = Quaternion.FromToRotation(Vector3.forward, hit.normal);
-                      //  hitMarker.transform.LookAt(currentCamera.transform);
-                     //   archObj[i].transform.parent = shootPoint.transform;
-                    
-                    break;
+                        //  hitMarker.transform.LookAt(currentCamera.transform);
+                        //   archObj[i].transform.parent = shootPoint.transform;
+
+                        break;
+                    }
+                }
+                if (showProjectilePath)
+                {
+                    GameObject mark = Instantiate(markPref, archVerts[i], Quaternion.identity) as GameObject;
+                    archObj.Add(mark);
+                    //   archObj[i].transform.parent = shootPoint.transform;
                 }
             }
-            if (showProjectilePath)
+            //  int lineLength = archLineCount;
+            // archVerts.Reverse();
+            //   if (archVerts.Count < lineLength)
+            //   {
+            //       lineLength = archVerts.Count;
+            //   }
+
+
+
+            if (lineRenderer != null)
             {
-                GameObject mark = Instantiate(markPref, archVerts[i], Quaternion.identity) as GameObject;
-                archObj.Add(mark);              
-             //   archObj[i].transform.parent = shootPoint.transform;
+                if (showProjectilePath && archVerts.Count >= 2)
+                {
+                    Vector3[] positions = new Vector3[archVerts.Count];
+                    for (int i = 0; i < archVerts.Count; i++)
+                    {
+                        positions[i] = archVerts[i];
+                    }
+
+                    lineRenderer.enabled = true;
+                    lineRenderer.positionCount = positions.Length;
+                    lineRenderer.SetPositions(positions);
+
+                }
+                else
+                {
+                    lineRenderer.enabled = false;
+                }
             }
         }
-      //  int lineLength = archLineCount;
-       // archVerts.Reverse();
-     //   if (archVerts.Count < lineLength)
-     //   {
-     //       lineLength = archVerts.Count;
-     //   }
     }
 
     public enum ShootType

@@ -84,6 +84,8 @@ namespace StarterAssets
         // player
         [SerializeField]
         private float _speed;
+        [SerializeField]
+        private float targetSpeed;
         private float _animationBlend;
         private float _targetRotation = 0.0f;
         private float _rotationVelocity;
@@ -98,6 +100,7 @@ namespace StarterAssets
 
         // animation IDs
         private int _animIDSpeed;
+        private int _animID_Direction;
         private int _animIDGrounded;
         private int _animIDJump;
         private int _animIDFreeFall;
@@ -174,6 +177,7 @@ namespace StarterAssets
         private void AssignAnimationIDs()
         {
             _animIDSpeed = Animator.StringToHash("Speed");
+            _animID_Direction = Animator.StringToHash("Direction");
             _animIDGrounded = Animator.StringToHash("Grounded");
             _animIDJump = Animator.StringToHash("Jump");
             _animIDFreeFall = Animator.StringToHash("FreeFall");
@@ -220,7 +224,12 @@ namespace StarterAssets
         private void Move()
         {
             // set target speed based on move speed, sprint speed and if sprint is pressed
-            float targetSpeed = _input.sprint ? SprintSpeed : MoveSpeed;
+             targetSpeed = _input.sprint ? SprintSpeed : MoveSpeed;
+          //  if(_input.move.y < 0.0f)
+          //  {
+          //      targetSpeed = targetSpeed * -1;
+          //  }
+
 
             // a simplistic acceleration and deceleration designed to be easy to remove, replace, or iterate upon
 
@@ -251,11 +260,21 @@ namespace StarterAssets
                 _speed = targetSpeed;
             }
 
+            //added reverse speed
+            if (_input.move.y < 0.0f)
+            {
+                targetSpeed = targetSpeed * -1;
+            }
+
             _animationBlend = Mathf.Lerp(_animationBlend, targetSpeed, Time.deltaTime * SpeedChangeRate);
-            if (_animationBlend < 0.01f) _animationBlend = 0f;
+            if (_animationBlend < 0.01f && _animationBlend > 0.01f )
+            {
+                _animationBlend = 0f; 
+            }
+           
 
             // normalise input direction
-            Vector3 inputDirection = new Vector3(_input.move.x, 0.0f, _input.move.y).normalized;
+            Vector3 inputDirection = new Vector3(_input.move.x, 0.0f, _input.move.y).normalized;  //
 
             // note: Vector2's != operator uses approximation so is not floating point error prone, and is cheaper than magnitude
             // if there is a move input rotate player when the player is moving
@@ -295,6 +314,7 @@ namespace StarterAssets
             {
                 _animator.SetFloat(_animIDSpeed, _animationBlend);
                 _animator.SetFloat(_animIDMotionSpeed, inputMagnitude);
+                _animator.SetFloat(_animID_Direction, _input.move.x);
             }
         }
 
