@@ -32,7 +32,7 @@ namespace JBR {
                 this.transform.rotation = Quaternion.LookRotation(velocity, Vector3.up);
                 rot = this.transform.rotation;
                 pos = this.transform.position;
-                Debug.Log(rot + "Arrow Rotation..." + Time.timeSinceLevelLoad);
+             //   Debug.Log(rot + "Arrow Rotation..." + Time.timeSinceLevelLoad);
             }
         }
 
@@ -58,7 +58,7 @@ namespace JBR {
             this.transform.rotation = Quaternion.LookRotation(velocity, Vector3.up);
             rot = this.transform.rotation;
             pos = this.transform.position;
-            Debug.Log(rot + "Arrow Rotation..." + Time.timeSinceLevelLoad);
+         //   Debug.Log(rot + "Arrow Rotation..." + Time.timeSinceLevelLoad);
         }
 
         private void OnCollisionEnter(Collision collision)

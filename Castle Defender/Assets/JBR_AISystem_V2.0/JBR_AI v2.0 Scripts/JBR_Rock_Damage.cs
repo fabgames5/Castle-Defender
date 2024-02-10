@@ -60,7 +60,7 @@ public class JBR_Rock_Damage : MonoBehaviour
         {
             if(collision.gameObject.tag == ("Enemy"))
             {
-                //damage code Friendly fire
+                //damage code Friendly canFire
                 Debug.Log("Rock Hit Enemy");
                 if (hitParticlePrefab != null)
                 {

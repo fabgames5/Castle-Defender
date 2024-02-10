@@ -85,7 +85,7 @@ namespace StarterAssets
 		{
 			aim = newAimState;
 		}
-		//added fire
+		//added canFire
         public void FireInput(bool newFireState)
         {
             fire = newFireState;

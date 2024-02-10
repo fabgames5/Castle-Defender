@@ -109,7 +109,7 @@ public class JBR_Weapon_Hands : JBR_Weapon_Base
 
         if(type == WeaponTypes.gun || type == WeaponTypes.throwing || type == WeaponTypes.spell)
         {
-            //set fire location if nothing was set
+            //set canFire location if nothing was set
             if(fireTransform == null)
             {
                 fireTransform = this.transform;

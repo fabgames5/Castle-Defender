@@ -6,69 +6,121 @@ using UnityEngine;
 
 public class JBR_Trajectory : MonoBehaviour
 {
+    [Header("Select Aiming Type")]
     [Tooltip("ShootAtTarget is for AI, SHootByDirection is for player aiming")]
     public ShootType shootType = ShootType.ShootAtTarget;
-
-    public bool checkDirection = false;
-    public bool fire = false;
-
-  
-    [Tooltip("Select all hit layers for collsion calculation")]
-    public LayerMask hitlayers;
-
-    [Range(0, 90)]
-    public float shootAngle;
-    public float shootMaxangle = 75;
-    public float shootMaxRange = 200;
-    public float heightOffset = 0.0f;
-    public float fireRate = 3.0f;
-
-    [Tooltip("Required")]
-    public GameObject shootPoint;
-    public GameObject pivotPoint;
-    public GameObject actor;
-    public GameObject projectile;
-    public LineRenderer lineRenderer;
-
-    private float spdVec;
-    private Vector3 shootVec;
-
-    [Tooltip("the arch points of a trajectory")]
     [SerializeField]
-    private List<GameObject> archObj;
-    public int archLineCount;//Count of of points. Starting from hit position.
-    public float archCalcInterval;//Resolution of trajectory arch
-    public float archCountLimit = 20;
-    public List<Vector3> archVerts = new List<Vector3>();
+    [Tooltip("Select all layers the Arrow should use for collsion calculation")]
+    private LayerMask hitLayers;
+
+    [Space(5)]
+    [Header("Universal Settings")]
+
+    [Tooltip("The Shooting force applied to the projectile prefab")]
+    public float shootForce = 20;
+    [Range(0, 90)]
+    [Tooltip("Dynamcally Set, The current Angle the Projectile will shoot from")]
+    public float shootAngle;
+    [Tooltip("if true Projectile will shoot")]
+    public bool canFire = false;
+    [Tooltip("THe maximum Rate at which a projectile can be shot at")]
+    [SerializeField]
+    private float fireRate = 3.0f;
+    [Tooltip("Add the Projectile Prefab Here")]
+    [SerializeField]
+    private GameObject projectile;
+    [Tooltip("Add the projectile spawn point here, should be on front of shooting Weapon")]
+    public GameObject shootPoint;
+    [Tooltip("Add the < Aiming Look At Target > Scene Object here")]
+    public GameObject AimingLookAtTarget;
+
+    [Space(5)]
+    [Header("Dynamic Settings (Shoot At Target) ")]
+   
+    [Tooltip("Dynamically Set, Distance to the Target for the AI")]
+    [SerializeField]
+    private float distance;
+    [Tooltip("The Max Range the target can be away")]
+    public float shootMaxRange = 200;
+    [Tooltip("The max angle the projectile can shoot at")]
+    public float shootMaxangle = 75;
+    [Tooltip("The height Offset for arrow projectile spawning")]
+    public float heightOffset = 0.0f;
+    [Tooltip("The Target for the AI to shoot at, Set by other Scripts or drag and drop for testing")]
+    [SerializeField]
+    private Transform target;
+
+    [Space(5)]
+    [Header("Required for (Shoot by Direction) ")] 
+    
+    [Tooltip("For matching Actual Arrow path a Gravity multiplier to Adjust, for Predictive Path")]
+    [SerializeField]
+    private float gravityOffset = .2f;
+    [Tooltip("For matching Actual Arrow path offset of Fire Angle to adjust, for Predictive Path")]
+    [SerializeField]
+    private float shootAngleOffset = 2.0f;
+    [Tooltip("Required when showTrajectory is true, just a point indicator on the projectile arch")]
+    public GameObject trajectoryPointPrefab;//Used to visualize arch vertices
+    [Tooltip("Add the hit Indicator Scene Object here,(Note: should be in scene not prefab) for predictive arrow path")]
+    public GameObject hitMarkerSceneObject;
+    [Tooltip("Resolution for the Trajectory Calculation, small is more accurate, but uses more resources")]
+    [SerializeField]
+    private float archCalcInterval = 0.05f;//Resolution of trajectory arch
+    [Tooltip("This is the limit of how many arch points the Predictive trajectory can have")]
+    [SerializeField]
+    private float archCountLimit = 80;
+
+    [Space(5)]
+    [Header("Dynamic Settings (Shoot By Direction) ")]
+      
+    [SerializeField]
+    [Tooltip("Dynamically Set, a list of points the arrow will follow in its predicted path")]
+    private List<Vector3> archVerts = new List<Vector3>();
+    // [Tooltip("the arch points of a trajectory")]
+    private List<GameObject> archObj = new List<GameObject>();
     [Tooltip("if checked, Shows the projectile path")]
     public bool showProjectilePath = false;
-    public float shootForce = 20;
-    public float gravityOffset = .2f;
-    public float shootAngleOffset = 2.0f;
-         
-    [Tooltip("Required when showTrajectory is true, just a point on the projectile arch")]
-    public GameObject markPref;//Used to visualize arch vertices
+    [Tooltip("Dynamically Set, was the Fire button Released")]
+    [SerializeField]
+    private bool fireReleased;
+    [Tooltip("Dynamically Set, was the Fire button Pressed")]
+    [SerializeField]
+    private bool firePressed;
 
-    public GameObject hitMarker;
-    public GameObject currentCamera;
+    //  public int archLineCount;//Count of of points. Starting from hit position.
+    //  public Vector3 hitPosition;
 
-    public Transform target;
-    public Vector3 hitPosition;
-    public Vector3 forwardDirection;
-
-    [Tooltip("Distance to the Target for the AI")]
-    public float distance;
-
+    // [Tooltip("Dynamically Set, The Current active Camera Target for aiming")]
+    //  [SerializeField]
+    private GameObject currentCameraTarget;
+    //  [SerializeField]
+    private bool checkDirection = true;
+    //dynamcially set, forward direction
+    private Vector3 forwardDirection;
+   // [Tooltip("Add the point to aim at here")]
+    private GameObject actor;
+    //timers
     private float timer;
     private float fireTimer;
 
+    //shoot at target calculations
+    private float spdVec;
+    private Vector3 shootVec;
+
     private StarterAssets.StarterAssetsInputs _Inputs;
-    public bool fireReleased;
-    public bool firePressed;
+    //  Line Renderer Component
+    private LineRenderer lineRenderer;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        _Inputs = this.gameObject.GetComponent<StarterAssets.StarterAssetsInputs>();
+        lineRenderer = this.gameObject.GetComponent<LineRenderer>();
+        actor = this.gameObject;
+    }
 
     public void CheckVector(Vector3 hitPos)
-    {
-       
+    {    
            spdVec = CalculateVectorFromAngle(hitPos, shootAngle);
            if (spdVec <= 0.0f)
            {
@@ -82,7 +134,7 @@ public class JBR_Trajectory : MonoBehaviour
     private float CalculateVectorFromAngle(Vector3 pos, float angle)
     {
         Vector2 shootPos = new Vector2(shootPoint.transform.position.x,
-            shootPoint.transform.position.z);
+        shootPoint.transform.position.z);
         Vector2 hitPos = new Vector2(pos.x, pos.z);
         float x = Vector2.Distance(shootPos, hitPos);
         float g = Physics.gravity.y;
@@ -106,7 +158,6 @@ public class JBR_Trajectory : MonoBehaviour
         Vector3 hitPos = pos;
         shootPos.y = 0f;
         hitPos.y = 0f;
-
         Vector3 dir = (hitPos - shootPos).normalized;
         Quaternion Rot3D = Quaternion.FromToRotation(Vector3.right, dir);
         Vector3 vec = spdVec * Vector3.right;
@@ -126,7 +177,7 @@ public class JBR_Trajectory : MonoBehaviour
             markPos = Camera.main.ScreenToWorldPoint(new Vector3(hitPos.x, hitPos.y, hit.distance));
         }
         CheckVector(markPos);
-        Debug.Log(markPos);
+        //Debug.Log(markPos);
 
         if (shootObj == null)
         {
@@ -147,7 +198,7 @@ public class JBR_Trajectory : MonoBehaviour
     public void ShootObjectByDirection(GameObject shootObj, Vector3 dir, float force)
     {
         
-        GameObject obj = Instantiate(shootObj, shootPoint.transform.position, pivotPoint.transform.rotation) as GameObject;
+        GameObject obj = Instantiate(shootObj, shootPoint.transform.position, shootPoint.transform.rotation) as GameObject;
         Rigidbody rig = obj.GetComponent<Rigidbody>();
         Vector3 newDir = new Vector3(this.transform.forward.x,dir.y,this.transform.forward.z);
 
@@ -160,7 +211,7 @@ public class JBR_Trajectory : MonoBehaviour
     public void ShootAtObject(GameObject shootObj, Vector3 hitPos)
     {
         CheckVector(hitPos);
-        Debug.Log(hitPos);
+        //Debug.Log(hitPos);
 
         if (shootObj == null)
         {
@@ -171,21 +222,13 @@ public class JBR_Trajectory : MonoBehaviour
             throw new System.NullReferenceException("shootPoint");
         }
 
-        GameObject obj = Instantiate(shootObj, shootPoint.transform.position, pivotPoint.transform.rotation);
+        GameObject obj = Instantiate(shootObj, shootPoint.transform.position, AimingLookAtTarget.transform.rotation);
         Rigidbody rig = obj.GetComponent<Rigidbody>();
         Vector3 force = shootVec * rig.mass;
         rig.AddForce(force, ForceMode.Impulse);
 
         obj.GetComponent<JBR.JBR_Projectile_>().Fire();
 
-    }
-
-
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        _Inputs = this.gameObject.GetComponent<StarterAssets.StarterAssetsInputs>();
     }
 
     // Update is called once per frame
@@ -197,7 +240,7 @@ public class JBR_Trajectory : MonoBehaviour
         }
         if(fireTimer<=0)
         {
-            fire = true;
+            canFire = true;
         }
 
         if (shootType == ShootType.ShootAtTarget)
@@ -213,14 +256,14 @@ public class JBR_Trajectory : MonoBehaviour
             shootAngle = percentage * shootMaxangle;
 
             //testing code only
-            pivotPoint.transform.localEulerAngles = new Vector3(-shootAngle, pivotPoint.transform.localEulerAngles.y, pivotPoint.transform.localEulerAngles.z);
+            AimingLookAtTarget.transform.localEulerAngles = new Vector3(-shootAngle, AimingLookAtTarget.transform.localEulerAngles.y, AimingLookAtTarget.transform.localEulerAngles.z);
             // looks at target
             Vector3 targetPostition = new Vector3(target.position.x, actor.transform.position.y, target.position.z);
             actor.transform.LookAt(targetPostition);
 
-            if (fire)
+            if (canFire)
             {
-                fire = false;
+                canFire = false;
                 fireTimer = fireRate;
                 ShootAtObject(projectile, new Vector3(target.transform.position.x, target.transform.position.y + heightOffset, target.transform.position.z));
             }
@@ -228,7 +271,7 @@ public class JBR_Trajectory : MonoBehaviour
 
         if(shootType ==ShootType.ShootByDirection)
         {
-            if(timer > 0)
+            if(timer >= 0)
             {
                 timer -= Time.deltaTime;
                 if(timer <= 0)
@@ -253,27 +296,26 @@ public class JBR_Trajectory : MonoBehaviour
 
             if(checkDirection)
             {
-            //    pivotPoint.transform.localEulerAngles = new Vector3(-shootAngle, pivotPoint.transform.localEulerAngles.y, pivotPoint.transform.localEulerAngles.z);
-            //    Debug.Log(360 - pivotPoint.transform.localEulerAngles.x);
-                currentCamera = this.gameObject.GetComponent<ThirdPersonController>().CinemachineCameraTargetCurrent;
+            //    AimingLookAtTarget.transform.localEulerAngles = new Vector3(-shootAngle, AimingLookAtTarget.transform.localEulerAngles.y, AimingLookAtTarget.transform.localEulerAngles.z);
+            //    Debug.Log(360 - AimingLookAtTarget.transform.localEulerAngles.x);
+                currentCameraTarget = this.gameObject.GetComponent<ThirdPersonController>().CinemachineCameraTargetCurrent;
                 forwardDirection = this.transform.forward;
                // shootPoint.transform.forward = new Vector3(forwardDirection.x, shootPoint.transform.forward.y, forwardDirection.z);
-                shootAngle = 360 - pivotPoint.transform.localEulerAngles.x;
+                shootAngle = 360 - AimingLookAtTarget.transform.localEulerAngles.x;
                
-                    DisplayTrajectoryByDirection(pivotPoint.transform.forward, shootForce);
+                DisplayTrajectoryByDirection(AimingLookAtTarget.transform.forward, shootForce);
                 
                 timer = .1f;
                 checkDirection = false;
             }
 
-            if (fireReleased == true && fire == true)
+            if (fireReleased == true && canFire == true)
             {
-                fire = false;
+                canFire = false;
                 fireReleased = false;
                 fireTimer = fireRate;
                 ShootObjectByDirection(projectile, shootPoint.transform.forward, shootForce);
             }
-
         }
     }
 
@@ -290,13 +332,11 @@ public class JBR_Trajectory : MonoBehaviour
         }
         archVerts.Clear();
         lineRenderer.positionCount = 0;
-        hitMarker.SetActive(false);
+        hitMarkerSceneObject.SetActive(false);
 
         if (showProjectilePath)
         {
-
             Vector3 dirNor = dir.normalized;
-
             float x;
             float y = shootPoint.transform.position.y;
             float y0 = y;
@@ -325,27 +365,26 @@ public class JBR_Trajectory : MonoBehaviour
 
                 if (i > 0)
                 {
-                    if (Physics.Linecast(archVerts[i - 1], archVerts[i], out hit, hitlayers))
+                    if (Physics.Linecast(archVerts[i - 1], archVerts[i], out hit, hitLayers))
                     {
                         archVerts[i] = hit.point;
                         //      Debug.Log("Hit " + hit.collider.gameObject.name);
                         if (showProjectilePath)
                         {
-                            GameObject mark = Instantiate(markPref, hit.point, Quaternion.identity) as GameObject;
+                            GameObject mark = Instantiate(trajectoryPointPrefab, hit.point, Quaternion.identity) as GameObject;
                             archObj.Add(mark);
                         }
-                        hitMarker.SetActive(true);
-                        hitMarker.transform.position = hit.point + (hit.normal * .05f);
-                        hitMarker.transform.rotation = Quaternion.FromToRotation(Vector3.forward, hit.normal);
-                        //  hitMarker.transform.LookAt(currentCamera.transform);
+                        hitMarkerSceneObject.SetActive(true);
+                        hitMarkerSceneObject.transform.position = hit.point + (hit.normal * .05f);
+                        hitMarkerSceneObject.transform.rotation = Quaternion.FromToRotation(Vector3.forward, hit.normal);
+                        //  hitMarkerSceneObject.transform.LookAt(currentCameraTarget.transform);
                         //   archObj[i].transform.parent = shootPoint.transform;
-
                         break;
                     }
                 }
                 if (showProjectilePath)
                 {
-                    GameObject mark = Instantiate(markPref, archVerts[i], Quaternion.identity) as GameObject;
+                    GameObject mark = Instantiate(trajectoryPointPrefab, archVerts[i], Quaternion.identity) as GameObject;
                     archObj.Add(mark);
                     //   archObj[i].transform.parent = shootPoint.transform;
                 }
