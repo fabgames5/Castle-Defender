@@ -96,7 +96,7 @@ public class _BuildSystem_Construction : MonoBehaviour
     [HideInInspector]
     public Vector3 localEulerRotations;
 
-    [HideInInspector]
+   // [HideInInspector]
     public bool isPlacing = false;
     public _BuildSystem_TerrainPlacer terrainPlacer;
     public int prefabRefID = -1;
@@ -282,5 +282,31 @@ public class _BuildSystem_Construction : MonoBehaviour
             Debug.Log("OnTriggerStay > " + Time.timeSinceLevelLoad);
             terrainPlacer.OnTriggerEnters(other, this.gameObject);
         }
+    }
+
+    /// <summary>
+    /// On Enable
+    /// </summary>
+    private void OnEnable()
+    {
+        Debug.Log("Enabled Building Construction");
+
+        if(terrainPlacer == null)
+        {
+            terrainPlacer = GameObject.Find("PlacingManager").GetComponent<_BuildSystem_TerrainPlacer>();
+        }
+
+        if (!isPlacing)
+        {
+            terrainPlacer.RegisterBuilding(this);
+        }
+    }
+
+    /// <summary>
+    /// On Disable
+    /// </summary>
+    private void OnDisable()
+    {
+        terrainPlacer.UnRegisterBuilding(this);
     }
 }

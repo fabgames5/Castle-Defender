@@ -406,22 +406,7 @@ public class _BuildSystem_TerrainPlacer : MonoBehaviour
                     }
 
                     //disable connection points
-                    if (placedBuildings.Count > 0)
-                    {
-                        for (int i = 0; i < placedBuildings.Count; i++)
-                        {
-                            placedBuildings[i].GetComponent<MeshCollider>().enabled = true;
-
-                            placedBuildings[i].GetComponent<BoxCollider>().enabled = false;
-                            if (placedBuildings[i].GetComponent<_BuildSystem_Construction>().spherePoints.Count > 0)
-                            {
-                                for (int s = 0; s < placedBuildings[i].GetComponent<_BuildSystem_Construction>().spherePoints.Count; s++)
-                                {
-                                    placedBuildings[i].GetComponent<_BuildSystem_Construction>().spherePoints[s].SetActive(false);
-                                }
-                            }
-                        }
-                    }
+                    DisableConnections();
 
                 }
 
@@ -477,6 +462,65 @@ public class _BuildSystem_TerrainPlacer : MonoBehaviour
         }
 
         return false;
+    }
+
+    /// <summary>
+    /// Disables building connections and resets colliders
+    /// </summary>
+    public void DisableConnections()
+    {
+        //disable connection points
+        if (placedBuildings.Count > 0)
+        {
+            for (int i = 0; i < placedBuildings.Count; i++)
+            {
+                placedBuildings[i].GetComponent<MeshCollider>().enabled = true;
+
+                placedBuildings[i].GetComponent<BoxCollider>().enabled = false;
+                if (placedBuildings[i].GetComponent<_BuildSystem_Construction>().spherePoints.Count > 0)
+                {
+                    for (int s = 0; s < placedBuildings[i].GetComponent<_BuildSystem_Construction>().spherePoints.Count; s++)
+                    {
+                        placedBuildings[i].GetComponent<_BuildSystem_Construction>().spherePoints[s].SetActive(false);
+                    }
+                }
+            }
+        }
+    }
+
+    /// <summary>
+    /// Registers /adds a building with the placed buildings list 
+    /// </summary>
+    /// <param name="construction"></param>
+    public void RegisterBuilding(_BuildSystem_Construction construction)
+    {
+        for (int i = 0; i < placedBuildings.Count; i++)
+        {
+            if (placedBuildings[i] == construction)
+            {
+                //match found, no need to add
+                return;
+            }          
+        }
+        //no matches, so add this building
+        placedBuildings.Add(construction);
+        DisableConnections();
+    }
+
+    /// <summary>
+    /// Removes Building from placed buildings list
+    /// </summary>
+    /// <param name="construction"></param>
+    public void UnRegisterBuilding(_BuildSystem_Construction construction)
+    {
+        for (int i = 0; i < placedBuildings.Count; i++)
+        {
+            if (placedBuildings[i] == construction)
+            {
+                placedBuildings.Remove(placedBuildings[i]);
+                return;
+            }            
+        }
     }
 
 
