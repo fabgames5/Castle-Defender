@@ -387,8 +387,8 @@ public class _BuildSystem_TerrainPlacer : MonoBehaviour
                             newPrefab.GetComponent<MeshRenderer>().materials[i].color = colors[refColor];
                         }
                         newPrefab.GetComponent<_BuildSystem_Construction>().isPlacing = false;
-                        placedBuildings.Add(newPrefab.GetComponent<_BuildSystem_Construction>());
-
+                        // placedBuildings.Add(newPrefab.GetComponent<_BuildSystem_Construction>());
+                        RegisterBuilding(newPrefab.GetComponent<_BuildSystem_Construction>());
                         //add to saving list
                         buildingSave.AddGameobjectToList(stylePrefabBuildings[prefabRef], prefabRef, newPrefab);
 
