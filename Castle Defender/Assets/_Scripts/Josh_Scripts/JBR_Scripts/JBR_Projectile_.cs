@@ -14,8 +14,10 @@ namespace JBR {
         [SerializeField]
         private Quaternion rot;
         private Vector3 pos;
-
+        [Tooltip("Set True if this projectile should check and update its location info, note this allows arrow to update its direction, and allow for correct hit sticking")]
         public bool updateProjectile = false;
+        [Tooltip("the damage this projectile will have on a hit object")]
+        public float damageAmount = 10;
 
         // Start is called before the first frame update
         void Start()
@@ -50,14 +52,12 @@ namespace JBR {
             updateProjectile = true;
         }
 
-
-
         public void ProjectileUpdate()
         {
-            velocity = rB.velocity;
-            this.transform.rotation = Quaternion.LookRotation(velocity, Vector3.up);
-            rot = this.transform.rotation;
-            pos = this.transform.position;
+          //  velocity = rB.velocity;
+          //  this.transform.rotation = Quaternion.LookRotation(velocity, Vector3.up);
+          //  rot = this.transform.rotation;
+          //  pos = this.transform.position;
          //   Debug.Log(rot + "Arrow Rotation..." + Time.timeSinceLevelLoad);
         }
 
@@ -65,13 +65,22 @@ namespace JBR {
         {          
             updateProjectile = false;
             CancelInvoke();           
-            this.rB.isKinematic = true;
+           // rB.isKinematic = true;
+            Destroy(rB);
+
             col.enabled = false;
          
             this.transform.position = collision.contacts[0].point;        
             this.transform.SetParent(collision.transform,true);
             this.transform.rotation = rot;
             Debug.Log(collision.gameObject.name + "<<< Arrow hit");
+
+            //add damage if available
+            if(collision.gameObject.GetComponent<JBR_Health_Part>() != null )
+            {
+                collision.gameObject.GetComponent<JBR_Health_Part>().HitDamage(damageAmount);
+            }
+
         }
 
         private void OnTriggerEnter(Collider other)

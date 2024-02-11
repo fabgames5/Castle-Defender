@@ -9,6 +9,7 @@ public class enemy_movement : MonoBehaviour
 
     // Private variables
     private NavMeshAgent agent;
+    public bool allowMoving = true;
 
     void Start()
     {
@@ -16,11 +17,17 @@ public class enemy_movement : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         tower = GameObject.FindGameObjectWithTag("TownHall");
 
-        // Set agent speed
-        agent.speed = moveSpeed;
+       
 
-        // Set target to the tower
-        agent.SetDestination(tower.transform.position);
+       //only move if allowed
+        if (allowMoving)
+        {
+            // Set agent speed
+            agent.speed = moveSpeed;
+
+            // Set target to the tower
+            agent.SetDestination(tower.transform.position);
+        }
     }
 
     void Update()
