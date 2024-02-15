@@ -33,5 +33,5 @@ Material:
     - _SunSizeConvergence: 5
     m_Colors:
     - _GroundColor: {r: 0.12024221, g: 0.11764705, b: 0.11979476, a: 1}
-    - _SkyTint: {r: 0.9295159, g: 0.9076377, b: 0.72026813, a: 1}
+    - _SkyTint: {r: 0.9497771, g: 0.90559953, b: 0.7075501, a: 1}
   m_BuildTextureStacks: []

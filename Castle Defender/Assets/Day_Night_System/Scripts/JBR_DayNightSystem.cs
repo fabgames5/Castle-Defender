@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 [System.Serializable]
 public class JBR_DayNightSystem : MonoBehaviour {
@@ -88,7 +89,7 @@ public class JBR_DayNightSystem : MonoBehaviour {
     [HideInInspector]
     public bool[] cloudTransDir;
 
-
+    public RenderSettings renderSettings;
 
     // Star spheres
     [Tooltip("Drag & Drop Star spheres here , you can dupicate the spheres to add more stars to the sky if needed")]
@@ -124,6 +125,7 @@ public class JBR_DayNightSystem : MonoBehaviour {
 	//set the start time to something specific, only good for use in a single player game
 		currentTime = startTime;
         Invoke("TimeCheck", 2);
+       
     }
 
     private void OnDisable()
@@ -177,7 +179,10 @@ public class JBR_DayNightSystem : MonoBehaviour {
                 currentTime %= 24.0f;
             }
         }
-	}
+
+        RenderSettings.skybox = null;
+        RenderSettings.ambientLight = Color.black;
+    }
 
 	void ControlLight() {
         //	if (currentTime >= 17.0f || currentTime <= 6.5f) {
@@ -201,6 +206,9 @@ public class JBR_DayNightSystem : MonoBehaviour {
             lightIntensity = Mathf.MoveTowards(sunLight.intensity, 1.0f, Time.deltaTime * daySpeedMultiplier* 4);
         }
 		sunLight.intensity = lightIntensity;
+
+        
+       
 
 // changes skybox color, used during sunrise and sunset
         if (lightIntensity == 0 || lightIntensity == 1)
@@ -266,8 +274,9 @@ public class JBR_DayNightSystem : MonoBehaviour {
                 //fade stars emission in and out as light intensity changes
                     float starEmission = (1 - lightIntensity);
                     Color newColor = new Color(starEmission, starEmission, starEmission, starEmission);
-                    stars.GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", newColor);          //Color(0,0,0,lightIntensity));
-
+                    stars.GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", newColor);  //Color(0,0,0,lightIntensity));
+                //chagning Matallic increases the darkness of the night sky
+                    stars.GetComponent<MeshRenderer>().material.SetFloat("_Metallic", starEmission);
                 stars.transform.Translate(Time.deltaTime, Time.deltaTime, Time.deltaTime, cameraToFollow.transform);
             }
 		}
@@ -373,6 +382,18 @@ public class JBR_DayNightSystem : MonoBehaviour {
 
         //now that a time is set start the movement process
         DelayedStart();
+    }
+
+
+    /// <summary>
+    /// Changes RenderSettings Based off Current Time of Day
+    /// </summary>
+    void AdjustRenderSettings()
+    {
+
+
+        RenderSettings.skybox = null;
+        RenderSettings.ambientLight = Color.black;
     }
 
 }
