@@ -561,6 +561,32 @@ public class _BuildSystem_TerrainPlacer : MonoBehaviour
         return result;
     }
 
+    /// <summary>
+    /// This allows the BuildingSystem TerrainPlacer to be enabled or disabled
+    /// </summary>
+    /// <param name="canBuild"></param>
+    public void BuildingPlacerEnabled(bool canBuild)
+    {
+
+        if (canBuild == false)
+        {
+            placeobjectMousePos = false;
+            DisableConnections();
+            if(newPrefab != null)
+            {
+                refColor = 1;
+                Destroy(newPrefab);
+                isConnected = false;
+                newPrefab = null;
+            }
+        }
+
+        if(canBuild == true)
+        {
+            placeobjectMousePos = true;
+        }
+    }
+
     [System.Serializable]
     public class BuildingSaveLocation
     {
