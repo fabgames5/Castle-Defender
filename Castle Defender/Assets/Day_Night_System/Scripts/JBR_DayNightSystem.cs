@@ -180,8 +180,8 @@ public class JBR_DayNightSystem : MonoBehaviour {
             }
         }
 
-        RenderSettings.skybox = null;
-        RenderSettings.ambientLight = Color.black;
+       // RenderSettings.skybox = null;
+      //  RenderSettings.ambientLight = Color.black;
     }
 
 	void ControlLight() {
@@ -198,17 +198,27 @@ public class JBR_DayNightSystem : MonoBehaviour {
 			xValueOfSun = 0.0f;
 		}
 		//This basically turn on and off the sun light based on day / night
-		if (controlIntensity && sunLight && (currentTime >= 18.0f || currentTime <= 4.5f)) {
+		if (controlIntensity && sunLight && (currentTime >= 18.0f || currentTime <= 4.5f)) 
+        {
 			lightIntensity = Mathf.MoveTowards(sunLight.intensity,0.0f,Time.deltaTime*daySpeedMultiplier * 4);
-          
-            }
-            else if (controlIntensity && sunLight) {
-            lightIntensity = Mathf.MoveTowards(sunLight.intensity, 1.0f, Time.deltaTime * daySpeedMultiplier* 4);
+            RenderSettings.skybox = null;
+         //   RenderSettings.reflectionIntensity = lightIntensity;
+         //  RenderSettings.ambientLight = Color.black;
         }
-		sunLight.intensity = lightIntensity;
+            else if (controlIntensity && sunLight) 
+        {
+            lightIntensity = Mathf.MoveTowards(sunLight.intensity, 1.0f, Time.deltaTime * daySpeedMultiplier* 4);
+            RenderSettings.skybox = skyBox;
+          //  RenderSettings.reflectionIntensity = lightIntensity;
+          //  RenderSettings.ambientLight = Color.white;
+        }
 
-        
-       
+		sunLight.intensity = lightIntensity;
+        RenderSettings.reflectionIntensity = lightIntensity;
+        RenderSettings.ambientLight = Color.Lerp(Color.black, Color.white, lightIntensity);
+
+
+
 
 // changes skybox color, used during sunrise and sunset
         if (lightIntensity == 0 || lightIntensity == 1)
