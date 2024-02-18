@@ -37,7 +37,7 @@ public class enemy_movement : MonoBehaviour
         {
             // Perform tower attack logic here (e.g., deal damage, destroy)
 
-            // Optionally, destroy enemy upon reaching the tower
+            
             //Destroy(gameObject);
         }
     }

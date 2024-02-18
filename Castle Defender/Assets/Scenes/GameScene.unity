@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 7792792325193808986}
-  m_IndirectSpecularColor: {r: 0.23467013, g: 0.3824391, b: 0.45113486, a: 1}
+  m_IndirectSpecularColor: {r: 0.26771548, g: 0.37703267, b: 0.43544623, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1523,7 +1523,7 @@ PrefabInstance:
     - target: {fileID: 2026114004922659949, guid: 2e2a18f55d1088042af6eaa94a08884b,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.109468326
+      value: -0.1094683
       objectReference: {fileID: 0}
     - target: {fileID: 2026114004922659949, guid: 2e2a18f55d1088042af6eaa94a08884b,
         type: 3}
@@ -1533,7 +1533,7 @@ PrefabInstance:
     - target: {fileID: 2026114004922659949, guid: 2e2a18f55d1088042af6eaa94a08884b,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.28809753
+      value: -0.2880975
       objectReference: {fileID: 0}
     - target: {fileID: 2029881683950137495, guid: 2e2a18f55d1088042af6eaa94a08884b,
         type: 3}
@@ -1994,6 +1994,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3126479024041535750, guid: 2e2a18f55d1088042af6eaa94a08884b,
+        type: 3}
+      propertyPath: fireRate
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3126479024041535750, guid: 2e2a18f55d1088042af6eaa94a08884b,
         type: 3}
@@ -4874,7 +4879,7 @@ MonoBehaviour:
     type: 3}
   castleCenter: {fileID: 906816029}
   spawnRadius: 100
-  spawnInterval: 1
+  spawnInterval: 5
 --- !u!4 &554506051
 Transform:
   m_ObjectHideFlags: 0
@@ -8402,7 +8407,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db025c935702d104ea54841b5fba95e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  daySpeedMultiplier: 1
+  daySpeedMultiplier: 0.1
   controlIntensity: 1
   skyUpdated: 0.1
   skyBox: {fileID: 2100000, guid: 9574f2283e9e45841ae5c4dfcd47e011, type: 2}

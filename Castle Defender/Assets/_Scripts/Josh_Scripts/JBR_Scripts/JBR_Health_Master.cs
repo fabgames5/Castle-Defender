@@ -4,6 +4,13 @@ using UnityEngine;
 
 public class JBR_Health_Master : MonoBehaviour
 {
+
+    
+
+    //animation manager for getting hit
+    public GuyAnimationManager anim_manager;
+
+
     [Space(10)]
     [Header("Health")]
     public float cur_Health;
@@ -37,8 +44,9 @@ public class JBR_Health_Master : MonoBehaviour
     /// Add or Minus health from Current Health
     /// </summary>
     /// <param name="addHealth"></param>
-    public void SetHealth(float addHealth)
+    public void SetHealth(float addHealth) // uh this should be called ChangeHealth() no?
     {
+        
         cur_Health += addHealth;
         if (cur_Health > max_Health)
         {
@@ -46,7 +54,11 @@ public class JBR_Health_Master : MonoBehaviour
         }
         if (cur_Health <= 0)
         {
+            anim_manager.dieanim();
             isDead = true;
+        }
+        if (addHealth<0) {
+            anim_manager.gothit();
         }
     }
 
@@ -69,8 +81,10 @@ public class JBR_Health_Master : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    public void died()
     {
-        
+        if (isDead) {
+            Destroy(this.gameObject);
+        }
     }
 }

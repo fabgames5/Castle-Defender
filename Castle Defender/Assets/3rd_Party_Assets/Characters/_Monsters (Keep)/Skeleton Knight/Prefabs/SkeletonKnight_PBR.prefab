@@ -1307,6 +1307,7 @@ GameObject:
   - component: {fileID: 4777831466965788954}
   - component: {fileID: 6684313158340121041}
   - component: {fileID: 8727634133160234855}
+  - component: {fileID: 1267216568695944997}
   m_Layer: 15
   m_Name: SkeletonKnight_PBR
   m_TagString: Untagged
@@ -1389,6 +1390,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 1
   tower: {fileID: 0}
+  allowMoving: 1
 --- !u!114 &8727634133160234855
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1401,13 +1403,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bea2bdf6157d64f4fb3b2e4a8b512a64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cur_Health: 0
-  baseHealth: 20
+  anim_manager: {fileID: 1267216568695944997}
+  cur_Health: 10
+  baseHealth: 10
   _MaxHealth: 0
   bonusMaxHealth: 0
   maxHealthMultipier: 1
   isDead: 0
   parts: []
+--- !u!114 &1267216568695944997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1005806008958709862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4eae5dcadb7813e43a441cde63531fcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyAnimator: {fileID: 1005806008951276450}
 --- !u!1 &1005806008958709864
 GameObject:
   m_ObjectHideFlags: 0
@@ -1461,7 +1477,7 @@ SphereCollider:
   m_ProvidesContacts: 1
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.1
+  m_Radius: 0.15
   m_Center: {x: -0.06, y: 0.03, z: 0}
 --- !u!114 &7108963261941263395
 MonoBehaviour:
@@ -1475,7 +1491,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f47857836ebd754183edb51ffac2fb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  masterHealth: {fileID: 0}
+  masterHealth: {fileID: 8727634133160234855}
   healthPercentage: 0.5
 --- !u!1 &1005806008958709866
 GameObject:
@@ -2199,8 +2215,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f47857836ebd754183edb51ffac2fb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  masterHealth: {fileID: 0}
-  healthPercentage: 0.1
+  masterHealth: {fileID: 8727634133160234855}
+  healthPercentage: 0.25
 --- !u!65 &7795148136012442485
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2220,7 +2236,7 @@ BoxCollider:
   m_ProvidesContacts: 1
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.2, y: 0.2, z: 0.3}
+  m_Size: {x: 0.3, y: 0.2, z: 0.4}
   m_Center: {x: 0.05, y: 0, z: 0}
 --- !u!1 &1005806008958710230
 GameObject:
@@ -2309,7 +2325,7 @@ BoxCollider:
   m_ProvidesContacts: 1
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.3, y: 0.2, z: 0.3}
+  m_Size: {x: 0.35, y: 0.3, z: 0.45}
   m_Center: {x: -0.02, y: 0.05, z: 0}
 --- !u!114 &6326077790413858000
 MonoBehaviour:
@@ -2323,7 +2339,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f47857836ebd754183edb51ffac2fb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  masterHealth: {fileID: 0}
+  masterHealth: {fileID: 8727634133160234855}
   healthPercentage: 0.25
 --- !u!1 &1005806008958710234
 GameObject:
