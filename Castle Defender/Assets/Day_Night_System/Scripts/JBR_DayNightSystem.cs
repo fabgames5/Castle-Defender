@@ -27,7 +27,7 @@ public class JBR_DayNightSystem : MonoBehaviour {
     //duration of color change
     [Tooltip("Time it takes for sky colors to change")]
     public float duration = 1.0F;
-    [HideInInspector]
+  //  [HideInInspector]
     public float step = 0;
     //UI display of  current time
     [Tooltip("Drag & Drop UI display of current time here")]
@@ -214,7 +214,7 @@ public class JBR_DayNightSystem : MonoBehaviour {
 			xValueOfSun = 0.0f;
 		}
 		//This basically turn on and off the sun light based on day / night
-		if (controlIntensity && sunLight && (currentTime >= 17.0f || currentTime <= 5.5f)) 
+		if (controlIntensity && sunLight && (currentTime >= 17.0f || currentTime <= 4.0f)) 
         {
 			lightIntensity = Mathf.MoveTowards(sunLight.intensity,0.0f,Time.deltaTime*daySpeedMultiplier * 4);      
         }
@@ -228,19 +228,26 @@ public class JBR_DayNightSystem : MonoBehaviour {
         RenderSettings.ambientLight = Color.Lerp(Color.black, Color.white, lightIntensity);
 
         //time this with sunrise to better iluminate the world at an approperiate time
-        if( currentTime > 6.0f && currentTime < 17.5f && RenderSettings.skybox == null)
+        if (currentTime > 7.0f && currentTime < 15.0f)
         {
-            RenderSettings.skybox = skyBox;
+            //    RenderSettings.skybox = skyBox;
+            if (step < 1)
+            {
+                step += (Time.deltaTime / duration);
+            }
         }
-
-        if(currentTime > 17.5f && RenderSettings.skybox != null)
+           
+        if(currentTime > 15.0f || currentTime < 7.0f )
         {
-            RenderSettings.skybox = null;
+            if (step > 0)
+            {
+                step -= (Time.deltaTime / duration);
+            }
         }
-
+        skyBox.SetColor("_SkyTint", Color.Lerp(colorStart, colorEnd, step));
 
         //Torch Lights turn on/off with light intesity
-        if(!sceneLightsOn && lightIntensity <= 0.2f)
+        if (!sceneLightsOn && lightIntensity <= 0.3f)
         {
            for (int i = 0; i < sceneLights.Count; i++)
            {
@@ -249,30 +256,14 @@ public class JBR_DayNightSystem : MonoBehaviour {
             sceneLightsOn = true;
         }
 
-        if (sceneLightsOn && lightIntensity > .6f)
+        if (sceneLightsOn && lightIntensity > .7f)
         {
             for (int i = 0; i < sceneLights.Count; i++)
             {
                 sceneLights[i].EnableLights(false);
             }
             sceneLightsOn = false;
-        }
-
-        // changes skybox color, used during sunrise and sunset
-        if (lightIntensity == 0 || lightIntensity == 1)
-        {
-            step = 0;
-        }
-        if (lightIntensity != 0)
-        {
-            step += (Time.deltaTime / duration);
-            skyBox.SetColor("_SkyTint", Color.Lerp(colorEnd, colorStart, step));
-        }
-        if (lightIntensity != 1)
-        {
-            step += (Time.deltaTime / duration);
-            skyBox.SetColor("_SkyTint", Color.Lerp(colorStart, colorEnd, step));
-        }
+        }     
     }
 
 	void ControlClouds (){

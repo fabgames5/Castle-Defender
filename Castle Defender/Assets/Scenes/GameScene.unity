@@ -24,7 +24,7 @@ RenderSettings:
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
-  m_AmbientMode: 0
+  m_AmbientMode: 3
   m_SubtractiveShadowColor: {r: 0.17755431, g: 0.20768702, b: 0.2830189, a: 1}
   m_SkyboxMaterial: {fileID: 2100000, guid: 9574f2283e9e45841ae5c4dfcd47e011, type: 2}
   m_HaloStrength: 0.5
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 7792792325193808986}
-  m_IndirectSpecularColor: {r: 0.23459068, g: 0.3824532, b: 0.45114863, a: 1}
+  m_IndirectSpecularColor: {r: 0.2563406, g: 0.3524064, b: 0.43799162, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1523,7 +1523,7 @@ PrefabInstance:
     - target: {fileID: 2026114004922659949, guid: 2e2a18f55d1088042af6eaa94a08884b,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.10946831
+      value: -0.1094683
       objectReference: {fileID: 0}
     - target: {fileID: 2026114004922659949, guid: 2e2a18f55d1088042af6eaa94a08884b,
         type: 3}
@@ -8411,9 +8411,9 @@ MonoBehaviour:
   controlIntensity: 1
   skyUpdated: 0.1
   skyBox: {fileID: 2100000, guid: 9574f2283e9e45841ae5c4dfcd47e011, type: 2}
-  colorStart: {r: 0.9528302, g: 0.9052924, b: 0.7056337, a: 1}
-  colorEnd: {r: 0.5740477, g: 0.9433962, b: 0.9433962, a: 1}
-  duration: 5
+  colorStart: {r: 0.8018868, g: 0.31235918, b: 0.049172327, a: 1}
+  colorEnd: {r: 0.7010057, g: 0.8396226, b: 0.8396226, a: 1}
+  duration: 0.2
   step: 0
   timeDisplay: {fileID: 4269039148097064639}
   seasonDisplay: {fileID: 4269039148097068685}
