@@ -2,6 +2,7 @@
 using System.Collections;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System.Collections.Generic;
 
 [System.Serializable]
 public class JBR_DayNightSystem : MonoBehaviour {
@@ -38,18 +39,12 @@ public class JBR_DayNightSystem : MonoBehaviour {
     //main directional light
     [Tooltip("Drag & Drop main directional light here")]
     public Light sunLight;
-    //Intensity of Light
-    [HideInInspector]
-    public float lightIntensity;
+    
 
-    //what time this cycle should start
-    [HideInInspector]
-    public float startTime = 12.0f;
+   
     [HideInInspector]
     public bool nextDay = false;
-	//what's the current time
-    [HideInInspector]
-	public float currentTime = 0.0f;
+    [Space(10)]
     [Tooltip("Set Automatically, the current time in the game")]
     public string timeString = "00:00 AM";
     [HideInInspector]
@@ -67,7 +62,7 @@ public class JBR_DayNightSystem : MonoBehaviour {
     public string[] seasonNames;
 
     public string curSeason = "";
-
+    [Space(10)]
     //rotation of sun
     [HideInInspector]
     public float xValueOfSun = 90.0f;
@@ -89,8 +84,8 @@ public class JBR_DayNightSystem : MonoBehaviour {
     [HideInInspector]
     public bool[] cloudTransDir;
 
-    public RenderSettings renderSettings;
-
+    //  public RenderSettings renderSettings;
+    [Space(10)]
     // Star spheres
     [Tooltip("Drag & Drop Star spheres here , you can dupicate the spheres to add more stars to the sky if needed")]
     [SerializeField]	public Transform[] starSpheres;
@@ -110,6 +105,23 @@ public class JBR_DayNightSystem : MonoBehaviour {
     [HideInInspector]
     public int years;
 
+    [Space(10)]
+    [Tooltip("Dynamically Set, Intensity of Light")]
+   // [HideInInspector]
+    public float lightIntensity;
+    [Tooltip("Dynamically Set, The Current Time")]
+    // [HideInInspector]
+    public float currentTime = 0.0f;
+    [Space(10)]
+    [Tooltip("Set the Time Of Day, On game start")]
+    // [HideInInspector]
+    public float startTime = 12.0f;
+
+    [Space(10)]
+    [Tooltip("All active sceneLights in the scene that register to be controlled")]
+    public List<JBR_Torches> sceneLights = new List<JBR_Torches>();
+
+    public bool sceneLightsOn = false;
 
     void Awake()
     {
@@ -124,7 +136,9 @@ public class JBR_DayNightSystem : MonoBehaviour {
 	void Start () {
 	//set the start time to something specific, only good for use in a single player game
 		currentTime = startTime;
-        Invoke("TimeCheck", 2);
+        nextDay = false;
+        DelayedStart();
+      //  Invoke("TimeCheck", 2);
        
     }
 
@@ -177,6 +191,7 @@ public class JBR_DayNightSystem : MonoBehaviour {
             if (currentTime >= 24.0f)
             {
                 currentTime %= 24.0f;
+                nextDay = true;
             }
         }
 
@@ -184,43 +199,66 @@ public class JBR_DayNightSystem : MonoBehaviour {
       //  RenderSettings.ambientLight = Color.black;
     }
 
-	void ControlLight() {
-        //	if (currentTime >= 17.0f || currentTime <= 6.5f) {
+	void ControlLight() 
+    {
+       
 
 		//Rotate light
 		xValueOfSun = -(90.0f+currentTime*15.0f);
         sunLight.transform.position = cameraToFollow.transform.position;
 		sunLight.transform.eulerAngles = new Vector3(xValueOfSun,0,0);
-	//	sunLight.transform.eulerAngles = sunLight.transform.right  *xValueOfSun;
+	
 		degsOfSun = sunLight.transform.eulerAngles;
 		//reset angle
 		if (xValueOfSun >= 360.0f) {
 			xValueOfSun = 0.0f;
 		}
 		//This basically turn on and off the sun light based on day / night
-		if (controlIntensity && sunLight && (currentTime >= 18.0f || currentTime <= 4.5f)) 
+		if (controlIntensity && sunLight && (currentTime >= 17.0f || currentTime <= 5.5f)) 
         {
-			lightIntensity = Mathf.MoveTowards(sunLight.intensity,0.0f,Time.deltaTime*daySpeedMultiplier * 4);
-            RenderSettings.skybox = null;
-         //   RenderSettings.reflectionIntensity = lightIntensity;
-         //  RenderSettings.ambientLight = Color.black;
+			lightIntensity = Mathf.MoveTowards(sunLight.intensity,0.0f,Time.deltaTime*daySpeedMultiplier * 4);      
         }
             else if (controlIntensity && sunLight) 
         {
             lightIntensity = Mathf.MoveTowards(sunLight.intensity, 1.0f, Time.deltaTime * daySpeedMultiplier* 4);
-            RenderSettings.skybox = skyBox;
-          //  RenderSettings.reflectionIntensity = lightIntensity;
-          //  RenderSettings.ambientLight = Color.white;
         }
 
 		sunLight.intensity = lightIntensity;
         RenderSettings.reflectionIntensity = lightIntensity;
         RenderSettings.ambientLight = Color.Lerp(Color.black, Color.white, lightIntensity);
 
+        //time this with sunrise to better iluminate the world at an approperiate time
+        if( currentTime > 6.0f && currentTime < 17.5f && RenderSettings.skybox == null)
+        {
+            RenderSettings.skybox = skyBox;
+        }
+
+        if(currentTime > 17.5f && RenderSettings.skybox != null)
+        {
+            RenderSettings.skybox = null;
+        }
 
 
+        //Torch Lights turn on/off with light intesity
+        if(!sceneLightsOn && lightIntensity <= 0.2f)
+        {
+           for (int i = 0; i < sceneLights.Count; i++)
+           {
+                sceneLights[i].EnableLights(true);
+           }
+            sceneLightsOn = true;
+        }
 
-// changes skybox color, used during sunrise and sunset
+        if (sceneLightsOn && lightIntensity > .6f)
+        {
+            for (int i = 0; i < sceneLights.Count; i++)
+            {
+                sceneLights[i].EnableLights(false);
+            }
+            sceneLightsOn = false;
+        }
+
+        // changes skybox color, used during sunrise and sunset
         if (lightIntensity == 0 || lightIntensity == 1)
         {
             step = 0;
@@ -257,7 +295,8 @@ public class JBR_DayNightSystem : MonoBehaviour {
                 }	
 	}
 
-	void StarSphere() {
+	void StarSphere() 
+    {
 		//Get the color of the stars
 		Color currentColor;
 		//Rotate and eneble and disable stars
@@ -271,7 +310,7 @@ public class JBR_DayNightSystem : MonoBehaviour {
                 //rotate Starts
                 stars.transform.Rotate(Vector3.forward*starRotationSpeed*daySpeedMultiplier*Time.deltaTime);
 
-                if (currentTime > 4.5f && currentTime < 17.0f)
+                if (currentTime > 4.0f && currentTime < 17.0f)
                 {
                     currentColor = stars.GetComponent<Renderer>().material.color;
                     stars.GetComponent<Renderer>().material.color = new Color(currentColor.r, currentColor.g, currentColor.b, Mathf.Lerp(currentColor.a, 0.0f, Time.deltaTime * 100.0f * daySpeedMultiplier));
@@ -293,29 +332,44 @@ public class JBR_DayNightSystem : MonoBehaviour {
 	}
 
 	
-	void CalculateTime (){
+	void CalculateTime ()
+    {
 		//Is it am of pm?
 		 AMPM = "";
 		 minutes = ((currentTime) - (Mathf.Floor(currentTime)))*60.0f;
-		if (currentTime <= 12.0f) {
+		if (currentTime <= 12.0f) 
+        {
 			AMPM = "AM";
-			if (nextDay == true) {
-				curDay += 1;
-                CalculateSeason();
-                if (curDay == daysInYear + 1)
-                {
-                    curDay = 1;
-                    curYear += 1;
-                }
-				nextDay = false;
-			}
-
-		} else {
-			AMPM = "PM";
-			nextDay = true;
+		} 
+        else 
+        {
+			AMPM = "PM";			
 		}
-		//Make the final string
-		timeString = Mathf.Floor(currentTime).ToString() + " : " + minutes.ToString("F0") + " "+AMPM ;
+        
+
+        if (nextDay == true)
+        {
+            curDay += 1;
+            CalculateSeason();
+            if (curDay == daysInYear + 1)
+            {
+                curDay = 1;
+                curYear += 1;
+            }
+            nextDay = false;
+        }
+
+
+        //Make the final string
+        if (AMPM == "PM")
+        {
+            timeString = Mathf.Floor(currentTime - 12).ToString() + " : " + minutes.ToString("F0") + " " + AMPM;
+        }
+        else
+        {
+            timeString = Mathf.Floor(currentTime).ToString() + " : " + minutes.ToString("F0") + " " + AMPM;
+        }
+
         timeDisplay.text = ("Time : " + timeString + "  Day :" + curDay.ToString() + "  Year : "+ curYear.ToString() );
         seasonDisplay.text = ("  Season : " + curSeason);
     }
@@ -404,6 +458,25 @@ public class JBR_DayNightSystem : MonoBehaviour {
 
         RenderSettings.skybox = null;
         RenderSettings.ambientLight = Color.black;
+    }
+
+
+    /// <summary>
+    /// Register a light with the day night system so that it can be controlled
+    /// </summary>
+    /// <param name="light"></param>
+    public void RegisterScenePointLights(JBR_Torches light)
+    {
+        for (int i = 0; i < sceneLights.Count; i++)
+        {
+            if (sceneLights[i] == light)
+            {
+                return;
+                // light was already added so no need to add another copy
+            }   
+        }
+        Debug.Log("Registered Torch Light with Day/Nigh System " + light.gameObject.name);
+        sceneLights.Add(light);
     }
 
 }

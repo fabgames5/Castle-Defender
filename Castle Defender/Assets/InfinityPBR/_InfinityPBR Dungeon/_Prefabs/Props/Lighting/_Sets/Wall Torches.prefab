@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5686039105478247431}
+  - component: {fileID: 7709500739065606310}
   m_Layer: 0
   m_Name: Wall Torches
   m_TagString: Untagged
@@ -33,6 +34,21 @@ Transform:
   - {fileID: 4407723095846985532}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7709500739065606310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7534672360473255409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d890eb45c427b2488cd780ea0d5120b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lightSource: {fileID: 0}
+  dayNightSystem: {fileID: 0}
+  isLightEnabled: 0
 --- !u!1001 &4407723095846671426
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -164,6 +180,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2317406, guid: d9594206d7b4a4ba9a8ec981a829993d, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2317406, guid: d9594206d7b4a4ba9a8ec981a829993d, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2385502, guid: d9594206d7b4a4ba9a8ec981a829993d, type: 3}
       propertyPath: m_CastShadows
       value: 0
@@ -180,6 +204,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114153687097265672, guid: d9594206d7b4a4ba9a8ec981a829993d,
         type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114153687097265672, guid: d9594206d7b4a4ba9a8ec981a829993d,
+        type: 3}
       propertyPath: intensityMax
       value: 4
       objectReference: {fileID: 0}
@@ -188,10 +217,30 @@ PrefabInstance:
       propertyPath: intensityMin
       value: 3.85
       objectReference: {fileID: 0}
+    - target: {fileID: 114564443378656324, guid: d9594206d7b4a4ba9a8ec981a829993d,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 199289767856114248, guid: d9594206d7b4a4ba9a8ec981a829993d,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 199520058074561144, guid: d9594206d7b4a4ba9a8ec981a829993d,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 199520058074561144, guid: d9594206d7b4a4ba9a8ec981a829993d,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1251796291401841136, guid: d9594206d7b4a4ba9a8ec981a829993d,
         type: 3}
       propertyPath: m_Volume
-      value: 0.115
+      value: 0.429
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

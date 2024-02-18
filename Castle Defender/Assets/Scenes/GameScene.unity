@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 7792792325193808986}
-  m_IndirectSpecularColor: {r: 0.26771548, g: 0.37703267, b: 0.43544623, a: 1}
+  m_IndirectSpecularColor: {r: 0.23459068, g: 0.3824532, b: 0.45114863, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1523,7 +1523,7 @@ PrefabInstance:
     - target: {fileID: 2026114004922659949, guid: 2e2a18f55d1088042af6eaa94a08884b,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.1094683
+      value: -0.10946831
       objectReference: {fileID: 0}
     - target: {fileID: 2026114004922659949, guid: 2e2a18f55d1088042af6eaa94a08884b,
         type: 3}
@@ -8407,7 +8407,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db025c935702d104ea54841b5fba95e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  daySpeedMultiplier: 0.1
+  daySpeedMultiplier: 0.5
   controlIntensity: 1
   skyUpdated: 0.1
   skyBox: {fileID: 2100000, guid: 9574f2283e9e45841ae5c4dfcd47e011, type: 2}
@@ -8418,10 +8418,7 @@ MonoBehaviour:
   timeDisplay: {fileID: 4269039148097064639}
   seasonDisplay: {fileID: 4269039148097068685}
   sunLight: {fileID: 7792792325193808986}
-  lightIntensity: 0
-  startTime: 4
   nextDay: 0
-  currentTime: 0
   timeString: 30303a303020414d
   AMPM: 
   curDay: 1
@@ -8452,7 +8449,6 @@ MonoBehaviour:
   - 0
   - 0
   cloudTransDir: 000000
-  renderSettings: {fileID: 0}
   starSpheres:
   - {fileID: 7792792325187650748}
   starRotationSpeed: 35
@@ -8462,6 +8458,11 @@ MonoBehaviour:
   hours: 0
   days: 0
   years: 0
+  lightIntensity: 1
+  currentTime: 0
+  startTime: 5
+  sceneLights: []
+  sceneLightsOn: 0
 --- !u!124 &8409350465454787057
 Behaviour:
   m_ObjectHideFlags: 0
@@ -8681,15 +8682,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7466871156320338712, guid: 4e0acfbcccb0449f0b21696dbafa6bf1,
-        type: 3}
-      propertyPath: m_Volume
-      value: 0.429
-      objectReference: {fileID: 0}
     - target: {fileID: 7534672360473255409, guid: 4e0acfbcccb0449f0b21696dbafa6bf1,
         type: 3}
       propertyPath: m_Name
       value: Wall Torches
+      objectReference: {fileID: 0}
+    - target: {fileID: 8558271366359905476, guid: 4e0acfbcccb0449f0b21696dbafa6bf1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
