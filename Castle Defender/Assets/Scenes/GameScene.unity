@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 7792792325193808986}
-  m_IndirectSpecularColor: {r: 0.2563406, g: 0.3524064, b: 0.43799162, a: 1}
+  m_IndirectSpecularColor: {r: 0.27646494, g: 0.23428914, b: 0.24394086, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2384,6 +2384,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4011768512632203945, guid: 2e2a18f55d1088042af6eaa94a08884b,
+        type: 3}
+      propertyPath: JumpTimeout
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4013815681011612420, guid: 2e2a18f55d1088042af6eaa94a08884b,
         type: 3}
@@ -4879,7 +4884,7 @@ MonoBehaviour:
     type: 3}
   castleCenter: {fileID: 906816029}
   spawnRadius: 100
-  spawnInterval: 5
+  spawnInterval: 10
 --- !u!4 &554506051
 Transform:
   m_ObjectHideFlags: 0
@@ -5458,6 +5463,16 @@ PrefabInstance:
         type: 3}
       propertyPath: allowMoving
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8727634133160234855, guid: 24482ef7632aa6042b45735370df80ec,
+        type: 3}
+      propertyPath: baseHealth
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8727634133160234855, guid: 24482ef7632aa6042b45735370df80ec,
+        type: 3}
+      propertyPath: cur_Health
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
