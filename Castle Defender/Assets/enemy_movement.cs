@@ -41,4 +41,12 @@ public class enemy_movement : MonoBehaviour
             //Destroy(gameObject);
         }
     }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("building"))  
+            {
+                Destroy(other.gameObject);
+            }
+    }
 }
